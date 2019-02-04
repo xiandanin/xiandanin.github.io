@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000">
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top">
+  
+  
+  <title>Homebrew安装指定版本软件 | 闲蛋</title>
+  <meta name="description" content="相关链接https://stackoverflow.com/questions/39187812/homebrew-how-to-install-older-versionshttps://stackoverflow.com/questions/3987683/homebrew-install-specific-version-of-formula  以安装groovy为例，最新的是2.5.4，">
+<meta name="keywords" content="Homebrew">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Homebrew安装指定版本软件">
+<meta property="og:url" content="https://dyhdyh.com/posts/homebrew-historic-version.html">
+<meta property="og:site_name" content="闲蛋的笔记">
+<meta property="og:description" content="相关链接https://stackoverflow.com/questions/39187812/homebrew-how-to-install-older-versionshttps://stackoverflow.com/questions/3987683/homebrew-install-specific-version-of-formula  以安装groovy为例，最新的是2.5.4，">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://dyhdyh.com/posts/homebrew-historic-version/1.jpg">
+<meta property="og:image" content="https://dyhdyh.com/posts/homebrew-historic-version/2.jpg">
+<meta property="og:image" content="https://dyhdyh.com/posts/homebrew-historic-version/3.jpg">
+<meta property="og:image" content="https://dyhdyh.com/posts/homebrew-historic-version/4.jpg">
+<meta property="og:image" content="https://dyhdyh.com/posts/homebrew-historic-version/5.jpg">
+<meta property="og:updated_time" content="2019-02-04T06:35:25.021Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Homebrew安装指定版本软件">
+<meta name="twitter:description" content="相关链接https://stackoverflow.com/questions/39187812/homebrew-how-to-install-older-versionshttps://stackoverflow.com/questions/3987683/homebrew-install-specific-version-of-formula  以安装groovy为例，最新的是2.5.4，">
+<meta name="twitter:image" content="https://dyhdyh.com/posts/homebrew-historic-version/1.jpg">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://dyhdyh.com/posts/homebrew-historic-version.html">
+  
+    <link rel="alternate" href="/atom.xml" title="闲蛋的笔记" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  
+  
+  
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.css">
+  
+</head>
+
+
+<body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/dengyuhan" target="_blank">
+          <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">闲蛋</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">好记性不如烂笔头</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Shanghai, China</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索">
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech="">
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope="" itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav ">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">首页</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">归档</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">分类</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">标签</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">项目</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-contribution">
+          <a href="/contribution">
+            
+            <i class="icon icon-book-fill"></i>
+            
+            <span class="menu-title">贡献</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links">
+            
+            <i class="icon icon-friendship"></i>
+            
+            <span class="menu-title">友链</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">关于</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/dengyuhan" target="_blank" title="Github-Fill" data-toggle="tooltip" data-placement="top"><i class="icon icon-github-fill"></i></a></li>
+        
+    	
+        <li><a href="https://blog.csdn.net/aa464971" target="_blank" title="Csdn" data-toggle="tooltip" data-placement="top"><i class="iconfont icon-csdn"></i></a></li>
+        
+        <li><a href="https://stackoverflow.com/users/6699113" target="_blank" title="Stack-Overflow" data-toggle="tooltip" data-placement="top"><i class="iconfont icon-stack-overflow"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope="" itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>CSDN不让发的东西都会发到这里</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Android适配/">Android适配</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Material-Design/">Material Design</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/开发工具/">开发工具</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/科学上网/">科学上网</a><span class="category-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget-body">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AppBarLayout/">AppBarLayout</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Homebrew/">Homebrew</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Proxifier/">Proxifier</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Shadowsocks/">Shadowsocks</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Splash/">Splash</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/YouTube/">YouTube</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/代理/">代理</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/全局代理/">全局代理</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/适配/">适配</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/AppBarLayout/" style="font-size: 13px;">AppBarLayout</a> <a href="/tags/Homebrew/" style="font-size: 13px;">Homebrew</a> <a href="/tags/Proxifier/" style="font-size: 13px;">Proxifier</a> <a href="/tags/Shadowsocks/" style="font-size: 14px;">Shadowsocks</a> <a href="/tags/Splash/" style="font-size: 13px;">Splash</a> <a href="/tags/YouTube/" style="font-size: 13px;">YouTube</a> <a href="/tags/代理/" style="font-size: 13px;">代理</a> <a href="/tags/全局代理/" style="font-size: 13px;">全局代理</a> <a href="/tags/适配/" style="font-size: 13px;">适配</a>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/Android适配/">Android适配</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/android-splash-compat.html" class="title">Splash适配解决启动图拉伸的问题</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-01-28T05:55:06.000Z" itemprop="datePublished">2019-01-28</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/Material-Design/">Material Design</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/appbar-srcoll.html" class="title">如何真实有效的用代码滚动AppBarLayout</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2018-12-25T02:56:44.000Z" itemprop="datePublished">2018-12-25</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/开发工具/">开发工具</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/homebrew-historic-version.html" class="title">Homebrew安装指定版本软件</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2018-12-06T08:53:12.000Z" itemprop="datePublished">2018-12-06</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/科学上网/">科学上网</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/mac-global-proxy.html" class="title">使用Proxifier+Shadowsocks实现Mac全局代理</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2018-03-29T09:52:03.000Z" itemprop="datePublished">2018-03-29</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/科学上网/">科学上网</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/youtube-download.html" class="title">分享几个下载YouTube视频的网站和工具</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2017-01-02T19:09:59.000Z" itemprop="datePublished">2017-01-03</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</aside>
+
+  
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-homebrew-historic-version" class="article article-type-post" itemscope="" itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Homebrew安装指定版本软件
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/posts/homebrew-historic-version.html" class="article-date">
+	  <time datetime="2018-12-06T08:53:12.000Z" itemprop="datePublished">2018-12-06 16:53</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/开发工具/">开发工具</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link" href="/tags/Homebrew/">Homebrew</a>
+  </span>
+
+
+        
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/posts/homebrew-historic-version.html#comments" class="article-comment-link">评论</a></span>
+        
+      </div>
+    </div>
+	<blockquote class="mt-2x">
+	  <ul class="post-copyright list-unstyled">
+	    <li class="post-copyright-link hidden-xs">
+	      转载请注明出处：<br>
+	      
+	      	<a href="https://dyhdyh.com/posts/homebrew-historic-version.html" title="Homebrew安装指定版本软件" target="_blank" rel="external">https://dyhdyh.com/posts/homebrew-historic-version.html</a>
+	      
+	    </li>
+	  </ul>
+	</blockquote>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <blockquote>
+<p>相关链接<br><a href="https://stackoverflow.com/questions/39187812/homebrew-how-to-install-older-versions" target="_blank" rel="noopener">https://stackoverflow.com/questions/39187812/homebrew-how-to-install-older-versions</a><br><a href="https://stackoverflow.com/questions/3987683/homebrew-install-specific-version-of-formula" target="_blank" rel="noopener">https://stackoverflow.com/questions/3987683/homebrew-install-specific-version-of-formula</a></p>
+</blockquote>
+<h4 id="以安装groovy为例，最新的是2-5-4，但我需要安装2-4-9"><a href="#以安装groovy为例，最新的是2-5-4，但我需要安装2-4-9" class="headerlink" title="以安装groovy为例，最新的是2.5.4，但我需要安装2.4.9"></a>以安装groovy为例，最新的是2.5.4，但我需要安装2.4.9</h4><h4 id="1-在homebrew-core直接搜索groovy-2-4-9，找到该版本的提交记录"><a href="#1-在homebrew-core直接搜索groovy-2-4-9，找到该版本的提交记录" class="headerlink" title="1.在homebrew-core直接搜索groovy 2.4.9，找到该版本的提交记录"></a>1.在<a href="https://github.com/Homebrew/homebrew-core" target="_blank" rel="noopener">homebrew-core</a>直接搜索<code>groovy 2.4.9</code>，找到该版本的提交记录</h4><p><img src="/posts/homebrew-historic-version/1.jpg" width="400"><br><br></p>
+<h4 id="2-查看groovy-rb，这样就得到了历史版本的文件地址"><a href="#2-查看groovy-rb，这样就得到了历史版本的文件地址" class="headerlink" title="2.查看groovy.rb，这样就得到了历史版本的文件地址"></a>2.查看<code>groovy.rb</code>，这样就得到了历史版本的文件地址</h4><p><img src="/posts/homebrew-historic-version/2.jpg" width="600"></p>
+<p><img src="/posts/homebrew-historic-version/3.jpg" width="600"></p>
+<p><img src="/posts/homebrew-historic-version/4.jpg" width="600"><br><br></p>
+<h4 id="3-直接用brew安装"><a href="#3-直接用brew安装" class="headerlink" title="3.直接用brew安装"></a>3.直接用brew安装</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/e091f8904349d6686637c9e0342b525cd58807db/Formula/groovy.rb</span><br></pre></td></tr></table></figure>
+<p><img src="/posts/homebrew-historic-version/5.jpg" width="500"></p>
+
+      
+    </div>
+	
+  </article>
+  
+    
+  <section id="comments">
+  	
+           
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom="">
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/posts/appbar-srcoll.html" title="如何真实有效的用代码滚动AppBarLayout"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+    </li>
+    
+    
+    <li class="next">
+      <a href="/posts/mac-global-proxy.html" title="使用Proxifier+Shadowsocks实现Mac全局代理"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
+  
+
+
+</main>
+
+  <footer class="footer" itemscope="" itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/dengyuhan" target="_blank" title="Github-Fill" data-toggle="tooltip" data-placement="top"><i class="icon icon-github-fill"></i></a></li>
+        
+    	
+        <li><a href="https://blog.csdn.net/aa464971" target="_blank" title="Csdn" data-toggle="tooltip" data-placement="top"><i class="iconfont icon-csdn"></i></a></li>
+        
+        <li><a href="https://stackoverflow.com/users/6699113" target="_blank" title="Stack-Overflow" data-toggle="tooltip" data-placement="top"><i class="iconfont icon-stack-overflow"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+		<!--
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+		-->
+        <div class="publishby">
+        	Theme base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+	
+	<!--CNZZ统计代码-->
+	<div style="display:none">
+	    <script src="https://s4.cnzz.com/z_stat.php?id=1258847419&web_id=1258847419" language="JavaScript"></script>
+	</div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script src="/js/plugin.min.js"></script>
+<script src="/js/application.js"></script>
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+
+
+
+
+   
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+   
+    
+  <!-- <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"> -->
+  <script src="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+  <script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: '4fede66efdff9428c9d1',
+    clientSecret: 'e4f92739e52e2e7b01ac64b118582b70c9ec6ff0',
+    repo: 'dengyuhan.github.io',
+    owner: 'dengyuhan',
+    admin: ['dengyuhan'],
+    id: md5(location.pathname),
+    distractionFreeMode: false
+  })
+  gitalk.render('comments')
+  </script>
+
+      
+
+
+
+
+
+
+
+</body>
+</html>
