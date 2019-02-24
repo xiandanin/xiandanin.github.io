@@ -6533,33 +6533,31 @@ body.no-sidebar .sidebar {
 }
 
 .marked-body h1 {
-  font-size: 28px;
-  padding-bottom: 0.3em;
   font-size: 2em;
+  padding-bottom: 0.3em;
   border-bottom: 1px solid #f2f2f2;
 }
 
 .marked-body h2 {
-  font-size: 24px;
-  padding-bottom: 0.3em;
   font-size: 1.5em;
+  padding-bottom: 0.3em;
   border-bottom: 1px solid #f2f2f2;
 }
 
 .marked-body h3 {
-	font-size: 22px;
+  font-size: 1.25em;
 }
 
 .marked-body h4 {
-	font-size: 20px;
+  font-size: 1em;
 }
 
 .marked-body h5 {
-	font-size: 18px;
+  font-size: .875em;
 }
 
 .marked-body h6 {
-	font-size: 16px;
+  font-size: .85em;
 }
 
 .marked-body a {
