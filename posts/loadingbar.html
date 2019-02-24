@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000">
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top">
+  
+  
+  <title>LoadingBar - 如何更优雅的使用Loading | 闲蛋</title>
+  <meta name="description" content="Github地址：https://github.com/dengyuhan/LoadingBar 前言Loading是很普遍的需求，比如请求的时候需要显示Loading，请求完成以后再取消Loading，而一般的实现方式是在布局xml里添加一个ProgressBar，但是这样写就有很多不便，每个页面的layout都要写一个ProgressBar，显示的位置也固定了，还耦合了很多代码。而Loadin">
+<meta name="keywords" content="Android,Loading">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LoadingBar - 如何更优雅的使用Loading">
+<meta property="og:url" content="https://dyhdyh.com/posts/loadingbar.html">
+<meta property="og:site_name" content="闲蛋的笔记">
+<meta property="og:description" content="Github地址：https://github.com/dengyuhan/LoadingBar 前言Loading是很普遍的需求，比如请求的时候需要显示Loading，请求完成以后再取消Loading，而一般的实现方式是在布局xml里添加一个ProgressBar，但是这样写就有很多不便，每个页面的layout都要写一个ProgressBar，显示的位置也固定了，还耦合了很多代码。而Loadin">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://dyhdyh.com/posts/loadingbar/1.gif">
+<meta property="og:image" content="https://dyhdyh.com/posts/loadingbar/2.gif">
+<meta property="og:image" content="https://dyhdyh.com/posts/loadingbar/3.gif">
+<meta property="og:updated_time" content="2019-02-24T07:48:49.349Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="LoadingBar - 如何更优雅的使用Loading">
+<meta name="twitter:description" content="Github地址：https://github.com/dengyuhan/LoadingBar 前言Loading是很普遍的需求，比如请求的时候需要显示Loading，请求完成以后再取消Loading，而一般的实现方式是在布局xml里添加一个ProgressBar，但是这样写就有很多不便，每个页面的layout都要写一个ProgressBar，显示的位置也固定了，还耦合了很多代码。而Loadin">
+<meta name="twitter:image" content="https://dyhdyh.com/posts/loadingbar/1.gif">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://dyhdyh.com/posts/loadingbar.html">
+  
+    <link rel="alternate" href="/atom.xml" title="闲蛋的笔记" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  
+  
+  
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.css">
+  
+</head>
+
+
+<body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/dengyuhan" target="_blank">
+          <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">闲蛋</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">好记性不如烂笔头</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Shanghai, China</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索">
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech="">
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope="" itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav ">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">首页</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">归档</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">分类</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">标签</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">项目</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-contribution">
+          <a href="/contribution">
+            
+            <i class="icon icon-book-fill"></i>
+            
+            <span class="menu-title">贡献</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links">
+            
+            <i class="icon icon-friendship"></i>
+            
+            <span class="menu-title">友链</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">关于</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/dengyuhan" target="_blank" title="Github-Fill" data-toggle="tooltip" data-placement="top"><i class="icon icon-github-fill"></i></a></li>
+        
+    	
+        <li><a href="https://blog.csdn.net/aa464971" target="_blank" title="Csdn" data-toggle="tooltip" data-placement="top"><i class="iconfont icon-csdn"></i></a></li>
+        
+        <li><a href="https://stackoverflow.com/users/6699113" target="_blank" title="Stack-Overflow" data-toggle="tooltip" data-placement="top"><i class="iconfont icon-stack-overflow"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope="" itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>CSDN不让发的东西都会发到这里</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Android-NDK/">Android NDK</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-兼容/">Android 兼容</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-开源/">Android 开源</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-文档/">Android 文档</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-源码分析/">Android 源码分析</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-适配/">Android 适配</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Github/">Github</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Material-Design/">Material Design</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/MySQL/">MySQL</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Spring/">Spring</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/工具/">工具</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/开发工具/">开发工具</a><span class="category-list-count">14</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/科学上网/">科学上网</a><span class="category-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/Android/" style="font-size: 14px;">Android</a> <a href="/tags/Android-Studio/" style="font-size: 13.67px;">Android Studio</a> <a href="/tags/AndroidManifest/" style="font-size: 13px;">AndroidManifest</a> <a href="/tags/AppBarLayout/" style="font-size: 13px;">AppBarLayout</a> <a href="/tags/Appium/" style="font-size: 13px;">Appium</a> <a href="/tags/Assets/" style="font-size: 13px;">Assets</a> <a href="/tags/Button/" style="font-size: 13px;">Button</a> <a href="/tags/CDN/" style="font-size: 13px;">CDN</a> <a href="/tags/CLion/" style="font-size: 13px;">CLion</a> <a href="/tags/Chrome/" style="font-size: 13.33px;">Chrome</a> <a href="/tags/CountDownTimer/" style="font-size: 13px;">CountDownTimer</a> <a href="/tags/GPUImage/" style="font-size: 13px;">GPUImage</a> <a href="/tags/Genymotion/" style="font-size: 13px;">Genymotion</a> <a href="/tags/Git/" style="font-size: 13px;">Git</a> <a href="/tags/Github/" style="font-size: 13.33px;">Github</a> <a href="/tags/Github-Pages/" style="font-size: 13px;">Github Pages</a> <a href="/tags/Gradle/" style="font-size: 13px;">Gradle</a> <a href="/tags/Homebrew/" style="font-size: 13.33px;">Homebrew</a> <a href="/tags/IntelliJ-IDEA/" style="font-size: 13px;">IntelliJ IDEA</a> <a href="/tags/JCenter/" style="font-size: 13px;">JCenter</a> <a href="/tags/JNI/" style="font-size: 13px;">JNI</a> <a href="/tags/Java/" style="font-size: 13.67px;">Java</a> <a href="/tags/JetBrains/" style="font-size: 13px;">JetBrains</a> <a href="/tags/Loading/" style="font-size: 13px;">Loading</a> <a href="/tags/Mac/" style="font-size: 13px;">Mac</a> <a href="/tags/MediaMetadataRetriever/" style="font-size: 13px;">MediaMetadataRetriever</a> <a href="/tags/MySQL/" style="font-size: 13px;">MySQL</a> <a href="/tags/NavigationBar/" style="font-size: 13px;">NavigationBar</a> <a href="/tags/OpenSSL/" style="font-size: 13px;">OpenSSL</a> <a href="/tags/PhpStorm/" style="font-size: 13px;">PhpStorm</a> <a href="/tags/Proxifier/" style="font-size: 13px;">Proxifier</a> <a href="/tags/PyCharm/" style="font-size: 13px;">PyCharm</a> <a href="/tags/RSA/" style="font-size: 13px;">RSA</a> <a href="/tags/Shadowsocks/" style="font-size: 13.33px;">Shadowsocks</a> <a href="/tags/Splash/" style="font-size: 13px;">Splash</a> <a href="/tags/Spring/" style="font-size: 13px;">Spring</a> <a href="/tags/Spring-Boot/" style="font-size: 13.33px;">Spring Boot</a> <a href="/tags/Tampermonkey/" style="font-size: 13px;">Tampermonkey</a> <a href="/tags/WebStorm/" style="font-size: 13px;">WebStorm</a> <a href="/tags/WebView/" style="font-size: 13.33px;">WebView</a> <a href="/tags/YouTube/" style="font-size: 13px;">YouTube</a> <a href="/tags/keyStore/" style="font-size: 13px;">keyStore</a> <a href="/tags/代理/" style="font-size: 13px;">代理</a> <a href="/tags/倒计时/" style="font-size: 13px;">倒计时</a> <a href="/tags/全局代理/" style="font-size: 13px;">全局代理</a> <a href="/tags/反编译/" style="font-size: 13px;">反编译</a> <a href="/tags/投屏/" style="font-size: 13px;">投屏</a> <a href="/tags/插件/" style="font-size: 13px;">插件</a> <a href="/tags/直播/" style="font-size: 13px;">直播</a> <a href="/tags/签名/" style="font-size: 13px;">签名</a> <a href="/tags/适配/" style="font-size: 13px;">适配</a>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">2019年02月</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">2019年01月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">2018年12月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">2018年11月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">2018年10月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">2018年09月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">2018年06月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">2018年05月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">2018年03月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">2018年02月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">2017年10月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">2017年09月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">2017年05月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">2017年04月</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">2017年01月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">2016年12月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">2016年10月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016年05月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">2016年04月</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/工具/">工具</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/github-pages-cdn.html" class="title">利用CDN加速你的Github Pages</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-02-22T03:22:53.000Z" itemprop="datePublished">2019-02-22</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/工具/">工具</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/git-mirror.html" class="title">Git完全复制一个Repository到新Repository</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-02-22T03:02:32.000Z" itemprop="datePublished">2019-02-22</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/工具/">工具</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/tampermonkey-live-fullscreen.html" class="title">通过油猴让直播平台自动网页全屏</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-02-12T08:24:29.000Z" itemprop="datePublished">2019-02-12</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/Android-适配/">Android 适配</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/android-splash-compat.html" class="title">Splash适配解决启动图拉伸的问题</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-01-28T05:55:06.000Z" itemprop="datePublished">2019-01-28</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/Material-Design/">Material Design</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/appbar-srcoll.html" class="title">如何真实有效的用代码滚动AppBarLayout</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2018-12-25T02:56:44.000Z" itemprop="datePublished">2018-12-25</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</aside>
+
+  
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-loadingbar" class="article article-type-post" itemscope="" itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      LoadingBar - 如何更优雅的使用Loading
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/posts/loadingbar.html" class="article-date">
+	  <time datetime="2017-04-16T11:41:06.000Z" itemprop="datePublished">2017-04-16 19:41</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/Android-开源/">Android 开源</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link" href="/tags/Android/">Android</a>, <a class="article-tag-link" href="/tags/Loading/">Loading</a>
+  </span>
+
+
+        
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/posts/loadingbar.html#comments" class="article-comment-link">评论</a></span>
+        
+      </div>
+    </div>
+	<blockquote class="mt-2x">
+	  <ul class="post-copyright list-unstyled">
+	    <li class="post-copyright-link hidden-xs">
+	      转载请注明出处：<br>
+	      
+	      	<a href="https://dyhdyh.com/posts/loadingbar.html" title="LoadingBar - 如何更优雅的使用Loading" target="_blank" rel="external">https://dyhdyh.com/posts/loadingbar.html</a>
+	      
+	    </li>
+	  </ul>
+	</blockquote>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <p>Github地址：<br><a href="https://github.com/dengyuhan/LoadingBar" target="_blank" rel="noopener">https://github.com/dengyuhan/LoadingBar</a></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a><strong>前言</strong></h2><p>Loading是很普遍的需求，比如请求的时候需要显示Loading，请求完成以后再取消Loading，而一般的实现方式是在布局xml里添加一个ProgressBar，但是这样写就有很多不便，每个页面的layout都要写一个ProgressBar，显示的位置也固定了，还耦合了很多代码。<br>而LoadingBar就是为了跟方便的操作Loading而生，高度解耦，样式全部通过工厂类决定。</p>
+<h2 id="结构介绍"><a href="#结构介绍" class="headerlink" title="结构介绍"></a><strong>结构介绍</strong></h2><p>LoadingBar - 适合一些显示数据的操作，比如请求列表<br>LoadingDialog - 适合一些提交数据的操作，比如注册，登录<br>Factory - 决定了loading的样式，自定义样式只需实现Factory</p>
+<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a><strong>快速开始</strong></h2><h4 id="Android-Studio-在build-gradle中引入"><a href="#Android-Studio-在build-gradle中引入" class="headerlink" title="Android Studio - 在build.gradle中引入"></a>Android Studio - 在build.gradle中引入</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">compile <span class="string">'com.dyhdyh.loadingbar:loadingbar:1.4.7'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//appcompat</span></span><br><span class="line">implementation <span class="string">"com.android.support:appcompat-v7:xxx"</span></span><br></pre></td></tr></table></figure>
+<h3 id="LoadingBar"><a href="#LoadingBar" class="headerlink" title="LoadingBar"></a><strong>LoadingBar</strong></h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//默认样式 loading将会覆盖在parent的内容上面</span></span><br><span class="line">LoadingBar.make(parent).show();</span><br><span class="line"></span><br><span class="line"><span class="comment">//自定义样式</span></span><br><span class="line"><span class="comment">//提供两种形式,loadingView更简便,loadingFactory自由度更高</span></span><br><span class="line">LoadingBar.make(parent,loadingView).show();</span><br><span class="line">LoadingBar.make(parent,loadingFactory).show();</span><br><span class="line"></span><br><span class="line"><span class="comment">//完全自定义</span></span><br><span class="line">LoadingBar.make(parent,loadingFactory)</span><br><span class="line">        .setOnClickListener(clickListener)<span class="comment">//点击事件</span></span><br><span class="line">        .setOnLoadingBarListener(loadingBarListener)<span class="comment">//当loadingbar取消的时候回调</span></span><br><span class="line">        .show();</span><br><span class="line">        </span><br><span class="line"><span class="comment">//取消Loading</span></span><br><span class="line">LoadingBar.cancel(parent);</span><br></pre></td></tr></table></figure>
+<img src="/posts/loadingbar/1.gif">
+<h3 id="LoadingDialog"><a href="#LoadingDialog" class="headerlink" title="LoadingDialog"></a><strong>LoadingDialog</strong></h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//默认样式</span></span><br><span class="line">LoadingDialog.make(context).show();</span><br><span class="line"></span><br><span class="line"><span class="comment">//自定义样式</span></span><br><span class="line">LoadingDialog.make(context, dialogFactory).show();</span><br><span class="line"></span><br><span class="line"><span class="comment">//完全自定义</span></span><br><span class="line">LoadingDialog.make(context, dialogFactory)</span><br><span class="line">           .setMessage(message)<span class="comment">//提示消息</span></span><br><span class="line">           .setCancelable(cancelable)</span><br><span class="line">           .show();</span><br><span class="line"></span><br><span class="line"><span class="comment">//设置更多属性</span></span><br><span class="line">Dialog dialog = LoadingDialog.make(context, dialogFactory)</span><br><span class="line">           .setMessage(message)<span class="comment">//提示消息</span></span><br><span class="line">           .setCancelable(cancelable)</span><br><span class="line">           .create();</span><br><span class="line">dialog.setOnCancelListener(cancelListener);</span><br><span class="line">dialog.set...</span><br><span class="line">dialog.show();</span><br><span class="line">           </span><br><span class="line"><span class="comment">//取消Loading</span></span><br><span class="line">LoadingDialog.cancel();</span><br></pre></td></tr></table></figure>
+<img src="/posts/loadingbar/2.gif">
+<h3 id="自定义Factory"><a href="#自定义Factory" class="headerlink" title="自定义Factory"></a><strong>自定义Factory</strong></h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CustomLoadingFactory</span> <span class="keyword">implements</span> <span class="title">LoadingFactory</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> View <span class="title">onCreateView</span><span class="params">(ViewGroup parent)</span> </span>&#123;</span><br><span class="line">        View loadingView = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_custom, parent,<span class="keyword">false</span>);</span><br><span class="line">        <span class="keyword">return</span> loadingView;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="全局配置"><a href="#全局配置" class="headerlink" title="全局配置"></a><strong>全局配置</strong></h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//自定义样式并应用于全局</span></span><br><span class="line">LoadingConfig.setFactory(loadingFactory,dialogFactory);</span><br></pre></td></tr></table></figure>
+<img src="/posts/loadingbar/3.gif">
+<h3 id="资源释放"><a href="#资源释放" class="headerlink" title="资源释放"></a><strong>资源释放</strong></h3><p>其实LoadingBar在cancel的时候已经释放掉了，可以不用手动释放，但是这里也提供释放的方法，根据自己需要选择</p>
+<p>在Activity onDestroy调用，个人建议在BaseActivity，资源释放只会释放无效的资源<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LoadingBar.release();</span><br></pre></td></tr></table></figure></p>
+<h3 id="源码解析"><a href="#源码解析" class="headerlink" title="源码解析"></a><strong>源码解析</strong></h3><h4 id="定义结构"><a href="#定义结构" class="headerlink" title="定义结构"></a>定义结构</h4><p>首先我一开始就想好了，这得有三样东西，LoadingBar与LoadingDialog，用Factory来生产loading所需要的View和Dialog</p>
+<h4 id="定义接口"><a href="#定义接口" class="headerlink" title="定义接口"></a>定义接口</h4><p>两者的共同点是都会有显示，所以我定义了一个共用的接口<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public interface ILoading &#123;</span><br><span class="line">    void show();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>LoadingBar除了有show还得有cancel<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public interface ILoadingBar extends ILoading &#123;</span><br><span class="line">    void cancel();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>LoadingDialog最终都是操作Dialog，所以它得有create，再附加一些设置常用属性的方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">public interface ILoadingDialog extends ILoading &#123;</span><br><span class="line">   </span><br><span class="line">    Dialog create();</span><br><span class="line"></span><br><span class="line">    ILoadingDialog setCancelable(boolean flag);</span><br><span class="line"></span><br><span class="line">    ILoadingDialog setMessage(CharSequence message);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>LoadingFactory onCreateView返回的View就决定了Loading长什么样<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public interface LoadingFactory &#123;</span><br><span class="line"></span><br><span class="line">    View onCreateView(ViewGroup parent);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>DialogFactory 主要是onCreateDialog，这个方法决定了Dialog长什么样，在这里实现创建Dialog<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">public interface DialogFactory &#123;</span><br><span class="line">    /**</span><br><span class="line">     * 创建dialog</span><br><span class="line">     * @param context</span><br><span class="line">     * @return</span><br><span class="line">     */</span><br><span class="line">    Dialog onCreateDialog(Context context);</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 设置提示消息</span><br><span class="line">     * @param dialog</span><br><span class="line">     * @param message</span><br><span class="line">     */</span><br><span class="line">    void setMessage(Dialog dialog,CharSequence message);</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 进入退出的动画id</span><br><span class="line">     * @return</span><br><span class="line">     */</span><br><span class="line">    @StyleRes int getAnimateStyleId();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h4 id="LoadingBar的实现"><a href="#LoadingBar的实现" class="headerlink" title="LoadingBar的实现"></a>LoadingBar的实现</h4><p>其实就是需要两个View，mView就是factory.onCreateView返回的LoadingView，mParent就是现实<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">private LoadingBar(ViewGroup parent, LoadingFactory factory) &#123;</span><br><span class="line">        mParent = parent;</span><br><span class="line">        mView = factory.onCreateView(mParent);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>然后把mView添加到mParent里，这样mView就处于最上层，覆盖着内容，这样就达到了Loading的效果<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">public void show() &#123;</span><br><span class="line">    if (mView != null) &#123;</span><br><span class="line">        mView.setVisibility(View.VISIBLE);</span><br><span class="line">        if (mView.getParent() != null) &#123;</span><br><span class="line">            mParent.removeView(mView);</span><br><span class="line">        &#125;</span><br><span class="line">        mParent.addView(mView);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>取消很简单，就直接把mView移除掉就好了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">public void cancel() &#123;</span><br><span class="line">    if (mView != null) &#123;</span><br><span class="line">        mView.setVisibility(View.GONE);</span><br><span class="line">        mParent.removeView(mView);</span><br><span class="line">        mView = null;</span><br><span class="line">        if (this.mListener != null) &#123;</span><br><span class="line">            this.mListener.onCancel(mParent);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>值得一说的还有findSuitableParent，因为Loading是要在可覆盖的布局上才有作用的，而当parent传的是非覆盖的布局（例如LinearLayout）,这个方法会一直往外层寻找可覆盖的布局<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">private static ViewGroup findSuitableParent(View parent) &#123;</span><br><span class="line">        if (parent == null) &#123;</span><br><span class="line">            return null;</span><br><span class="line">        &#125;</span><br><span class="line">        View suitableParent = parent;</span><br><span class="line">        do &#123;</span><br><span class="line">            if (suitableParent instanceof FrameLayout || suitableParent instanceof RelativeLayout ||</span><br><span class="line">                    &quot;android.support.v4.widget.DrawerLayout&quot;.equals(suitableParent.getClass().getName()) ||</span><br><span class="line">                    &quot;android.support.design.widget.CoordinatorLayout&quot;.equals(suitableParent.getClass().getName()) ||</span><br><span class="line">                    &quot;android.support.v7.widget.CardView&quot;.equals(suitableParent.getClass().getName())) &#123;</span><br><span class="line">                return (ViewGroup) suitableParent;</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">                final ViewParent viewParent = suitableParent.getParent();</span><br><span class="line">                suitableParent = viewParent instanceof View ? (View) viewParent : null;</span><br><span class="line">                return (ViewGroup) suitableParent;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; while (suitableParent != null);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
+<h4 id="LoadingDialog的实现"><a href="#LoadingDialog的实现" class="headerlink" title="LoadingDialog的实现"></a>LoadingDialog的实现</h4><p>构造方法先用factory创建了dialog，如果有动画设置动画<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">public LoadingDialog(Context context, DialogFactory factory) &#123;</span><br><span class="line">    this.mDialog = factory.onCreateDialog(context);</span><br><span class="line">    this.mFactory = factory;</span><br><span class="line">    int animateStyleId = this.mFactory.getAnimateStyleId();</span><br><span class="line">    if (animateStyleId &gt; 0) &#123;</span><br><span class="line">  this.mDialog.getWindow().setWindowAnimations(animateStyleId);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>因为Dialog是单例，如果在Activity已经finish了再去操作做个Dialog的话，就会抛异常，所以在show与cancel的时候要先检查是否能够操作<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">public void show() &#123;</span><br><span class="line">    if (isValid() &amp;&amp; !mDialog.isShowing()) &#123;</span><br><span class="line">        mDialog.show();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public void cancelDialog() &#123;</span><br><span class="line">    if (isValid() &amp;&amp; mDialog.isShowing()) &#123;</span><br><span class="line">        mDialog.cancel();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">private boolean isValid() &#123;</span><br><span class="line">    if (mDialog != null) &#123;</span><br><span class="line">        Context context = mDialog.getContext();</span><br><span class="line">        if (context instanceof ContextWrapper)&#123;</span><br><span class="line">            context = ((ContextWrapper) context).getBaseContext();</span><br><span class="line">        &#125;</span><br><span class="line">        if (context instanceof Activity) &#123;</span><br><span class="line">            if (!((Activity) context).isFinishing()) &#123;</span><br><span class="line">                return true;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return false;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a><strong>总结</strong></h3><p>使用场景不局限于请求，其实还有很多异步操作都能用上<br>比如压缩图片，也可以用LoadingDialog<br>更多玩法等你挖掘，有问题可以去Github的issue提出 </p>
+
+      
+    </div>
+	
+  </article>
+  
+    
+  <section id="comments">
+  	
+           
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom="">
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/posts/android-studio-plugin.html" title="分享一些实用的Android Studio插件 - 不定期更新"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+    </li>
+    
+    
+    <li class="next">
+      <a href="/posts/available-for-offline-mode.html" title="解决AndroidStudio编译出现available for offline mode的问题"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
+  
+
+
+</main>
+
+  <footer class="footer" itemscope="" itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/dengyuhan" target="_blank" title="Github-Fill" data-toggle="tooltip" data-placement="top"><i class="icon icon-github-fill"></i></a></li>
+        
+    	
+        <li><a href="https://blog.csdn.net/aa464971" target="_blank" title="Csdn" data-toggle="tooltip" data-placement="top"><i class="iconfont icon-csdn"></i></a></li>
+        
+        <li><a href="https://stackoverflow.com/users/6699113" target="_blank" title="Stack-Overflow" data-toggle="tooltip" data-placement="top"><i class="iconfont icon-stack-overflow"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+		<!--
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+		-->
+        <div class="publishby">
+        	Theme base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+	
+	<!--CNZZ统计代码-->
+	<div style="display:none">
+	    <script src="https://s4.cnzz.com/z_stat.php?id=1258847419&web_id=1258847419" language="JavaScript"></script>
+	</div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script src="/js/plugin.min.js"></script>
+<script src="/js/application.js"></script>
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+
+
+
+
+   
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+   
+    
+  <!-- <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"> -->
+  <script src="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+  <script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: '4fede66efdff9428c9d1',
+    clientSecret: 'e4f92739e52e2e7b01ac64b118582b70c9ec6ff0',
+    repo: 'dengyuhan.github.io',
+    owner: 'dengyuhan',
+    admin: ['dengyuhan'],
+    id: md5(location.pathname),
+    distractionFreeMode: false,
+	perPage: 20
+  })
+  gitalk.render('comments')
+  </script>
+
+      
+
+
+
+
+
+
+
+</body>
+</html>

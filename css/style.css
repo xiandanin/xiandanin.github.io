@@ -5596,6 +5596,7 @@ code {
   color: #1d1d1d;
   background: #f2f2f2;
   border-radius: 3px;
+  font-size: 90%;
 }
 
 pre code {
@@ -5884,6 +5885,7 @@ body.no-sidebar .sidebar {
 }
 
 .main .pager .disabled {
+  display: none;
   cursor: not-allowed;
 }
 
@@ -5912,6 +5914,10 @@ body.no-sidebar .sidebar {
 
 .main .pager .prev {
   margin-right: 10px;
+}
+
+.main .pager .next {
+  margin-left: 10px;
 }
 
 .main .pager .page-number.current {
@@ -6131,6 +6137,7 @@ body.no-sidebar .sidebar {
 .bar.bar-footer {
   position: relative;
   background-color: #fff;
+  opacity: 0.95;
   bottom: -15px;
 }
 
@@ -6435,6 +6442,10 @@ body.no-sidebar .sidebar {
   margin-bottom: 20px;
 }
 
+.article-header h1{
+  font-size: 28px;
+}
+
 .article-footer {
   margin-top: 20px;
 }
@@ -6495,6 +6506,20 @@ body.no-sidebar .sidebar {
   padding: 14px 0;
 }
 
+.marked-body p{
+	font-family: "PingHei","PingFangSC-Light",Helvetica Neue,"Work Sans","Hiragino Sans GB","Microsoft YaHei",SimSun,sans-serif;
+	font-size: 16px;
+	color: #000;
+}
+
+.marked-body img{
+	margin-bottom: 12px;
+}
+
+.marked-body blockquote p{
+    color: #6a737d;
+}
+
 .marked-body h1,
 .marked-body h2,
 .marked-body h3,
@@ -6508,15 +6533,33 @@ body.no-sidebar .sidebar {
 }
 
 .marked-body h1 {
+  font-size: 28px;
   padding-bottom: 0.3em;
   font-size: 2em;
   border-bottom: 1px solid #f2f2f2;
 }
 
 .marked-body h2 {
+  font-size: 24px;
   padding-bottom: 0.3em;
   font-size: 1.5em;
   border-bottom: 1px solid #f2f2f2;
+}
+
+.marked-body h3 {
+	font-size: 22px;
+}
+
+.marked-body h4 {
+	font-size: 20px;
+}
+
+.marked-body h5 {
+	font-size: 18px;
+}
+
+.marked-body h6 {
+	font-size: 16px;
 }
 
 .marked-body a {
@@ -6532,8 +6575,14 @@ body.no-sidebar .sidebar {
 
 .marked-body ul,
 .marked-body ol {
+  font-size: 16px;
   padding-left: 0;
   margin-left: 20px;
+}
+.marked-body ul,
+.marked-body ol li{
+  margin-left: 32px;
+  font-family: "PingHei","PingFangSC-Light",Helvetica Neue,"Work Sans","Hiragino Sans GB","Microsoft YaHei",SimSun,sans-serif;
 }
 
 /*

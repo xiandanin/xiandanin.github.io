@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000">
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top">
+  
+  
+  <title>scrcpy - Android无需ROOT的跨平台投屏工具 | 闲蛋</title>
+  <meta name="description" content="前言之前有提到Vysor，但是这个插件免费版的码率比较低，如果要高清的就要付费。现在推荐一个Genymotion推出的投屏工具，跨平台，自定义码率，最重要的是开源，简直良心。 Github：https://github.com/Genymobile/scrcpy下载地址：https://github.com/Genymobile/scrcpy/releases 效果图gif录制较模糊，实际使用很清">
+<meta name="keywords" content="Android,投屏">
+<meta property="og:type" content="article">
+<meta property="og:title" content="scrcpy - Android无需ROOT的跨平台投屏工具">
+<meta property="og:url" content="https://dyhdyh.com/posts/scrcpy.html">
+<meta property="og:site_name" content="闲蛋的笔记">
+<meta property="og:description" content="前言之前有提到Vysor，但是这个插件免费版的码率比较低，如果要高清的就要付费。现在推荐一个Genymotion推出的投屏工具，跨平台，自定义码率，最重要的是开源，简直良心。 Github：https://github.com/Genymobile/scrcpy下载地址：https://github.com/Genymobile/scrcpy/releases 效果图gif录制较模糊，实际使用很清">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://dyhdyh.com/posts/scrcpy/1.gif">
+<meta property="og:image" content="https://dyhdyh.com/posts/scrcpy/2.jpg">
+<meta property="og:updated_time" content="2019-02-24T07:48:49.393Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="scrcpy - Android无需ROOT的跨平台投屏工具">
+<meta name="twitter:description" content="前言之前有提到Vysor，但是这个插件免费版的码率比较低，如果要高清的就要付费。现在推荐一个Genymotion推出的投屏工具，跨平台，自定义码率，最重要的是开源，简直良心。 Github：https://github.com/Genymobile/scrcpy下载地址：https://github.com/Genymobile/scrcpy/releases 效果图gif录制较模糊，实际使用很清">
+<meta name="twitter:image" content="https://dyhdyh.com/posts/scrcpy/1.gif">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://dyhdyh.com/posts/scrcpy.html">
+  
+    <link rel="alternate" href="/atom.xml" title="闲蛋的笔记" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  
+  
+  
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.css">
+  
+</head>
+
+
+<body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/dengyuhan" target="_blank">
+          <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">闲蛋</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">好记性不如烂笔头</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Shanghai, China</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索">
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech="">
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope="" itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav ">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">首页</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">归档</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">分类</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">标签</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">项目</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-contribution">
+          <a href="/contribution">
+            
+            <i class="icon icon-book-fill"></i>
+            
+            <span class="menu-title">贡献</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links">
+            
+            <i class="icon icon-friendship"></i>
+            
+            <span class="menu-title">友链</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">关于</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/dengyuhan" target="_blank" title="Github-Fill" data-toggle="tooltip" data-placement="top"><i class="icon icon-github-fill"></i></a></li>
+        
+    	
+        <li><a href="https://blog.csdn.net/aa464971" target="_blank" title="Csdn" data-toggle="tooltip" data-placement="top"><i class="iconfont icon-csdn"></i></a></li>
+        
+        <li><a href="https://stackoverflow.com/users/6699113" target="_blank" title="Stack-Overflow" data-toggle="tooltip" data-placement="top"><i class="iconfont icon-stack-overflow"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope="" itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>CSDN不让发的东西都会发到这里</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Android-NDK/">Android NDK</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-兼容/">Android 兼容</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-开源/">Android 开源</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-文档/">Android 文档</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-源码分析/">Android 源码分析</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-适配/">Android 适配</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Github/">Github</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Material-Design/">Material Design</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/MySQL/">MySQL</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Spring/">Spring</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/工具/">工具</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/开发工具/">开发工具</a><span class="category-list-count">14</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/科学上网/">科学上网</a><span class="category-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/Android/" style="font-size: 14px;">Android</a> <a href="/tags/Android-Studio/" style="font-size: 13.67px;">Android Studio</a> <a href="/tags/AndroidManifest/" style="font-size: 13px;">AndroidManifest</a> <a href="/tags/AppBarLayout/" style="font-size: 13px;">AppBarLayout</a> <a href="/tags/Appium/" style="font-size: 13px;">Appium</a> <a href="/tags/Assets/" style="font-size: 13px;">Assets</a> <a href="/tags/Button/" style="font-size: 13px;">Button</a> <a href="/tags/CDN/" style="font-size: 13px;">CDN</a> <a href="/tags/CLion/" style="font-size: 13px;">CLion</a> <a href="/tags/Chrome/" style="font-size: 13.33px;">Chrome</a> <a href="/tags/CountDownTimer/" style="font-size: 13px;">CountDownTimer</a> <a href="/tags/GPUImage/" style="font-size: 13px;">GPUImage</a> <a href="/tags/Genymotion/" style="font-size: 13px;">Genymotion</a> <a href="/tags/Git/" style="font-size: 13px;">Git</a> <a href="/tags/Github/" style="font-size: 13.33px;">Github</a> <a href="/tags/Github-Pages/" style="font-size: 13px;">Github Pages</a> <a href="/tags/Gradle/" style="font-size: 13px;">Gradle</a> <a href="/tags/Homebrew/" style="font-size: 13.33px;">Homebrew</a> <a href="/tags/IntelliJ-IDEA/" style="font-size: 13px;">IntelliJ IDEA</a> <a href="/tags/JCenter/" style="font-size: 13px;">JCenter</a> <a href="/tags/JNI/" style="font-size: 13px;">JNI</a> <a href="/tags/Java/" style="font-size: 13.67px;">Java</a> <a href="/tags/JetBrains/" style="font-size: 13px;">JetBrains</a> <a href="/tags/Loading/" style="font-size: 13px;">Loading</a> <a href="/tags/Mac/" style="font-size: 13px;">Mac</a> <a href="/tags/MediaMetadataRetriever/" style="font-size: 13px;">MediaMetadataRetriever</a> <a href="/tags/MySQL/" style="font-size: 13px;">MySQL</a> <a href="/tags/NavigationBar/" style="font-size: 13px;">NavigationBar</a> <a href="/tags/OpenSSL/" style="font-size: 13px;">OpenSSL</a> <a href="/tags/PhpStorm/" style="font-size: 13px;">PhpStorm</a> <a href="/tags/Proxifier/" style="font-size: 13px;">Proxifier</a> <a href="/tags/PyCharm/" style="font-size: 13px;">PyCharm</a> <a href="/tags/RSA/" style="font-size: 13px;">RSA</a> <a href="/tags/Shadowsocks/" style="font-size: 13.33px;">Shadowsocks</a> <a href="/tags/Splash/" style="font-size: 13px;">Splash</a> <a href="/tags/Spring/" style="font-size: 13px;">Spring</a> <a href="/tags/Spring-Boot/" style="font-size: 13.33px;">Spring Boot</a> <a href="/tags/Tampermonkey/" style="font-size: 13px;">Tampermonkey</a> <a href="/tags/WebStorm/" style="font-size: 13px;">WebStorm</a> <a href="/tags/WebView/" style="font-size: 13.33px;">WebView</a> <a href="/tags/YouTube/" style="font-size: 13px;">YouTube</a> <a href="/tags/keyStore/" style="font-size: 13px;">keyStore</a> <a href="/tags/代理/" style="font-size: 13px;">代理</a> <a href="/tags/倒计时/" style="font-size: 13px;">倒计时</a> <a href="/tags/全局代理/" style="font-size: 13px;">全局代理</a> <a href="/tags/反编译/" style="font-size: 13px;">反编译</a> <a href="/tags/投屏/" style="font-size: 13px;">投屏</a> <a href="/tags/插件/" style="font-size: 13px;">插件</a> <a href="/tags/直播/" style="font-size: 13px;">直播</a> <a href="/tags/签名/" style="font-size: 13px;">签名</a> <a href="/tags/适配/" style="font-size: 13px;">适配</a>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">2019年02月</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">2019年01月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">2018年12月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">2018年11月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">2018年10月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">2018年09月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">2018年06月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">2018年05月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">2018年03月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">2018年02月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">2017年10月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">2017年09月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">2017年05月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">2017年04月</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">2017年01月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">2016年12月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">2016年10月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016年05月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">2016年04月</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/工具/">工具</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/github-pages-cdn.html" class="title">利用CDN加速你的Github Pages</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-02-22T03:22:53.000Z" itemprop="datePublished">2019-02-22</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/工具/">工具</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/git-mirror.html" class="title">Git完全复制一个Repository到新Repository</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-02-22T03:02:32.000Z" itemprop="datePublished">2019-02-22</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/工具/">工具</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/tampermonkey-live-fullscreen.html" class="title">通过油猴让直播平台自动网页全屏</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-02-12T08:24:29.000Z" itemprop="datePublished">2019-02-12</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/Android-适配/">Android 适配</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/android-splash-compat.html" class="title">Splash适配解决启动图拉伸的问题</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-01-28T05:55:06.000Z" itemprop="datePublished">2019-01-28</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/Material-Design/">Material Design</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/appbar-srcoll.html" class="title">如何真实有效的用代码滚动AppBarLayout</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2018-12-25T02:56:44.000Z" itemprop="datePublished">2018-12-25</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</aside>
+
+  
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-scrcpy" class="article article-type-post" itemscope="" itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      scrcpy - Android无需ROOT的跨平台投屏工具
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/posts/scrcpy.html" class="article-date">
+	  <time datetime="2018-10-24T11:27:21.000Z" itemprop="datePublished">2018-10-24 19:27</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/开发工具/">开发工具</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link" href="/tags/Android/">Android</a>, <a class="article-tag-link" href="/tags/投屏/">投屏</a>
+  </span>
+
+
+        
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/posts/scrcpy.html#comments" class="article-comment-link">评论</a></span>
+        
+      </div>
+    </div>
+	<blockquote class="mt-2x">
+	  <ul class="post-copyright list-unstyled">
+	    <li class="post-copyright-link hidden-xs">
+	      转载请注明出处：<br>
+	      
+	      	<a href="https://dyhdyh.com/posts/scrcpy.html" title="scrcpy - Android无需ROOT的跨平台投屏工具" target="_blank" rel="external">https://dyhdyh.com/posts/scrcpy.html</a>
+	      
+	    </li>
+	  </ul>
+	</blockquote>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>之前有提到Vysor，但是这个插件免费版的码率比较低，如果要高清的就要付费。<br>现在推荐一个Genymotion推出的投屏工具，跨平台，自定义码率，最重要的是开源，简直良心。</p>
+<p>Github：<a href="https://github.com/Genymobile/scrcpy" target="_blank" rel="noopener">https://github.com/Genymobile/scrcpy</a><br>下载地址：<a href="https://github.com/Genymobile/scrcpy/releases" target="_blank" rel="noopener">https://github.com/Genymobile/scrcpy/releases</a></p>
+<h3 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h3><p>gif录制较模糊，实际使用很清晰</p>
+<img src="/posts/scrcpy/1.gif">
+<h3 id="设备要求"><a href="#设备要求" class="headerlink" title="设备要求"></a>设备要求</h3><p><code>Android 5.0以上</code></p>
+<h3 id="检查ADB"><a href="#检查ADB" class="headerlink" title="检查ADB"></a>检查ADB</h3><p>在命令行里打<code>adb</code>，如果有反应就说明已经有ADB，如果提示<code>command not found</code>就说明没有安装ADB</p>
+<p>如果没有<a href="https://developer.android.google.cn/studio/releases/platform-tools" target="_blank" rel="noopener">ADB</a>需要先安装ADB<br><a href="https://dl.google.com/android/repository/platform-tools-latest-windows.zip" target="_blank" rel="noopener">Windows</a><br><a href="https://dl.google.com/android/repository/platform-tools-latest-darwin.zip" target="_blank" rel="noopener">Mac OS</a><br><a href="https://dl.google.com/android/repository/platform-tools-latest-linux.zip" target="_blank" rel="noopener">Linux</a></p>
+<h3 id="安装scrcpy"><a href="#安装scrcpy" class="headerlink" title="安装scrcpy"></a>安装scrcpy</h3><h5 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h5><ul>
+<li><a href="https://github.com/Genymobile/scrcpy/releases/download/v1.4/scrcpy-win32-v1.4.zip" target="_blank" rel="noopener">scrcpy-win32-v1.4.zip</a></li>
+<li><a href="https://github.com/Genymobile/scrcpy/releases/download/v1.4/scrcpy-win64-v1.4.zip" target="_blank" rel="noopener">scrcpy-win64-v1.4.zip</a></li>
+</ul>
+<h5 id="Mac-OS"><a href="#Mac-OS" class="headerlink" title="Mac OS"></a>Mac OS</h5><p>可以通过<a href="https://blog.csdn.net/aa464971/article/details/70336331" target="_blank" rel="noopener">Homebrew</a>直接安装<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install scrcpy</span><br></pre></td></tr></table></figure></p>
+<h5 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h5><p>Arch Linux</p>
+<ul>
+<li><a href="https://aur.archlinux.org/packages/scrcpy/" target="_blank" rel="noopener">scrcpy</a></li>
+<li><a href="https://aur.archlinux.org/packages/scrcpy-prebuiltserver/" target="_blank" rel="noopener">scrcpy-prebuiltserver</a></li>
+</ul>
+<p>其它版本的Linux需要手动构建<br><a href="https://github.com/Genymobile/scrcpy/blob/master/BUILD.md" target="_blank" rel="noopener">手动构建文档</a></p>
+<h3 id="打开USB调试"><a href="#打开USB调试" class="headerlink" title="打开USB调试"></a>打开USB调试</h3><p>在 <code>开发人员选项</code> 打开 <code>USB调试</code>，USB连接手机</p>
+<img src="/posts/scrcpy/2.jpg">
+<h3 id="命令行执行"><a href="#命令行执行" class="headerlink" title="命令行执行"></a>命令行执行</h3><p>启动scrcpy<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrcpy</span><br></pre></td></tr></table></figure></p>
+<p>如果有多个设备，需要指定序列号，序列号可以从<code>adb devices</code>获得<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrcpy -s a1171b8</span><br></pre></td></tr></table></figure></p>
+<p>设置端口<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrcpy -p 27184</span><br></pre></td></tr></table></figure></p>
+<p>查看帮助<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrcpy --help</span><br></pre></td></tr></table></figure></p>
+<p>设置码率（默认8M）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrcpy -b 8M</span><br></pre></td></tr></table></figure></p>
+<p>限制投屏尺寸<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrcpy -m 1024</span><br></pre></td></tr></table></figure></p>
+<p>裁剪投屏屏幕<code>(长:宽:偏移x:偏移y)</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrcpy -c 800:800:0:0</span><br></pre></td></tr></table></figure></p>
+<p>手指触摸的时候显示轨迹球<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrcpy -t</span><br></pre></td></tr></table></figure></p>
+<p>显示版本信息<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrcpy -v</span><br></pre></td></tr></table></figure></p>
+<h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><table>
+<thead>
+<tr>
+<th>Action</th>
+<th style="text-align:left">Shortcut</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>切换全屏模式</td>
+<td style="text-align:left"><code>Ctrl</code>+<code>f</code></td>
+</tr>
+<tr>
+<td>将窗口调整为1：1（完美像素）</td>
+<td style="text-align:left"><code>Ctrl</code>+<code>g</code></td>
+</tr>
+<tr>
+<td>调整窗口大小以删除黑色边框</td>
+<td style="text-align:left"><code>Ctrl</code>+<code>x</code> 或 <code>双击黑色背景</code></td>
+</tr>
+<tr>
+<td>设备<code>HOME</code>键</td>
+<td style="text-align:left"><code>Ctrl</code>+<code>h</code> 或 <code>鼠标中键</code></td>
+</tr>
+<tr>
+<td>设备<code>BACK</code>键</td>
+<td style="text-align:left"><code>Ctrl</code>+<code>b</code> 或 <code>鼠标右键</code></td>
+</tr>
+<tr>
+<td>设备<code>任务管理</code>键</td>
+<td style="text-align:left"><code>Ctrl</code>+<code>s</code></td>
+</tr>
+<tr>
+<td>设备 <code>菜单</code> 键</td>
+<td style="text-align:left"><code>Ctrl</code>+<code>m</code></td>
+</tr>
+<tr>
+<td>设备<code>音量+</code>键</td>
+<td style="text-align:left"><code>Ctrl</code>+<code>↑</code></td>
+</tr>
+<tr>
+<td>设备<code>音量-</code>键</td>
+<td style="text-align:left"><code>Ctrl</code>+<code>↓</code></td>
+</tr>
+<tr>
+<td>设备<code>电源</code>键</td>
+<td style="text-align:left"><code>Ctrl</code>+<code>p</code></td>
+</tr>
+<tr>
+<td>点亮手机屏幕</td>
+<td style="text-align:left">鼠标右键</td>
+</tr>
+<tr>
+<td>复制内容到设备</td>
+<td style="text-align:left"><code>Ctrl</code>+<code>v</code></td>
+</tr>
+<tr>
+<td>启用/禁用FPS计数器（stdout）</td>
+<td style="text-align:left"><code>Ctrl</code>+<code>i</code></td>
+</tr>
+<tr>
+<td>安装APK</td>
+<td style="text-align:left">将apk文件拖入投屏</td>
+</tr>
+<tr>
+<td>传输文件到设备</td>
+<td style="text-align:left">将文件拖入投屏（非apk）</td>
+</tr>
+</tbody>
+</table>
+
+      
+    </div>
+	
+  </article>
+  
+    
+  <section id="comments">
+  	
+           
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom="">
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/posts/github-verification-code.html" title="Github短信验证码没有中国区的解决办法"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+    </li>
+    
+    
+    <li class="next">
+      <a href="/posts/android-decompile-tool.html" title="Android反编译工具"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
+  
+
+
+</main>
+
+  <footer class="footer" itemscope="" itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/dengyuhan" target="_blank" title="Github-Fill" data-toggle="tooltip" data-placement="top"><i class="icon icon-github-fill"></i></a></li>
+        
+    	
+        <li><a href="https://blog.csdn.net/aa464971" target="_blank" title="Csdn" data-toggle="tooltip" data-placement="top"><i class="iconfont icon-csdn"></i></a></li>
+        
+        <li><a href="https://stackoverflow.com/users/6699113" target="_blank" title="Stack-Overflow" data-toggle="tooltip" data-placement="top"><i class="iconfont icon-stack-overflow"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+		<!--
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+		-->
+        <div class="publishby">
+        	Theme base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+	
+	<!--CNZZ统计代码-->
+	<div style="display:none">
+	    <script src="https://s4.cnzz.com/z_stat.php?id=1258847419&web_id=1258847419" language="JavaScript"></script>
+	</div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script src="/js/plugin.min.js"></script>
+<script src="/js/application.js"></script>
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+
+
+
+
+   
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+   
+    
+  <!-- <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"> -->
+  <script src="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+  <script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: '4fede66efdff9428c9d1',
+    clientSecret: 'e4f92739e52e2e7b01ac64b118582b70c9ec6ff0',
+    repo: 'dengyuhan.github.io',
+    owner: 'dengyuhan',
+    admin: ['dengyuhan'],
+    id: md5(location.pathname),
+    distractionFreeMode: false,
+	perPage: 20
+  })
+  gitalk.render('comments')
+  </script>
+
+      
+
+
+
+
+
+
+
+</body>
+</html>
