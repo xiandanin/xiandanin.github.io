@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000">
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top">
+  
+  
+  <title>搬瓦工被墙后 | 闲蛋</title>
+  <meta name="description" content="验证是否被墙在http://port.ping.pe输入服务器IP和SSH端口号，如果国外节点成功国内节点失败说明被墙  解决办法咨询了搬瓦工，回复原文如下： 123456789101112131415161718192021222324252627282930313233343536373839Hello,Looks like the IP is blocked by GFW. While th">
+<meta name="keywords" content="Shadowsocks,搬瓦工">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搬瓦工被墙后">
+<meta property="og:url" content="https://dyhdyh.com/posts/bwg-gfw.html">
+<meta property="og:site_name" content="闲蛋的笔记">
+<meta property="og:description" content="验证是否被墙在http://port.ping.pe输入服务器IP和SSH端口号，如果国外节点成功国内节点失败说明被墙  解决办法咨询了搬瓦工，回复原文如下： 123456789101112131415161718192021222324252627282930313233343536373839Hello,Looks like the IP is blocked by GFW. While th">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://dyhdyh.com/posts/bwg-gfw/1.png">
+<meta property="og:updated_time" content="2019-06-03T13:40:12.956Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="搬瓦工被墙后">
+<meta name="twitter:description" content="验证是否被墙在http://port.ping.pe输入服务器IP和SSH端口号，如果国外节点成功国内节点失败说明被墙  解决办法咨询了搬瓦工，回复原文如下： 123456789101112131415161718192021222324252627282930313233343536373839Hello,Looks like the IP is blocked by GFW. While th">
+<meta name="twitter:image" content="https://dyhdyh.com/posts/bwg-gfw/1.png">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://dyhdyh.com/posts/bwg-gfw.html">
+  
+    <link rel="alternate" href="/atom.xml" title="闲蛋的笔记" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  
+  
+  
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.css">
+  
+</head>
+
+
+<body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/dengyuhan" target="_blank">
+          <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">闲蛋</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">竟然被你找到了</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Shanghai, China</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索">
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech="">
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope="" itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav ">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">首页</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">归档</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">分类</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">标签</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">项目</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-contribution">
+          <a href="/contribution">
+            
+            <i class="icon icon-book-fill"></i>
+            
+            <span class="menu-title">贡献</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links">
+            
+            <i class="icon icon-friendship"></i>
+            
+            <span class="menu-title">友链</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">关于</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/dengyuhan" target="_blank" title="Github-Fill" data-toggle="tooltip" data-placement="top"><i class="icon icon-github-fill"></i></a></li>
+        
+    	
+        <li><a href="https://blog.csdn.net/aa464971" target="_blank" title="Csdn" data-toggle="tooltip" data-placement="top"><i class="iconfont icon-csdn"></i></a></li>
+        
+        <li><a href="https://stackoverflow.com/users/6699113" target="_blank" title="Stack-Overflow" data-toggle="tooltip" data-placement="top"><i class="iconfont icon-stack-overflow"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope="" itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>CSDN不让发的东西都会发到这里</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Android-NDK/">Android NDK</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-兼容/">Android 兼容</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-开源/">Android 开源</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-文档/">Android 文档</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-源码分析/">Android 源码分析</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-适配/">Android 适配</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Github/">Github</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Material-Design/">Material Design</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/MySQL/">MySQL</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Spring/">Spring</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/工具/">工具</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/开发工具/">开发工具</a><span class="category-list-count">15</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/科学上网/">科学上网</a><span class="category-list-count">5</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/Android/" style="font-size: 14px;">Android</a> <a href="/tags/Android-Studio/" style="font-size: 13.6px;">Android Studio</a> <a href="/tags/AndroidManifest/" style="font-size: 13px;">AndroidManifest</a> <a href="/tags/AppBarLayout/" style="font-size: 13px;">AppBarLayout</a> <a href="/tags/Appium/" style="font-size: 13px;">Appium</a> <a href="/tags/Apple-Configurator/" style="font-size: 13px;">Apple Configurator</a> <a href="/tags/Assets/" style="font-size: 13px;">Assets</a> <a href="/tags/Button/" style="font-size: 13px;">Button</a> <a href="/tags/CDN/" style="font-size: 13px;">CDN</a> <a href="/tags/CLion/" style="font-size: 13px;">CLion</a> <a href="/tags/Chrome/" style="font-size: 13.2px;">Chrome</a> <a href="/tags/CountDownTimer/" style="font-size: 13px;">CountDownTimer</a> <a href="/tags/GPUImage/" style="font-size: 13px;">GPUImage</a> <a href="/tags/Genymotion/" style="font-size: 13px;">Genymotion</a> <a href="/tags/Git/" style="font-size: 13px;">Git</a> <a href="/tags/Github/" style="font-size: 13.2px;">Github</a> <a href="/tags/Github-Pages/" style="font-size: 13px;">Github Pages</a> <a href="/tags/Gradle/" style="font-size: 13px;">Gradle</a> <a href="/tags/Homebrew/" style="font-size: 13.2px;">Homebrew</a> <a href="/tags/IntelliJ-IDEA/" style="font-size: 13px;">IntelliJ IDEA</a> <a href="/tags/JCenter/" style="font-size: 13px;">JCenter</a> <a href="/tags/JNI/" style="font-size: 13px;">JNI</a> <a href="/tags/Java/" style="font-size: 13.4px;">Java</a> <a href="/tags/JetBrains/" style="font-size: 13px;">JetBrains</a> <a href="/tags/Loading/" style="font-size: 13px;">Loading</a> <a href="/tags/Mac/" style="font-size: 13px;">Mac</a> <a href="/tags/MediaMetadataRetriever/" style="font-size: 13px;">MediaMetadataRetriever</a> <a href="/tags/MySQL/" style="font-size: 13px;">MySQL</a> <a href="/tags/NavigationBar/" style="font-size: 13px;">NavigationBar</a> <a href="/tags/OpenSSL/" style="font-size: 13px;">OpenSSL</a> <a href="/tags/PhpStorm/" style="font-size: 13px;">PhpStorm</a> <a href="/tags/Proxifier/" style="font-size: 13px;">Proxifier</a> <a href="/tags/PyCharm/" style="font-size: 13px;">PyCharm</a> <a href="/tags/RSA/" style="font-size: 13px;">RSA</a> <a href="/tags/Shadowsocks/" style="font-size: 13.8px;">Shadowsocks</a> <a href="/tags/Splash/" style="font-size: 13px;">Splash</a> <a href="/tags/Spring/" style="font-size: 13px;">Spring</a> <a href="/tags/Spring-Boot/" style="font-size: 13.2px;">Spring Boot</a> <a href="/tags/Tampermonkey/" style="font-size: 13px;">Tampermonkey</a> <a href="/tags/WebStorm/" style="font-size: 13px;">WebStorm</a> <a href="/tags/WebView/" style="font-size: 13.2px;">WebView</a> <a href="/tags/YouTube/" style="font-size: 13px;">YouTube</a> <a href="/tags/ipa/" style="font-size: 13px;">ipa</a> <a href="/tags/keyStore/" style="font-size: 13px;">keyStore</a> <a href="/tags/代理/" style="font-size: 13px;">代理</a> <a href="/tags/倒计时/" style="font-size: 13px;">倒计时</a> <a href="/tags/全局代理/" style="font-size: 13px;">全局代理</a> <a href="/tags/反编译/" style="font-size: 13px;">反编译</a> <a href="/tags/同步/" style="font-size: 13px;">同步</a> <a href="/tags/投屏/" style="font-size: 13px;">投屏</a> <a href="/tags/插件/" style="font-size: 13px;">插件</a> <a href="/tags/搬瓦工/" style="font-size: 13px;">搬瓦工</a> <a href="/tags/直播/" style="font-size: 13px;">直播</a> <a href="/tags/签名/" style="font-size: 13px;">签名</a> <a href="/tags/适配/" style="font-size: 13px;">适配</a>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">2019年06月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">2019年04月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">2019年02月</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">2019年01月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">2018年12月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">2018年11月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">2018年10月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">2018年09月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">2018年06月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">2018年05月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">2018年03月</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">2018年02月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">2017年10月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">2017年09月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">2017年05月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">2017年04月</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">2017年01月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">2016年12月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">2016年10月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016年05月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">2016年04月</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/科学上网/">科学上网</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/bwg-gfw.html" class="title">搬瓦工被墙后</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-06-03T07:10:42.000Z" itemprop="datePublished">2019-06-03</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/开发工具/">开发工具</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/android-studio-sync.html" class="title">Android Studio多设备同步配置</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-04-17T11:50:56.000Z" itemprop="datePublished">2019-04-17</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/工具/">工具</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/get-ipa.html" class="title">用Apple Configurator 2提取ipa文件</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-02-26T14:48:17.000Z" itemprop="datePublished">2019-02-26</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/工具/">工具</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/github-pages-cdn.html" class="title">利用CDN加速你的Github Pages</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-02-22T03:22:53.000Z" itemprop="datePublished">2019-02-22</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/工具/">工具</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/git-mirror.html" class="title">Git完全复制一个Repository到新Repository</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-02-22T03:02:32.000Z" itemprop="datePublished">2019-02-22</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</aside>
+
+  
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-bwg-gfw" class="article article-type-post" itemscope="" itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      搬瓦工被墙后
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/posts/bwg-gfw.html" class="article-date">
+	  <time datetime="2019-06-03T07:10:42.000Z" itemprop="datePublished">2019-06-03 15:10</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/科学上网/">科学上网</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link" href="/tags/Shadowsocks/">Shadowsocks</a>, <a class="article-tag-link" href="/tags/搬瓦工/">搬瓦工</a>
+  </span>
+
+
+        
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/posts/bwg-gfw.html#comments" class="article-comment-link">评论</a></span>
+        
+      </div>
+    </div>
+	<blockquote class="mt-2x">
+	  <ul class="post-copyright list-unstyled">
+	    <li class="post-copyright-link hidden-xs">
+	      转载请注明出处：<br>
+	      
+	      	<a href="https://dyhdyh.com/posts/bwg-gfw.html" title="搬瓦工被墙后" target="_blank" rel="external">https://dyhdyh.com/posts/bwg-gfw.html</a>
+	      
+	    </li>
+	  </ul>
+	</blockquote>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <h2 id="验证是否被墙"><a href="#验证是否被墙" class="headerlink" title="验证是否被墙"></a>验证是否被墙</h2><p>在<a href="http://port.ping.pe" target="_blank" rel="noopener">http://port.ping.pe</a>输入服务器IP和SSH端口号，如果国外节点成功国内节点失败说明被墙</p>
+<p><img src="/posts/bwg-gfw/1.png" width="500"></p>
+<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>咨询了搬瓦工，回复原文如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">Hello,</span><br><span class="line"></span><br><span class="line">Looks like the IP is blocked by GFW. While the IP is on any other major block list (Spamhaus, Barracuda, GFW etc), the VPS stays fully operational. However you will not be able to migrate the VPS to a different datacenter until the block is removed.</span><br><span class="line"></span><br><span class="line">Here is how to manually verify if your VPS IP is being blocked by the Great Firewall of China:</span><br><span class="line"></span><br><span class="line">1. Navigate to http://port.ping.pe</span><br><span class="line">2. Enter your VPS IP and SSH port in the top field, like this: 1.2.3.4:22222</span><br><span class="line">3. Click &apos;Go&apos;</span><br><span class="line"></span><br><span class="line">The service will attempt to connect to your SSH port from multiple countries and in case of a banned IP will show that the port is closed when attempting from China (but not other countries).</span><br><span class="line"></span><br><span class="line">*** Possible solutions ***</span><br><span class="line"></span><br><span class="line">We found that generally GFW automatically removes the ban when it can no longer detect the &apos;prohibited&apos; service for a few days to few weeks. The best solution in the case of a ban would be the complete removal of all service(s) that could trigger the ban and waiting for some time for the ban to be lifted.</span><br><span class="line"></span><br><span class="line">Having said that, please do keep in mind that we do not have any control over GFW, and we do not know much about how it works. It is our responsibility to make sure our hardware and network stay fully operational, and GFW-related issues are out of scope of our competence.</span><br><span class="line"></span><br><span class="line">If you need to replace a banned IP with a clean IP, we offer this service at the following link:</span><br><span class="line"></span><br><span class="line">https://bandwagonhost.com/ipchange.php</span><br><span class="line"></span><br><span class="line">mirror:</span><br><span class="line"></span><br><span class="line">https://bwh88.net/ipchange.php</span><br><span class="line"></span><br><span class="line">This is an automatic reply. If your request was not properly addressed, please reply in this ticket and one of our engineers will take a look.</span><br><span class="line"></span><br><span class="line">****************************************************************************</span><br><span class="line"></span><br><span class="line">Our friends at https://justmysocks.net/ built a Shadowsocks solution </span><br><span class="line">which addresses most common issues related to Shadowsocks: </span><br><span class="line"></span><br><span class="line">* Ready to use Shadowsocks servers tweaked for best security and privacy</span><br><span class="line">* You get 5 different IPs to connect to at any time</span><br><span class="line">* Unlimited IP replacement at no additional cost</span><br><span class="line">* 10 Gbps CN2 GIA network</span><br><span class="line"></span><br><span class="line">****************************************************************************</span><br></pre></td></tr></table></figure>
+<p>其中提到了几个解决办法：</p>
+<blockquote>
+<p>1.停止服务，也许几天或几周后会解除；<br>2.付费8.79美元<a href="https://bwh88.net/ipchange.php" target="_blank" rel="noopener">更换新的IP</a>；<br>3.使用<a href="https://justmysocks1.net/members/aff.php?aff=1627" target="_blank" rel="noopener">JustMySocks</a>，JustMySocks是搬瓦工推出的Shadowsocks服务，可以无限制的免费更换IP。</p>
+</blockquote>
+<h2 id="Vultr"><a href="#Vultr" class="headerlink" title="Vultr"></a>Vultr</h2><p>除了搬瓦工，还有<a href="https://www.vultr.com/?ref=8093231" target="_blank" rel="noopener">Vultr</a>也可以用，比搬瓦工要贵，但是按小时付费的，所以可以随时更换</p>
+<p>选择节点前可以先<a href="https://www.vultr.com/faq/#downloadspeedtests" target="_blank" rel="noopener">测速</a>，找到适合自己的机房</p>
+<h2 id="相关信息"><a href="#相关信息" class="headerlink" title="相关信息"></a>相关信息</h2><p>搬瓦工官网：<a href="https://bandwagonhost.com/aff.php?aff=48595" target="_blank" rel="noopener">https://bwh1.net</a><br>搬瓦工官网：<a href="https://bandwagonhost.com/aff.php?aff=48595" target="_blank" rel="noopener">https://bwh88.net</a>（国内可访问）</p>
+<p>Vultr官网：<a href="https://www.vultr.com/?ref=8093231" target="_blank" rel="noopener">https://www.vultr.com</a>  </p>
+<p>JustMySocks官网：<a href="https://justmysocks.net/members/aff.php?aff=1627" target="_blank" rel="noopener">https://justmysocks.net</a><br>JustMySocks官网：<a href="https://justmysocks1.net/members/aff.php?aff=1627" target="_blank" rel="noopener">https://justmysocks1.net</a>（国内可访问）</p>
+<h5 id="被墙时期"><a href="#被墙时期" class="headerlink" title="被墙时期"></a>被墙时期</h5><p>3月1日至17日左右，6月1日至10日左右都是可能被墙的时期，期间最好停止Shadowsocks</p>
+
+      
+    </div>
+	
+  </article>
+  
+    
+  <section id="comments">
+  	
+           
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom="">
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    
+    <li class="next">
+      <a href="/posts/android-studio-sync.html" title="Android Studio多设备同步配置"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
+  
+
+
+</main>
+
+  <footer class="footer" itemscope="" itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/dengyuhan" target="_blank" title="Github-Fill" data-toggle="tooltip" data-placement="top"><i class="icon icon-github-fill"></i></a></li>
+        
+    	
+        <li><a href="https://blog.csdn.net/aa464971" target="_blank" title="Csdn" data-toggle="tooltip" data-placement="top"><i class="iconfont icon-csdn"></i></a></li>
+        
+        <li><a href="https://stackoverflow.com/users/6699113" target="_blank" title="Stack-Overflow" data-toggle="tooltip" data-placement="top"><i class="iconfont icon-stack-overflow"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+		<!--
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+		-->
+        <div class="publishby">
+        	Theme base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+	
+	<!--CNZZ统计代码-->
+	<div style="display:none">
+	    <script src="https://s4.cnzz.com/z_stat.php?id=1258847419&web_id=1258847419" language="JavaScript"></script>
+	</div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script src="/js/plugin.min.js"></script>
+<script src="/js/application.js"></script>
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+
+
+
+
+   
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+   
+    
+  <!-- <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"> -->
+  <script src="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+  <script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: '4fede66efdff9428c9d1',
+    clientSecret: 'e4f92739e52e2e7b01ac64b118582b70c9ec6ff0',
+    repo: 'dengyuhan.github.io',
+    owner: 'dengyuhan',
+    admin: ['dengyuhan'],
+    id: md5(location.pathname),
+    distractionFreeMode: false,
+	perPage: 20
+  })
+  gitalk.render('comments')
+  </script>
+
+      
+
+
+
+
+
+
+
+</body>
+</html>
