@@ -164,6 +164,17 @@ hr {
   height: 0;
 }
 
+.float-bottom {
+  position:absolute;
+  bottom:0;
+}
+
+.total-statistics{
+  width:88%;
+  text-align:center;
+  margin-bottom: 10px;
+}
+
 pre {
   overflow: auto;
 }
@@ -6557,6 +6568,7 @@ body.no-sidebar .sidebar {
 }
 
 .marked-body h6 {
+  color: #6a737d;
   font-size: .85em;
 }
 
@@ -7039,8 +7051,8 @@ body.okayNav-loaded {
 
 .donate-box .donate-payimg {
   display: inline-block;
-  padding: 10px;
-  border: 6px solid #ea5f00;
+  padding: 5px;
+  border: 3px solid #ea5f00;
   margin: 0 auto;
   border-radius: 3px;
 }
@@ -7048,8 +7060,8 @@ body.okayNav-loaded {
 .donate-box .donate-payimg img {
   display: block;
   text-align: center;
-  width: 140px;
-  height: 140px;
+  width: 160px;
+  height: 160px;
 }
 
 .book .media-middle {

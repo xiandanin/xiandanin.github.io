@@ -18,23 +18,25 @@
   
   
   <title>MediaMetadataRetrieverCompat - 获取视频信息与缩略图兼容方案 | 闲蛋</title>
-  <meta name="description" content="MediaMetadataRetrieverCompat多媒体元数据兼容方案 - 支持获取图片、视频、音频文件的媒体信息、视频缩略图   简介MediaMetadataRetrieverCompat 内部有两种实现(根据自身需求选择初始化方式)   FFmpegMediaMetadataRetriever&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;基于FFm">
+  <meta name="description" content="效果　　　　　图片　　　　　　　　　音频　　　　　　　　　　视频　　　　　　　　　自定义     示例APK：example-debug.apk Gradle123456789101112//必选implementation &amp;apos;in.xiandan.mmrc:media-metadata-retriever-compat:1.2.0&amp;apos;//可选，需要Exif支持时必选implem">
 <meta name="keywords" content="Android,MediaMetadataRetriever">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MediaMetadataRetrieverCompat - 获取视频信息与缩略图兼容方案">
-<meta property="og:url" content="https://dyhdyh.com/posts/android-media-metadata-retriever-compat.html">
+<meta property="og:url" content="https://xiandan.in/posts/android-media-metadata-retriever-compat.html">
 <meta property="og:site_name" content="闲蛋的笔记">
-<meta property="og:description" content="MediaMetadataRetrieverCompat多媒体元数据兼容方案 - 支持获取图片、视频、音频文件的媒体信息、视频缩略图   简介MediaMetadataRetrieverCompat 内部有两种实现(根据自身需求选择初始化方式)   FFmpegMediaMetadataRetriever&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;基于FFm">
+<meta property="og:description" content="效果　　　　　图片　　　　　　　　　音频　　　　　　　　　　视频　　　　　　　　　自定义     示例APK：example-debug.apk Gradle123456789101112//必选implementation &amp;apos;in.xiandan.mmrc:media-metadata-retriever-compat:1.2.0&amp;apos;//可选，需要Exif支持时必选implem">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://dyhdyh.com/posts/android-media-metadata-retriever-compat/1.png">
-<meta property="og:image" content="https://dyhdyh.com/posts/android-media-metadata-retriever-compat/2.gif">
-<meta property="og:updated_time" content="2019-02-24T07:48:49.361Z">
+<meta property="og:image" content="https://xiandan.in/posts/android-media-metadata-retriever-compat/1.gif">
+<meta property="og:image" content="https://xiandan.in/posts/android-media-metadata-retriever-compat/2.gif">
+<meta property="og:image" content="https://xiandan.in/posts/android-media-metadata-retriever-compat/3.gif">
+<meta property="og:image" content="https://xiandan.in/posts/android-media-metadata-retriever-compat/4.gif">
+<meta property="og:updated_time" content="2019-07-19T13:42:54.594Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MediaMetadataRetrieverCompat - 获取视频信息与缩略图兼容方案">
-<meta name="twitter:description" content="MediaMetadataRetrieverCompat多媒体元数据兼容方案 - 支持获取图片、视频、音频文件的媒体信息、视频缩略图   简介MediaMetadataRetrieverCompat 内部有两种实现(根据自身需求选择初始化方式)   FFmpegMediaMetadataRetriever&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;基于FFm">
-<meta name="twitter:image" content="https://dyhdyh.com/posts/android-media-metadata-retriever-compat/1.png">
+<meta name="twitter:description" content="效果　　　　　图片　　　　　　　　　音频　　　　　　　　　　视频　　　　　　　　　自定义     示例APK：example-debug.apk Gradle123456789101112//必选implementation &amp;apos;in.xiandan.mmrc:media-metadata-retriever-compat:1.2.0&amp;apos;//可选，需要Exif支持时必选implem">
+<meta name="twitter:image" content="https://xiandan.in/posts/android-media-metadata-retriever-compat/1.gif">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://dyhdyh.com/posts/android-media-metadata-retriever-compat.html">
+  <link rel="canonical" href="https://xiandan.in/posts/android-media-metadata-retriever-compat.html">
   
     <link rel="alternate" href="/atom.xml" title="闲蛋的笔记" type="application/atom+xml">
   
@@ -162,16 +164,6 @@
         </li>
         
         
-        <li class="menu-item menu-item-links">
-          <a href="/links">
-            
-            <i class="icon icon-friendship"></i>
-            
-            <span class="menu-title">友链</span>
-          </a>
-        </li>
-        
-        
         <li class="menu-item menu-item-about">
           <a href="/about">
             
@@ -208,7 +200,7 @@
     <div class="widget-body">
         <div id="board">
             <div class="content">
-                <p>CSDN不让发的东西都会发到这里</p>
+                <p>闲蛋的笔记 denghahae@qq.com</p>
             </div>
         </div>
     </div>
@@ -219,26 +211,7 @@
   <div class="widget">
     <h3 class="widget-title">分类</h3>
     <div class="widget-body">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Android-NDK/">Android NDK</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-兼容/">Android 兼容</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-开源/">Android 开源</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-文档/">Android 文档</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-源码分析/">Android 源码分析</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-适配/">Android 适配</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Github/">Github</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Material-Design/">Material Design</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/MySQL/">MySQL</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Spring/">Spring</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/工具/">工具</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/开发工具/">开发工具</a><span class="category-list-count">15</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/科学上网/">科学上网</a><span class="category-list-count">5</span></li></ul>
-    </div>
-  </div>
-
-
-    
-      
-  <div class="widget">
-    <h3 class="widget-title">标签云</h3>
-    <div class="widget-body tagcloud">
-      <a href="/tags/Android/" style="font-size: 14px;">Android</a> <a href="/tags/Android-Studio/" style="font-size: 13.6px;">Android Studio</a> <a href="/tags/AndroidManifest/" style="font-size: 13px;">AndroidManifest</a> <a href="/tags/AppBarLayout/" style="font-size: 13px;">AppBarLayout</a> <a href="/tags/Appium/" style="font-size: 13px;">Appium</a> <a href="/tags/Apple-Configurator/" style="font-size: 13px;">Apple Configurator</a> <a href="/tags/Assets/" style="font-size: 13px;">Assets</a> <a href="/tags/Button/" style="font-size: 13px;">Button</a> <a href="/tags/CDN/" style="font-size: 13px;">CDN</a> <a href="/tags/CLion/" style="font-size: 13px;">CLion</a> <a href="/tags/Chrome/" style="font-size: 13.2px;">Chrome</a> <a href="/tags/CountDownTimer/" style="font-size: 13px;">CountDownTimer</a> <a href="/tags/GPUImage/" style="font-size: 13px;">GPUImage</a> <a href="/tags/Genymotion/" style="font-size: 13px;">Genymotion</a> <a href="/tags/Git/" style="font-size: 13px;">Git</a> <a href="/tags/Github/" style="font-size: 13.2px;">Github</a> <a href="/tags/Github-Pages/" style="font-size: 13px;">Github Pages</a> <a href="/tags/Gradle/" style="font-size: 13px;">Gradle</a> <a href="/tags/Homebrew/" style="font-size: 13.2px;">Homebrew</a> <a href="/tags/IntelliJ-IDEA/" style="font-size: 13px;">IntelliJ IDEA</a> <a href="/tags/JCenter/" style="font-size: 13px;">JCenter</a> <a href="/tags/JNI/" style="font-size: 13px;">JNI</a> <a href="/tags/Java/" style="font-size: 13.4px;">Java</a> <a href="/tags/JetBrains/" style="font-size: 13px;">JetBrains</a> <a href="/tags/Loading/" style="font-size: 13px;">Loading</a> <a href="/tags/Mac/" style="font-size: 13px;">Mac</a> <a href="/tags/MediaMetadataRetriever/" style="font-size: 13px;">MediaMetadataRetriever</a> <a href="/tags/MySQL/" style="font-size: 13px;">MySQL</a> <a href="/tags/NavigationBar/" style="font-size: 13px;">NavigationBar</a> <a href="/tags/OpenSSL/" style="font-size: 13px;">OpenSSL</a> <a href="/tags/PhpStorm/" style="font-size: 13px;">PhpStorm</a> <a href="/tags/Proxifier/" style="font-size: 13px;">Proxifier</a> <a href="/tags/PyCharm/" style="font-size: 13px;">PyCharm</a> <a href="/tags/RSA/" style="font-size: 13px;">RSA</a> <a href="/tags/Shadowsocks/" style="font-size: 13.8px;">Shadowsocks</a> <a href="/tags/Splash/" style="font-size: 13px;">Splash</a> <a href="/tags/Spring/" style="font-size: 13px;">Spring</a> <a href="/tags/Spring-Boot/" style="font-size: 13.2px;">Spring Boot</a> <a href="/tags/Tampermonkey/" style="font-size: 13px;">Tampermonkey</a> <a href="/tags/WebStorm/" style="font-size: 13px;">WebStorm</a> <a href="/tags/WebView/" style="font-size: 13.2px;">WebView</a> <a href="/tags/YouTube/" style="font-size: 13px;">YouTube</a> <a href="/tags/ipa/" style="font-size: 13px;">ipa</a> <a href="/tags/keyStore/" style="font-size: 13px;">keyStore</a> <a href="/tags/代理/" style="font-size: 13px;">代理</a> <a href="/tags/倒计时/" style="font-size: 13px;">倒计时</a> <a href="/tags/全局代理/" style="font-size: 13px;">全局代理</a> <a href="/tags/反编译/" style="font-size: 13px;">反编译</a> <a href="/tags/同步/" style="font-size: 13px;">同步</a> <a href="/tags/投屏/" style="font-size: 13px;">投屏</a> <a href="/tags/插件/" style="font-size: 13px;">插件</a> <a href="/tags/搬瓦工/" style="font-size: 13px;">搬瓦工</a> <a href="/tags/直播/" style="font-size: 13px;">直播</a> <a href="/tags/签名/" style="font-size: 13px;">签名</a> <a href="/tags/适配/" style="font-size: 13px;">适配</a>
-    </div>
-  </div>
-
-    
-      
-  <div class="widget">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">2019年06月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">2019年04月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">2019年02月</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">2019年01月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">2018年12月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">2018年11月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">2018年10月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">2018年09月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">2018年06月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">2018年05月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">2018年03月</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">2018年02月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">2017年10月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">2017年09月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">2017年05月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">2017年04月</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">2017年01月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">2016年12月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">2016年10月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016年05月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">2016年04月</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Android-NDK/">Android NDK</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-兼容/">Android 兼容</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-开源/">Android 开源</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-文档/">Android 文档</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-源码分析/">Android 源码分析</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-适配/">Android 适配</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Github/">Github</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Material-Design/">Material Design</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/MySQL/">MySQL</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Spring/">Spring</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/工具/">工具</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/开发工具/">开发工具</a><span class="category-list-count">15</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/磁力链接/">磁力链接</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/科学上网/">科学上网</a><span class="category-list-count">6</span></li></ul>
     </div>
   </div>
 
@@ -250,6 +223,36 @@
     <div class="widget-body">
       <ul class="recent-post-list list-unstyled no-thumbnail">
         
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/磁力链接/">磁力链接</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/download-magnet.html" class="title">整理一些迅雷百度离线下载的替代品</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-07-19T05:40:22.000Z" itemprop="datePublished">2019-07-19</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/科学上网/">科学上网</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/bwg-vultr-justmysocks.html" class="title">搬瓦工/Vultr/JustMySocks/AAEX对比</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-06-03T07:17:17.000Z" itemprop="datePublished">2019-06-03</time>
+              </p>
+            </div>
+          </li>
+          
           <li>
             
             <div class="item-inner">
@@ -295,40 +298,20 @@
             </div>
           </li>
           
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="/categories/工具/">工具</a>
-              </p>
-              <p class="item-title">
-                <a href="/posts/github-pages-cdn.html" class="title">利用CDN加速你的Github Pages</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2019-02-22T03:22:53.000Z" itemprop="datePublished">2019-02-22</time>
-              </p>
-            </div>
-          </li>
-          
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="/categories/工具/">工具</a>
-              </p>
-              <p class="item-title">
-                <a href="/posts/git-mirror.html" class="title">Git完全复制一个Repository到新Repository</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2019-02-22T03:02:32.000Z" itemprop="datePublished">2019-02-22</time>
-              </p>
-            </div>
-          </li>
-          
       </ul>
     </div>
   </div>
   
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">2019年07月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">2019年06月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">2019年04月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">2019年02月</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">2019年01月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">2018年12月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">2018年11月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">2018年10月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">2018年09月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">2018年06月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">2018年05月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">2018年03月</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">2018年02月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">2017年10月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">2017年09月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">2017年05月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">2017年04月</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">2017年01月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">2016年12月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">2016年10月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016年05月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">2016年04月</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
 
     
   </div>
@@ -388,25 +371,37 @@
 	    <li class="post-copyright-link hidden-xs">
 	      转载请注明出处：<br>
 	      
-	      	<a href="https://dyhdyh.com/posts/android-media-metadata-retriever-compat.html" title="MediaMetadataRetrieverCompat - 获取视频信息与缩略图兼容方案" target="_blank" rel="external">https://dyhdyh.com/posts/android-media-metadata-retriever-compat.html</a>
+	      	<a href="https://xiandan.in/posts/android-media-metadata-retriever-compat.html" title="MediaMetadataRetrieverCompat - 获取视频信息与缩略图兼容方案" target="_blank" rel="external">https://xiandan.in/posts/android-media-metadata-retriever-compat.html</a>
 	      
 	    </li>
 	  </ul>
 	</blockquote>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <h1 id="MediaMetadataRetrieverCompat"><a href="#MediaMetadataRetrieverCompat" class="headerlink" title="MediaMetadataRetrieverCompat"></a>MediaMetadataRetrieverCompat</h1><p>多媒体元数据兼容方案 - 支持获取图片、视频、音频文件的媒体信息、视频缩略图  </p>
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h2><p>MediaMetadataRetrieverCompat 内部有两种实现(根据自身需求选择初始化方式)  </p>
-<p><code>FFmpegMediaMetadataRetriever</code><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;基于<a href="https://github.com/wseemann/FFmpegMediaMetadataRetriever" target="_blank" rel="noopener">FFmpegMediaMetadataRetriever</a>，对视频资源有增强，但库体积较大  </p>
-<p><code>MediaMetadataRetriever</code><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;基于原生API</p>
-<h2 id="示例apk"><a href="#示例apk" class="headerlink" title="示例apk"></a><strong>示例apk</strong></h2><img src="/posts/android-media-metadata-retriever-compat/1.png">
-<h2 id="效果演示"><a href="#效果演示" class="headerlink" title="效果演示"></a><strong>效果演示</strong></h2><img src="/posts/android-media-metadata-retriever-compat/2.gif">
-<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a><strong>快速开始</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">//核心库 必选</span><br><span class="line">implementation &apos;com.dyhdyh.compat.mmrc:media-metadata-retriever-compat:1.0.9&apos;</span><br><span class="line"></span><br><span class="line">//当需要FFmpegMediaMetadataRetriever时必选</span><br><span class="line">implementation &apos;com.dyhdyh.remake:FFmpegMediaMetadataRetriever-java:1.0.14&apos;</span><br><span class="line">implementation &apos;com.dyhdyh.remake:FFmpegMediaMetadataRetriever-armeabi-v7a:1.0.14&apos;</span><br><span class="line"></span><br><span class="line">//可选平台</span><br><span class="line">implementation &apos;com.dyhdyh.remake:FFmpegMediaMetadataRetriever-armeabi:1.0.14&apos;</span><br><span class="line">implementation &apos;com.dyhdyh.remake:FFmpegMediaMetadataRetriever-arm64-v8a:1.0.14&apos;</span><br><span class="line">implementation &apos;com.dyhdyh.remake:FFmpegMediaMetadataRetriever-mips:1.0.14&apos;</span><br><span class="line">implementation &apos;com.dyhdyh.remake:FFmpegMediaMetadataRetriever-x86:1.0.14&apos;</span><br><span class="line">implementation &apos;com.dyhdyh.remake:FFmpegMediaMetadataRetriever-x86_64:1.0.14&apos;</span><br></pre></td></tr></table></figure>
-<h2 id="初始化（三种模式）"><a href="#初始化（三种模式）" class="headerlink" title="初始化（三种模式）"></a><strong>初始化（三种模式）</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//自动 - 推荐  </span><br><span class="line">MediaMetadataRetrieverCompat mmrc = MediaMetadataRetrieverCompat.create();  </span><br><span class="line">//FFmpeg  </span><br><span class="line">//MediaMetadataRetrieverCompat  mmrc = MediaMetadataRetrieverCompat.create(MediaMetadataRetrieverCompat.RETRIEVER_FFMPEG);  </span><br><span class="line">//原生API  </span><br><span class="line">//MediaMetadataRetrieverCompat  mmrc = MediaMetadataRetrieverCompat.create(MediaMetadataRetrieverCompat.RETRIEVER_ANDROID);</span><br></pre></td></tr></table></figure>
-<h2 id="设置输入源"><a href="#设置输入源" class="headerlink" title="设置输入源"></a><strong>设置输入源</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//本地文件</span><br><span class="line">mmrc.setDataSource(inputFile);</span><br><span class="line"></span><br><span class="line">//网络资源(需要放在子线程，每次调用都会下载视频，请慎用，建议自行下载后设置File)</span><br><span class="line">mmrc.setDataSource(url, headers);</span><br><span class="line"></span><br><span class="line">//Uri</span><br><span class="line">mmrc.setDataSource(context, uri);</span><br></pre></td></tr></table></figure>
-<h2 id="获取Metadata信息"><a href="#获取Metadata信息" class="headerlink" title="获取Metadata信息"></a><strong>获取Metadata信息</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">String width = mmrc.extractMetadata(MediaMetadataRetrieverCompat.METADATA_KEY_VIDEO_WIDTH);</span><br><span class="line">String height = mmrc.extractMetadata(MediaMetadataRetrieverCompat.METADATA_KEY_VIDEO_HEIGHT);</span><br><span class="line">String rotation = mmrc.extractMetadata(MediaMetadataRetrieverCompat.METADATA_KEY_VIDEO_ROTATION);</span><br><span class="line">String numTracks = mmrc.extractMetadata(MediaMetadataRetrieverCompat.METADATA_KEY_NUM_TRACKS);</span><br><span class="line">String title = mmrc.extractMetadata(MediaMetadataRetrieverCompat.METADATA_KEY_TITLE);</span><br><span class="line">String album = mmrc.extractMetadata(MediaMetadataRetrieverCompat.METADATA_KEY_ALBUM);</span><br><span class="line">String albumArtist = mmrc.extractMetadata(MediaMetadataRetrieverCompat.METADATA_KEY_ALBUMARTIST);</span><br><span class="line">String author = mmrc.extractMetadata(MediaMetadataRetrieverCompat.METADATA_KEY_AUTHOR);</span><br><span class="line">String duration = mmrc.extractMetadata(MediaMetadataRetrieverCompat.METADATA_KEY_DURATION);</span><br><span class="line">String framerate = mmrc.extractMetadata(MediaMetadataRetrieverCompat.METADATA_KEY_CAPTURE_FRAMERATE);</span><br><span class="line">...</span><br><span class="line"></span><br><span class="line">//带转换类型和默认值的 基本类型的默认值是-1</span><br><span class="line">long value = extractMetadataLong(keyCode);</span><br><span class="line">Long value = extractMetadataLong(keyCode, defaultValue);</span><br><span class="line"></span><br><span class="line">int value = extractMetadataInt(keyCode);</span><br><span class="line">Integer value = extractMetadataInteger(keyCode, defaultValue);</span><br><span class="line"></span><br><span class="line">float value = extractMetadataFloat(keyCode);</span><br><span class="line">Float value = extractMetadataFloat(keyCode, defaultValue);</span><br></pre></td></tr></table></figure>
-<h2 id="获取缩略图"><a href="#获取缩略图" class="headerlink" title="获取缩略图"></a><strong>获取缩略图</strong></h2><p>耗时操作，请放在子线程，获取到的缩略图会根据资源信息自动旋转  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//获取第一帧原尺寸图片</span><br><span class="line">mmrc.getFrameAtTime();</span><br><span class="line"></span><br><span class="line">//获取指定位置的原尺寸图片 注意这里传的timeUs是微秒</span><br><span class="line">mmrc.getFrameAtTime(timeUs, option);</span><br><span class="line"></span><br><span class="line">//获取指定位置指定宽高的缩略图</span><br><span class="line">mmrc.getScaledFrameAtTime(timeUs, MediaMetadataRetrieverCompat.OPTION_CLOSEST, width, height);</span><br></pre></td></tr></table></figure>
+        <h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p>　　　　　图片　　　　　　　　　音频　　　　　　　　　　视频　　　　　　　　　自定义</p>
+<p><img src="/posts/android-media-metadata-retriever-compat/1.gif" width="180"> <img src="/posts/android-media-metadata-retriever-compat/2.gif" width="180"> <img src="/posts/android-media-metadata-retriever-compat/3.gif" width="180"> <img src="/posts/android-media-metadata-retriever-compat/4.gif" width="180"></p>
+<p>示例APK：<a href="https://github.com/dengyuhan/MediaMetadataRetrieverCompat/releases/download/1.2.0/example-debug.apk" target="_blank" rel="noopener">example-debug.apk</a></p>
+<h2 id="Gradle"><a href="#Gradle" class="headerlink" title="Gradle"></a>Gradle</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">//必选</span><br><span class="line">implementation &apos;in.xiandan.mmrc:media-metadata-retriever-compat:1.2.0&apos;</span><br><span class="line"></span><br><span class="line">//可选，需要Exif支持时必选</span><br><span class="line">implementation &apos;com.android.support:exifinterface:28.0.0&apos;</span><br><span class="line">//可选，需要FFmpeg支持时必选，全平台约24M</span><br><span class="line">implementation &apos;com.github.wseemann:FFmpegMediaMetadataRetriever:1.0.14&apos;</span><br><span class="line"></span><br><span class="line">//只保留v7a，可降低至3M</span><br><span class="line">ndk &#123;</span><br><span class="line">    abiFilters &apos;armeabi-v7a&apos;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="数据源类型"><a href="#数据源类型" class="headerlink" title="数据源类型"></a>数据源类型</h2><p><a href="https://github.com/dengyuhan/MediaMetadataRetrieverCompat/tree/master/media-metadata-retriever-compat/src/main/java/in/xiandan/mmrc/datasource" target="_blank" rel="noopener">datasource</a> 中预设了一些<code>DataSource</code>，以提供不同的输入源，如果需要<strong>自定义数据源</strong>，可<code>implements DataSource</code>或参考其它数据源</p>
+<ul>
+<li><a href="https://github.com/dengyuhan/MediaMetadataRetrieverCompat/tree/master/media-metadata-retriever-compat/src/main/java/in/xiandan/mmrc/datasource/FileSource.java" target="_blank" rel="noopener">FileSource</a></li>
+<li><a href="https://github.com/dengyuhan/MediaMetadataRetrieverCompat/tree/master/media-metadata-retriever-compat/src/main/java/in/xiandan/mmrc/datasource/HTTPSource.java" target="_blank" rel="noopener">HTTPSource</a></li>
+<li><a href="https://github.com/dengyuhan/MediaMetadataRetrieverCompat/tree/master/media-metadata-retriever-compat/src/main/java/in/xiandan/mmrc/datasource/UriSource.java" target="_blank" rel="noopener">UriSource</a></li>
+<li><a href="https://github.com/dengyuhan/MediaMetadataRetrieverCompat/tree/master/media-metadata-retriever-compat/src/main/java/in/xiandan/mmrc/datasource/FileDescriptorSource.java" target="_blank" rel="noopener">FileDescriptorSource</a></li>
+<li><a href="https://github.com/dengyuhan/MediaMetadataRetrieverCompat/tree/master/media-metadata-retriever-compat/src/main/java/in/xiandan/mmrc/datasource/OkHttpSource.java" target="_blank" rel="noopener">OkHttpSource</a>（图片会使用OkHttp）</li>
+<li><a href="https://github.com/dengyuhan/MediaMetadataRetrieverCompat/tree/master/media-metadata-retriever-compat/src/main/java/in/xiandan/mmrc/datasource/InputStreamSource.java" target="_blank" rel="noopener">InputStreamSource</a>（仅支持图片）</li>
+<li><a href="https://github.com/dengyuhan/MediaMetadataRetrieverCompat/tree/master/media-metadata-retriever-compat/src/main/java/in/xiandan/mmrc/datasource/AssetSource.java" target="_blank" rel="noopener">AssetSource</a>（仅支持图片）</li>
+</ul>
+<h2 id="设置数据源"><a href="#设置数据源" class="headerlink" title="设置数据源"></a>设置数据源</h2><p>设置数据源的操作建议放在子线程</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">MediaMetadataRetrieverCompat mmrc = new MediaMetadataRetrieverCompat();</span><br><span class="line"></span><br><span class="line">//设置数据源</span><br><span class="line">mmrc.setDataSource(source);</span><br><span class="line">//设置数据源或抛出异常</span><br><span class="line">mmrc.setDataSourceOrThrow(source);</span><br><span class="line">//设置数据源或抛出异常 并指定检索器</span><br><span class="line">mmrc.setDataSourceOrThrow(source, AndroidMediaMetadataRetrieverFactory.class);</span><br></pre></td></tr></table></figure>
+<h2 id="获取Metadata信息"><a href="#获取Metadata信息" class="headerlink" title="获取Metadata信息"></a>获取Metadata信息</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">final String width = mmrc.extractMetadata(MediaMetadataKey.WIDTH);</span><br><span class="line"></span><br><span class="line">//将值转换为int</span><br><span class="line">final int width = mmrc.extractMetadataInt(MediaMetadataKey.WIDTH, 0);</span><br><span class="line"></span><br><span class="line">//将值转换为float</span><br><span class="line">final float width = mmrc.extractMetadataFloat(MediaMetadataKey.WIDTH, 0f);</span><br><span class="line"></span><br><span class="line">//将值转换为long</span><br><span class="line">final long width = mmrc.extractMetadataLong(MediaMetadataKey.WIDTH, 0L);</span><br><span class="line"></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<h2 id="获取缩略图"><a href="#获取缩略图" class="headerlink" title="获取缩略图"></a>获取缩略图</h2><p>取帧是耗时操作，需要放在子线程，视频有4种取帧方式 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">//最接近timeUs的关键帧 - 仅视频</span><br><span class="line">MediaMetadataKey.OPTION_CLOSEST_SYNC</span><br><span class="line"></span><br><span class="line">//最接近timeUs的帧，不一定是关键帧(性能开销较大) - 仅视频</span><br><span class="line">MediaMetadataKey.OPTION_CLOSEST</span><br><span class="line"></span><br><span class="line">//早于timeUs的关键帧 - 仅视频</span><br><span class="line">MediaMetadataKey.OPTION_PREVIOUS_SYNC</span><br><span class="line"></span><br><span class="line">//晚于timeUs的关键帧 - 仅视频</span><br><span class="line">MediaMetadataKey.OPTION_NEXT_SYNC</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">//获取第一帧原尺寸图片</span><br><span class="line">mmrc.getFrameAtTime();</span><br><span class="line"></span><br><span class="line">//获取指定毫秒的原尺寸图片 注意这里传的毫秒不再是微秒</span><br><span class="line">mmrc.getFrameAtTime(0, MediaMetadataKey.OPTION_CLOSEST_SYNC);</span><br><span class="line"></span><br><span class="line">//获取指定毫秒的缩略图，并基于指定宽高缩放，输出的Bitmap不一定是指定宽高</span><br><span class="line">mmrc.getScaledFrameAtTime(0, MediaMetadataKey.OPTION_CLOSEST_SYNC, 300, 300);</span><br><span class="line"></span><br><span class="line">//获取指定毫秒的缩略图，并按指定宽高缩放裁剪，输出的Bitmap一定是指定宽高</span><br><span class="line">mmrc.getCenterCropFrameAtTime(0, MediaMetadataKey.OPTION_CLOSEST_SYNC, 300, 300);</span><br></pre></td></tr></table></figure>
+<h2 id="全局配置"><a href="#全局配置" class="headerlink" title="全局配置"></a>全局配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">//创建一个新的配置构造器</span><br><span class="line">MediaMetadataConfig.newBuilder()</span><br><span class="line">        .setCustomDataSourceCallback(new MediaMetadataConfig.CustomDataSourceCallback() &#123;</span><br><span class="line">            @Override</span><br><span class="line">            public void setCustomDataSource(IMediaMetadataRetriever retriever, DataSource source) &#123;</span><br><span class="line">                //当设置了自定义数据源时 会回调</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">        //添加格式检查器</span><br><span class="line">        .addFileFormatChecker(new CustomFormatChecker())</span><br><span class="line">        //添加自定义检索器</span><br><span class="line">        .addCustomRetrieverFactory(new SVGMediaMetadataRetrieverFactory())</span><br><span class="line">        .addCustomRetrieverFactory(new CustomMediaMetadataRetrieverFactory())</span><br><span class="line">        .build()</span><br><span class="line">        //应用配置</span><br><span class="line">        .apply();</span><br></pre></td></tr></table></figure>
+<h2 id="自定义检索器"><a href="#自定义检索器" class="headerlink" title="自定义检索器"></a>自定义检索器</h2><p><a href="https://github.com/dengyuhan/MediaMetadataRetrieverCompat/tree/master/example/src/main/java/in/xiandan/mmrc/example/custom" target="_blank" rel="noopener">custom</a> 演示了以SVG文件为例如何<strong>自定义检索器</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">MediaMetadataConfig.newBuilder()</span><br><span class="line">        .addFileFormatChecker(new CustomFormatChecker())</span><br><span class="line">        .addCustomRetrieverFactory(new SVGMediaMetadataRetrieverFactory())</span><br><span class="line">        .build()</span><br><span class="line">        .apply();</span><br></pre></td></tr></table></figure>
+<h2 id="相关资料"><a href="#相关资料" class="headerlink" title="相关资料"></a>相关资料</h2><p><a href="https://github.com/facebook/fresco/tree/master/imagepipeline-base/src/main/java/com/facebook/imageformat" target="_blank" rel="noopener">fresco/imageformat</a><br><a href="https://github.com/wseemann/FFmpegMediaMetadataRetriever" target="_blank" rel="noopener">FFmpegMediaMetadataRetriever</a><br><a href="https://developer.android.google.cn/reference/kotlin/android/media/MediaMetadataRetriever" target="_blank" rel="noopener">MediaMetadataRetriever</a><br><a href="https://developer.android.google.cn/reference/android/graphics/ImageDecoder" target="_blank" rel="noopener">ImageDecoder</a><br><a href="https://developer.android.google.cn/reference/android/media/ExifInterface" target="_blank" rel="noopener">ExifInterface</a>   </p>
 
       
     </div>
@@ -442,6 +437,15 @@
   </ul>
   
   
+  <!-- Button trigger modal -->
+  <!--
+  <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>赏</span></button>
+  -->
+  <img src="/images/donate.svg" data-toggle="modal" data-target="#donateModal" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning">
+  <!-- <div class="wave-icon wave-icon-danger btn-donate" data-toggle="modal" data-target="#donateModal">
+    <div class="wave-circle"><span class="icon"><i class="icon icon-bill"></i></span></div>
+  </div> -->
+  
   
   <div class="bar-right">
     
@@ -451,6 +455,49 @@
   </div>
 </nav>
   
+<!-- Modal -->
+<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content donate">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="modal-body">
+        <div class="donate-box">
+          <div class="donate-head">
+            <p>感谢您的支持，我会继续努力的!</p>
+          </div>
+          <div class="tab-content">
+			
+			
+
+			
+            <div role="tabpanel" class="tab-pane fade active in" id="wechatdonate">
+              <div class="donate-payimg">
+                <img src="/images/donate/wechatdonate.jpg" alt="扫码支持" title="扫一扫">
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开微信扫一扫，即可进行扫码赞赏哦</p>
+            </div>
+			
+          </div>
+          <div class="donate-footer">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+
+			
+			
+
+			
+              <li role="presentation" class="active">
+                <a href="#wechatdonate" role="tab" id="wechatdonate-tab" data-toggle="tab" aria-controls="wechatdonate" aria-expanded="true"><i class="icon icon-wepay"></i> 微信赞赏</a>
+              </li>
+			
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 </main>
