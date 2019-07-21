@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://xiandan.in/posts/shadowsocks-install.html</loc>
+    
+    <lastmod>2019-07-21T11:05:24.429Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://xiandan.in/posts/bwg-vultr-justmysocks.html</loc>
     
     <lastmod>2019-07-19T17:27:04.163Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>https://xiandan.in/posts/bwg-gfw.html</loc>
     
     <lastmod>2019-07-19T13:42:54.640Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://xiandan.in/posts/shadowsocks-install.html</loc>
-    
-    <lastmod>2019-07-19T13:42:54.639Z</lastmod>
     
   </url>
   
@@ -317,14 +317,14 @@
   </url>
   
   <url>
-    <loc>https://xiandan.in/links/index.html</loc>
+    <loc>https://xiandan.in/categories/index.html</loc>
     
     <lastmod>2018-12-16T08:55:18.163Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://xiandan.in/categories/index.html</loc>
+    <loc>https://xiandan.in/links/index.html</loc>
     
     <lastmod>2018-12-16T08:55:18.163Z</lastmod>
     
