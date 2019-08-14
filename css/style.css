@@ -164,17 +164,6 @@ hr {
   height: 0;
 }
 
-.float-bottom {
-  position:absolute;
-  bottom:0;
-}
-
-.total-statistics{
-  width:88%;
-  text-align:center;
-  margin-bottom: 10px;
-}
-
 pre {
   overflow: auto;
 }

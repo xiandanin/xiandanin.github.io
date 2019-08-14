@@ -18,23 +18,25 @@
   
   
   <title>让wepy在WebStorm支持代码高亮 | 闲蛋</title>
-  <meta name="description" content="支持wpyPreferences - Editor - File Types选择Vue.js Template，添加*.wpy  支持特殊标签Preferences - Editor - Language Injections添加XML Tag Injection  高亮config标签Namespace用http://www.w3.org/1999/html  高亮wxs标签 效果">
+  <meta name="description" content="支持wpyPreferences - Editor - File Types选择Vue.js Template，添加*.wpy  支持特殊标签Preferences - Editor - Language Injections添加XML Tag Injection  高亮config标签Namespace用http://www.w3.org/1999/html  高亮wxs标签 支持rpxPref">
 <meta name="keywords" content="WebStorm,wepy,小程序">
 <meta property="og:type" content="article">
 <meta property="og:title" content="让wepy在WebStorm支持代码高亮">
 <meta property="og:url" content="https://xiandan.in/posts/wepy-webstorm.html">
 <meta property="og:site_name" content="闲蛋的笔记">
-<meta property="og:description" content="支持wpyPreferences - Editor - File Types选择Vue.js Template，添加*.wpy  支持特殊标签Preferences - Editor - Language Injections添加XML Tag Injection  高亮config标签Namespace用http://www.w3.org/1999/html  高亮wxs标签 效果">
+<meta property="og:description" content="支持wpyPreferences - Editor - File Types选择Vue.js Template，添加*.wpy  支持特殊标签Preferences - Editor - Language Injections添加XML Tag Injection  高亮config标签Namespace用http://www.w3.org/1999/html  高亮wxs标签 支持rpxPref">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://xiandan.in/posts/wepy-webstorm/5.png">
 <meta property="og:image" content="https://xiandan.in/posts/wepy-webstorm/1.jpg">
 <meta property="og:image" content="https://xiandan.in/posts/wepy-webstorm/2.jpg">
 <meta property="og:image" content="https://xiandan.in/posts/wepy-webstorm/3.jpg">
+<meta property="og:image" content="https://xiandan.in/posts/wepy-webstorm/6.png">
+<meta property="og:image" content="https://xiandan.in/posts/wepy-webstorm/7.png">
 <meta property="og:image" content="https://xiandan.in/posts/wepy-webstorm/4.jpg">
-<meta property="og:updated_time" content="2019-07-25T14:32:56.968Z">
+<meta property="og:updated_time" content="2019-08-14T16:26:36.245Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="让wepy在WebStorm支持代码高亮">
-<meta name="twitter:description" content="支持wpyPreferences - Editor - File Types选择Vue.js Template，添加*.wpy  支持特殊标签Preferences - Editor - Language Injections添加XML Tag Injection  高亮config标签Namespace用http://www.w3.org/1999/html  高亮wxs标签 效果">
+<meta name="twitter:description" content="支持wpyPreferences - Editor - File Types选择Vue.js Template，添加*.wpy  支持特殊标签Preferences - Editor - Language Injections添加XML Tag Injection  高亮config标签Namespace用http://www.w3.org/1999/html  高亮wxs标签 支持rpxPref">
 <meta name="twitter:image" content="https://xiandan.in/posts/wepy-webstorm/5.png">
   <!-- Canonical links -->
   <link rel="canonical" href="https://xiandan.in/posts/wepy-webstorm.html">
@@ -386,6 +388,13 @@
 <h4 id="高亮config标签"><a href="#高亮config标签" class="headerlink" title="高亮config标签"></a>高亮config标签</h4><p><code>Namespace</code>用<code>http://www.w3.org/1999/html</code></p>
 <p><img src="/posts/wepy-webstorm/2.jpg" width="400"></p>
 <h4 id="高亮wxs标签"><a href="#高亮wxs标签" class="headerlink" title="高亮wxs标签"></a>高亮wxs标签</h4><p><img src="/posts/wepy-webstorm/3.jpg" width="400"></p>
+<h2 id="支持rpx"><a href="#支持rpx" class="headerlink" title="支持rpx"></a>支持rpx</h2><p><code>Preferences</code> - <code>Tools</code> - <code>File Watchers</code>添加<code>custom</code>  </p>
+<p><img src="/posts/wepy-webstorm/6.png" width="600"></p>
+<p>Program: <code>sed</code><br>Arguments: <code>—i “ s/”\ rpx”/rpx/g $FilePath$</code><br>Output paths to refresh: <code>$FilePath$</code>  </p>
+<blockquote>
+<p>*如果是Windows需要先安装<a href="https://github.com/mbuilov/sed-windows" target="_blank" rel="noopener">sed-windows</a>，<code>Program</code>则换成<code>sed</code>的安装路径  </p>
+</blockquote>
+<p><img src="/posts/wepy-webstorm/7.png" width="600"></p>
 <h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p><img src="/posts/wepy-webstorm/4.jpg" width="600"></p>
 
       
