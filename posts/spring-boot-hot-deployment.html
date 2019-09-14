@@ -18,21 +18,19 @@
   
   
   <title>Spring Boot热部署 - 不重启应用也能看到修改效果 | 闲蛋</title>
-  <meta name="description" content="引入依赖在pom.xml引入spring-boot-devtools 12345&amp;lt;dependency&amp;gt;    &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;gt;spring-boot-devtools&amp;lt;/artifactId&amp;gt;    &amp;lt;optional&amp;gt;tr">
+  <meta name="description" content="只需在Run/Debug Configuration中，把On &amp;#39;Update&amp;#39; action和On frame deactivation全部改为Update classes and resources即可，启动时要用Debug方式启动才有效">
 <meta name="keywords" content="Java,Spring Boot">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Spring Boot热部署 - 不重启应用也能看到修改效果">
 <meta property="og:url" content="https://xiandan.in/posts/spring-boot-hot-deployment.html">
 <meta property="og:site_name" content="闲蛋的笔记">
-<meta property="og:description" content="引入依赖在pom.xml引入spring-boot-devtools 12345&amp;lt;dependency&amp;gt;    &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;gt;spring-boot-devtools&amp;lt;/artifactId&amp;gt;    &amp;lt;optional&amp;gt;tr">
+<meta property="og:description" content="只需在Run/Debug Configuration中，把On &amp;#39;Update&amp;#39; action和On frame deactivation全部改为Update classes and resources即可，启动时要用Debug方式启动才有效">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://xiandan.in/posts/spring-boot-hot-deployment/1.jpg">
-<meta property="og:image" content="https://xiandan.in/posts/spring-boot-hot-deployment/2.png">
-<meta property="og:image" content="https://xiandan.in/posts/spring-boot-hot-deployment/3.jpg">
-<meta property="og:updated_time" content="2019-04-27T07:41:51.444Z">
+<meta property="og:updated_time" content="2019-09-07T20:06:11.364Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Spring Boot热部署 - 不重启应用也能看到修改效果">
-<meta name="twitter:description" content="引入依赖在pom.xml引入spring-boot-devtools 12345&amp;lt;dependency&amp;gt;    &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;gt;spring-boot-devtools&amp;lt;/artifactId&amp;gt;    &amp;lt;optional&amp;gt;tr">
+<meta name="twitter:description" content="只需在Run/Debug Configuration中，把On &amp;#39;Update&amp;#39; action和On frame deactivation全部改为Update classes and resources即可，启动时要用Debug方式启动才有效">
 <meta name="twitter:image" content="https://xiandan.in/posts/spring-boot-hot-deployment/1.jpg">
   <!-- Canonical links -->
   <link rel="canonical" href="https://xiandan.in/posts/spring-boot-hot-deployment.html">
@@ -244,7 +242,7 @@
                 <a class="category-link" href="/categories/科学上网/">科学上网</a>
               </p>
               <p class="item-title">
-                <a href="/posts/bwg-vultr-justmysocks.html" class="title">搬瓦工/Vultr/JustMySocks/AAEX对比</a>
+                <a href="/posts/bwg-vultr-justmysocks.html" class="title">搬瓦工/Vultr/JustMySocks对比</a>
               </p>
               <p class="item-date">
                 <time datetime="2019-06-03T07:17:17.000Z" itemprop="datePublished">2019-06-03</time>
@@ -377,18 +375,8 @@
 	</blockquote>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <h3 id="引入依赖"><a href="#引入依赖" class="headerlink" title="引入依赖"></a>引入依赖</h3><p>在pom.xml引入<code>spring-boot-devtools</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;spring-boot-devtools&lt;/artifactId&gt;</span><br><span class="line">    &lt;optional&gt;true&lt;/optional&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
-<p>加入插件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;plugins&gt;</span><br><span class="line">    &lt;plugin&gt;</span><br><span class="line">        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;</span><br><span class="line">    &lt;/plugin&gt;</span><br><span class="line">&lt;/plugins&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="IDEA设置"><a href="#IDEA设置" class="headerlink" title="IDEA设置"></a>IDEA设置</h3><p>进入设置，<code>Build,Execution,Deployment</code>  - <code>Compiler</code>，打勾 <code>Build project automatically</code></p>
-<p><img src="/posts/spring-boot-hot-deployment/1.jpg" width="650"></p>
-<p><code>Control</code>+<code>Shift</code>+<code>A</code>，搜索<code>Registry</code>，打勾<code>compiler.automake.allow.when.app.running</code></p>
-<p><img src="/posts/spring-boot-hot-deployment/2.png" width="650"></p>
-<h3 id="Run-Debug-Configurations"><a href="#Run-Debug-Configurations" class="headerlink" title="Run/Debug Configurations"></a>Run/Debug Configurations</h3><p>修改<code>Run/Debug Configurations</code>，将<code>On &#39;Update&#39; action</code>和<code>On frame deactivation</code>都设成<code>Update classes and resources</code></p>
-<p><img src="/posts/spring-boot-hot-deployment/3.jpg" width="650"></p>
-<p>这样每次保存，不用重新启动也会应用修改了，修改html是实时的，修改Java会有几秒的延迟</p>
-
+        <p>只需在<code>Run/Debug Configuration</code>中，把<code>On &#39;Update&#39; action</code>和<code>On frame deactivation</code>全部改为<code>Update classes and resources</code>即可，启动时要用Debug方式启动才有效</p>
+<img src="/posts/spring-boot-hot-deployment/1.jpg">
       
     </div>
 	

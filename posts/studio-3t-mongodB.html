@@ -18,21 +18,22 @@
   
   
   <title>Studio 3T外网远程访问MongoDB | 闲蛋</title>
-  <meta name="description" content="Studio 3T：https://studio3t.com/download MongoDB：http://www.mongodb.org 设置MongoDB以宝塔面板为例，进入到MongoDB的配置文件，将bindIp改成0.0.0.0，表示支持任何ip访问，重启MongoDB生效  远程连接MongoDB打开Studio 3T，Connect - New Connection输入服务器IP和">
+  <meta name="description" content="Studio 3T：https://studio3t.com/download MongoDB：http://www.mongodb.org 设置MongoDB以宝塔面板为例，进入到MongoDB的配置文件，将bindIp改成0.0.0.0，表示支持任何ip访问，重启MongoDB生效  开放端口如果没开放端口，还需要在防火墙开放MongoDB端口  远程连接MongoDB打开Studio 3T，">
 <meta name="keywords" content="MongoDB,Studio 3T">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Studio 3T外网远程访问MongoDB">
 <meta property="og:url" content="https://xiandan.in/posts/studio-3t-mongodB.html">
 <meta property="og:site_name" content="闲蛋的笔记">
-<meta property="og:description" content="Studio 3T：https://studio3t.com/download MongoDB：http://www.mongodb.org 设置MongoDB以宝塔面板为例，进入到MongoDB的配置文件，将bindIp改成0.0.0.0，表示支持任何ip访问，重启MongoDB生效  远程连接MongoDB打开Studio 3T，Connect - New Connection输入服务器IP和">
+<meta property="og:description" content="Studio 3T：https://studio3t.com/download MongoDB：http://www.mongodb.org 设置MongoDB以宝塔面板为例，进入到MongoDB的配置文件，将bindIp改成0.0.0.0，表示支持任何ip访问，重启MongoDB生效  开放端口如果没开放端口，还需要在防火墙开放MongoDB端口  远程连接MongoDB打开Studio 3T，">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://xiandan.in/posts/studio-3t-mongodB/1.jpg">
+<meta property="og:image" content="https://xiandan.in/posts/studio-3t-mongodB/4.jpg">
 <meta property="og:image" content="https://xiandan.in/posts/studio-3t-mongodB/2.jpg">
 <meta property="og:image" content="https://xiandan.in/posts/studio-3t-mongodB/3.jpg">
-<meta property="og:updated_time" content="2019-09-01T14:35:30.496Z">
+<meta property="og:updated_time" content="2019-09-07T20:06:11.369Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Studio 3T外网远程访问MongoDB">
-<meta name="twitter:description" content="Studio 3T：https://studio3t.com/download MongoDB：http://www.mongodb.org 设置MongoDB以宝塔面板为例，进入到MongoDB的配置文件，将bindIp改成0.0.0.0，表示支持任何ip访问，重启MongoDB生效  远程连接MongoDB打开Studio 3T，Connect - New Connection输入服务器IP和">
+<meta name="twitter:description" content="Studio 3T：https://studio3t.com/download MongoDB：http://www.mongodb.org 设置MongoDB以宝塔面板为例，进入到MongoDB的配置文件，将bindIp改成0.0.0.0，表示支持任何ip访问，重启MongoDB生效  开放端口如果没开放端口，还需要在防火墙开放MongoDB端口  远程连接MongoDB打开Studio 3T，">
 <meta name="twitter:image" content="https://xiandan.in/posts/studio-3t-mongodB/1.jpg">
   <!-- Canonical links -->
   <link rel="canonical" href="https://xiandan.in/posts/studio-3t-mongodB.html">
@@ -244,7 +245,7 @@
                 <a class="category-link" href="/categories/科学上网/">科学上网</a>
               </p>
               <p class="item-title">
-                <a href="/posts/bwg-vultr-justmysocks.html" class="title">搬瓦工/Vultr/JustMySocks/AAEX对比</a>
+                <a href="/posts/bwg-vultr-justmysocks.html" class="title">搬瓦工/Vultr/JustMySocks对比</a>
               </p>
               <p class="item-date">
                 <time datetime="2019-06-03T07:17:17.000Z" itemprop="datePublished">2019-06-03</time>
@@ -381,12 +382,20 @@
 <p>MongoDB：<a href="http://www.mongodb.org" target="_blank" rel="noopener">http://www.mongodb.org</a></p>
 <h2 id="设置MongoDB"><a href="#设置MongoDB" class="headerlink" title="设置MongoDB"></a>设置MongoDB</h2><p>以<a href="https://www.bt.cn/?invite_code=MV9va2p0bmQ=" target="_blank" rel="noopener">宝塔面板</a>为例，进入到MongoDB的配置文件，将<code>bindIp</code>改成<code>0.0.0.0</code>，表示支持任何ip访问，重启MongoDB生效</p>
 <p><img src="/posts/studio-3t-mongodB/1.jpg" width="600"></p>
-<h2 id="远程连接MongoDB"><a href="#远程连接MongoDB" class="headerlink" title="远程连接MongoDB"></a>远程连接MongoDB</h2><p>打开Studio 3T，<code>Connect</code> - <code>New Connection</code>输入服务器IP和MongoDB的端口</p>
+<h2 id="开放端口"><a href="#开放端口" class="headerlink" title="开放端口"></a>开放端口</h2><p>如果没开放端口，还需要在防火墙开放MongoDB端口</p>
+<p><img src="/posts/studio-3t-mongodB/4.jpg" width="400"></p>
+<h2 id="远程连接MongoDB"><a href="#远程连接MongoDB" class="headerlink" title="远程连接MongoDB"></a>远程连接MongoDB</h2><p>打开Studio 3T，<code>Connect</code> - <code>New Connection</code>输入服务器IP和MongoDB的端口，保存后直接双击即可连接</p>
 <img src="/posts/studio-3t-mongodB/2.jpg">
-<p>这里选择不使用SSL，保存后直接双击就可连接</p>
-<p><img src="/posts/studio-3t-mongodB/3.jpg" width="400"></p>
-<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>以上设置开启了<code>不限制IP</code>并且<code>不需要用户验证</code>，是很不安全的</p>
-
+<h2 id="添加用户验证"><a href="#添加用户验证" class="headerlink" title="添加用户验证"></a>添加用户验证</h2><p>以上设置开启了<code>不限制IP</code>并且<code>不需要用户验证</code>，是很不安全的，所以还需要添加用户验证<br>切换至<code>admin</code>数据库</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mongo</span><br><span class="line">use admin</span><br></pre></td></tr></table></figure>
+<p>添加一个用户</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">db.createUser(</span><br><span class="line">  &#123;</span><br><span class="line">    user: &quot;[用户名]&quot;,</span><br><span class="line">    pwd: &quot;[密码]&quot;,</span><br><span class="line">    roles: [ &#123; role: &quot;userAdminAnyDatabase&quot;, db: &quot;admin&quot; &#125; ]</span><br><span class="line">  &#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<p>在配置文件将<code>authorization</code>改为<code>enabled</code>，保存后重启生效</p>
+<p><img src="/posts/studio-3t-mongodB/3.jpg" width="600"></p>
+<h2 id="备份-mongodump-与恢复-mongorestore"><a href="#备份-mongodump-与恢复-mongorestore" class="headerlink" title="备份(mongodump)与恢复(mongorestore)"></a>备份(mongodump)与恢复(mongorestore)</h2><p>mongodump备份，如果端口是27017，命令中可以省略</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongodump -h [地址]:[端口] -d [数据库] -o [备份导出目录]</span><br></pre></td></tr></table></figure>
+<p>mongorestore恢复，如果端口是27017，命令中可以省略</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongorestore -h [地址]:[端口] -d [数据库] [备份所在目录]</span><br></pre></td></tr></table></figure>
       
     </div>
 	

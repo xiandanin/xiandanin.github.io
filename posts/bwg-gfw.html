@@ -18,21 +18,22 @@
   
   
   <title>搬瓦工被墙后 | 闲蛋</title>
-  <meta name="description" content="验证是否被墙 在http://port.ping.pe输入服务器IP和SSH端口号，如果国外节点成功国内节点失败说明被墙    也可以登录控制面板，进入到Block List Check，出现IP BLOCKED说明被墙   解决办法咨询了搬瓦工，回复原文如下： 12345678910111213141516171819202122232425262728293031323334353637383">
-<meta name="keywords" content="搬瓦工,Vultr,JustMySocks">
+  <meta name="description" content="搬瓦工被墙后的解决方案">
+<meta name="keywords" content="搬瓦工,被墙,ss,justmysocks">
 <meta property="og:type" content="article">
 <meta property="og:title" content="搬瓦工被墙后">
 <meta property="og:url" content="https://xiandan.in/posts/bwg-gfw.html">
 <meta property="og:site_name" content="闲蛋的笔记">
-<meta property="og:description" content="验证是否被墙 在http://port.ping.pe输入服务器IP和SSH端口号，如果国外节点成功国内节点失败说明被墙    也可以登录控制面板，进入到Block List Check，出现IP BLOCKED说明被墙   解决办法咨询了搬瓦工，回复原文如下： 12345678910111213141516171819202122232425262728293031323334353637383">
+<meta property="og:description" content="搬瓦工被墙后的解决方案">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://xiandan.in/posts/bwg-gfw/1.jpg">
 <meta property="og:image" content="https://xiandan.in/posts/bwg-gfw/3.png">
+<meta property="og:image" content="https://xiandan.in/posts/bwg-gfw/4.png">
 <meta property="og:image" content="https://xiandan.in/posts/bwg-gfw/2.png">
-<meta property="og:updated_time" content="2019-08-31T12:36:53.661Z">
+<meta property="og:updated_time" content="2019-09-14T19:24:33.218Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搬瓦工被墙后">
-<meta name="twitter:description" content="验证是否被墙 在http://port.ping.pe输入服务器IP和SSH端口号，如果国外节点成功国内节点失败说明被墙    也可以登录控制面板，进入到Block List Check，出现IP BLOCKED说明被墙   解决办法咨询了搬瓦工，回复原文如下： 12345678910111213141516171819202122232425262728293031323334353637383">
+<meta name="twitter:description" content="搬瓦工被墙后的解决方案">
 <meta name="twitter:image" content="https://xiandan.in/posts/bwg-gfw/1.jpg">
   <!-- Canonical links -->
   <link rel="canonical" href="https://xiandan.in/posts/bwg-gfw.html">
@@ -244,7 +245,7 @@
                 <a class="category-link" href="/categories/科学上网/">科学上网</a>
               </p>
               <p class="item-title">
-                <a href="/posts/bwg-vultr-justmysocks.html" class="title">搬瓦工/Vultr/JustMySocks/AAEX对比</a>
+                <a href="/posts/bwg-vultr-justmysocks.html" class="title">搬瓦工/Vultr/JustMySocks对比</a>
               </p>
               <p class="item-date">
                 <time datetime="2019-06-03T07:17:17.000Z" itemprop="datePublished">2019-06-03</time>
@@ -386,16 +387,15 @@
 </ul>
 <img src="/posts/bwg-gfw/3.png">
 <h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>咨询了搬瓦工，回复原文如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">Hello,</span><br><span class="line"></span><br><span class="line">Looks like the IP is blocked by GFW. While the IP is on any other major block list (Spamhaus, Barracuda, GFW etc), the VPS stays fully operational. However you will not be able to migrate the VPS to a different datacenter until the block is removed.</span><br><span class="line"></span><br><span class="line">Here is how to manually verify if your VPS IP is being blocked by the Great Firewall of China:</span><br><span class="line"></span><br><span class="line">1. Navigate to http://port.ping.pe</span><br><span class="line">2. Enter your VPS IP and SSH port in the top field, like this: 1.2.3.4:22222</span><br><span class="line">3. Click &apos;Go&apos;</span><br><span class="line"></span><br><span class="line">The service will attempt to connect to your SSH port from multiple countries and in case of a banned IP will show that the port is closed when attempting from China (but not other countries).</span><br><span class="line"></span><br><span class="line">*** Possible solutions ***</span><br><span class="line"></span><br><span class="line">We found that generally GFW automatically removes the ban when it can no longer detect the &apos;prohibited&apos; service for a few days to few weeks. The best solution in the case of a ban would be the complete removal of all service(s) that could trigger the ban and waiting for some time for the ban to be lifted.</span><br><span class="line"></span><br><span class="line">Having said that, please do keep in mind that we do not have any control over GFW, and we do not know much about how it works. It is our responsibility to make sure our hardware and network stay fully operational, and GFW-related issues are out of scope of our competence.</span><br><span class="line"></span><br><span class="line">If you need to replace a banned IP with a clean IP, we offer this service at the following link:</span><br><span class="line"></span><br><span class="line">https://bandwagonhost.com/ipchange.php</span><br><span class="line"></span><br><span class="line">mirror:</span><br><span class="line"></span><br><span class="line">https://bwh88.net/ipchange.php</span><br><span class="line"></span><br><span class="line">This is an automatic reply. If your request was not properly addressed, please reply in this ticket and one of our engineers will take a look.</span><br><span class="line"></span><br><span class="line">****************************************************************************</span><br><span class="line"></span><br><span class="line">Our friends at justmysocks built a Shadowsocks solution </span><br><span class="line">which addresses most common issues related to Shadowsocks: </span><br><span class="line"></span><br><span class="line">* Ready to use Shadowsocks servers tweaked for best security and privacy</span><br><span class="line">* You get 5 different IPs to connect to at any time</span><br><span class="line">* Unlimited IP replacement at no additional cost</span><br><span class="line">* 10 Gbps CN2 GIA network</span><br><span class="line"></span><br><span class="line">****************************************************************************</span><br></pre></td></tr></table></figure>
+<p><img src="/posts/bwg-gfw/4.png" width="600"></p>
 <p>其中提到了几个解决办法：</p>
 <blockquote>
 <p>1.停止服务，也许几天或几周后会解除；<br>2.付费8.79美元<a href="https://bwh88.net/ipchange.php" target="_blank" rel="noopener">更换新的IP</a>；<br>3.使用<a href="https://justmysocks1.net/members/aff.php?aff=1627" target="_blank" rel="noopener">JustMySocks</a>。</p>
 </blockquote>
-<h4 id="关于JustMySocks的介绍可以看Just-My-Socks中文网"><a href="#关于JustMySocks的介绍可以看Just-My-Socks中文网" class="headerlink" title="关于JustMySocks的介绍可以看Just My Socks中文网"></a>关于JustMySocks的介绍可以看<a href="https://jichang.uk" target="_blank" rel="noopener">Just My Socks中文网</a></h4><blockquote>
-<p>查看 <a href="bwg-vultr-justmysocks.html">搬瓦工/Vultr/JustMySocks对比</a></p>
-</blockquote>
+<p>关于JustMySocks的介绍可以看<a href="https://jichang.uk" target="_blank" rel="noopener">Just My Socks中文网</a></p>
+<p>或者查看 <a href="bwg-vultr-justmysocks.html">搬瓦工/Vultr/JustMySocks对比</a></p>
 <h2 id="也许有效的预防措施"><a href="#也许有效的预防措施" class="headerlink" title="也许有效的预防措施"></a>也许有效的预防措施</h2><p>3月1日至17日左右，6月1日至10日左右都是可能被墙的时期，期间最好关机，也许可以防止被墙</p>
-<h2 id="亲测解除"><a href="#亲测解除" class="headerlink" title="亲测解除"></a>亲测解除</h2><p>我是6月3号被墙的，<strong>关机</strong>直到7月7日再测发现已经解除了</p>
+<h2 id="亲测解除"><a href="#亲测解除" class="headerlink" title="亲测解除"></a>亲测解除</h2><p>6月3号被墙，<strong>关机</strong>直到7月7日再测发现已经解除了</p>
 <p><img src="/posts/bwg-gfw/2.png" width="500"></p>
 
       
@@ -420,7 +420,7 @@
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/posts/bwg-vultr-justmysocks.html" title="搬瓦工/Vultr/JustMySocks/AAEX对比"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+      <a href="/posts/bwg-vultr-justmysocks.html" title="搬瓦工/Vultr/JustMySocks对比"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
     </li>
     
     
