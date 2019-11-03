@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>闲蛋的笔记</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://xiandan.in/"/>
+  <updated>2019-11-03T16:38:31.326Z</updated>
+  <id>https://xiandan.in/</id>
+  
+  <author>
+    <name>denghaha</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>搬瓦工/Vultr/JustMySocks对比</title>
+    <link href="https://xiandan.in/posts/bwg-vultr-justmysocks.html"/>
+    <id>https://xiandan.in/posts/bwg-vultr-justmysocks.html</id>
+    <published>2019-06-03T07:17:17.000Z</published>
+    <updated>2019-11-03T16:38:31.326Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="搬瓦工"><a href="#搬瓦工" class="headerlink" title="搬瓦工"></a>搬瓦工</h2><p><a href="https://bwh88.net/aff.php?aff=48595" target="_blank" rel="noopener">搬瓦工</a>是IT7旗下的VPS品牌，相对国内的VPS性价比很高。</p><h2 id="JustMySocks"><a href="#JustMySocks" class="headerlink" title="JustMySocks"></a>JustMySocks</h2><p><a href="https://justmysocks1.net/members/aff.php?gid=1&amp;aff=1627&amp;language=chinese" target="_blank" rel="noopener">JustMySocks</a>是搬瓦工推出的代理服务，相对VPS也是便宜很多，并且很稳定。</p><p><img src="/posts/bwg-vultr-justmysocks/4.jpg" width="500"></p><h2 id="Vultr"><a href="#Vultr" class="headerlink" title="Vultr"></a>Vultr</h2><p>除了搬瓦工，还有<a href="https://www.vultr.com/?ref=8093231" target="_blank" rel="noopener">Vultr</a>也可以用，比搬瓦工要贵，但是按小时付费的，所以可以随时更换。</p><p>可以先<a href="https://www.vultr.com/faq/#downloadspeedtests" target="_blank" rel="noopener">测速</a>再选择适合自己的机房</p><p>Vultr的工单处理的很快，快的时候2分钟就回复了，而且可以随时提现余额</p><h2 id="对比"><a href="#对比" class="headerlink" title="对比"></a>对比</h2><p>价格更新于2019-09-23，不排除涨价降价的可能，以官网显示为准</p><table><thead><tr><th style="text-align:center"></th><th style="text-align:center">类型</th><th style="text-align:center">最低档价格</th><th style="text-align:center">最低档流量</th><th style="text-align:center">速度</th><th>优点</th><th>缺点</th></tr></thead><tbody><tr><td style="text-align:center">搬瓦工</td><td style="text-align:center">VPS</td><td style="text-align:center">$49.99/年</td><td style="text-align:center">1T/月</td><td style="text-align:center">正常</td><td>硬件配置性价比更高</td><td>1.被墙就只能花钱改IP<br>2.最低档的只能年付</td></tr><tr><td style="text-align:center">Vultr</td><td style="text-align:center">VPS</td><td style="text-align:center">$0.007/时<br>$5/月<br>$60/年</td><td style="text-align:center">1T/月</td><td style="text-align:center">略慢</td><td>1.可以随时开通和取消<br>2.余额可随时提现<br>3.工单处理快</td><td>1.国内访问相对较慢<br>2.价格较高</td></tr><tr><td style="text-align:center">JustMySocks</td><td style="text-align:center">服务</td><td style="text-align:center">$2.88/月<br>$28.88/年</td><td style="text-align:center">100G/月</td><td style="text-align:center">正常</td><td>1.最便宜<br>2.稳定</td><td>不能自定义端口/密码/域名</td></tr></tbody></table><h2 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h2><p>搬瓦工官网：<a href="https://bandwagonhost.com/aff.php?aff=48595" target="_blank" rel="noopener">https://bandwagonhost.com</a><br>搬瓦工官网：<a href="https://bwh88.net/aff.php?aff=48595" target="_blank" rel="noopener">https://bwh88.net</a>（国内可访问）</p><p>Vultr官网：<a href="https://www.vultr.com/?ref=8093231" target="_blank" rel="noopener">https://www.vultr.com</a>  </p><p>JustMySocks官网：<a href="https://justmysocks.net/members/aff.php?gid=1&amp;aff=1627&amp;language=chinese" target="_blank" rel="noopener">https://justmysocks.net</a><br>JustMySocks官网：<a href="https://justmysocks1.net/members/aff.php?gid=1&amp;aff=1627&amp;language=chinese" target="_blank" rel="noopener">https://justmysocks1.net</a>（国内可访问）  </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;搬瓦工&quot;&gt;&lt;a href=&quot;#搬瓦工&quot; class=&quot;headerlink&quot; title=&quot;搬瓦工&quot;&gt;&lt;/a&gt;搬瓦工&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://bwh88.net/aff.php?aff=48595&quot; target=&quot;_blank&quot; rel=
+      
+    
+    </summary>
+    
+      <category term="科学上网" scheme="https://xiandan.in/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    
+      <category term="Shadowsocks" scheme="https://xiandan.in/tags/Shadowsocks/"/>
+    
+      <category term="搬瓦工" scheme="https://xiandan.in/tags/%E6%90%AC%E7%93%A6%E5%B7%A5/"/>
+    
+      <category term="Vultr" scheme="https://xiandan.in/tags/Vultr/"/>
+    
+      <category term="JustMySocks" scheme="https://xiandan.in/tags/JustMySocks/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搬瓦工被墙后</title>
+    <link href="https://xiandan.in/posts/bwg-gfw.html"/>
+    <id>https://xiandan.in/posts/bwg-gfw.html</id>
+    <published>2019-06-03T07:10:42.000Z</published>
+    <updated>2019-10-19T22:34:41.131Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="验证是否被墙"><a href="#验证是否被墙" class="headerlink" title="验证是否被墙"></a>验证是否被墙</h2><ul><li>在<a href="http://port.ping.pe" target="_blank" rel="noopener">http://port.ping.pe</a>输入服务器IP和SSH端口号，如果国外节点成功国内节点失败说明被墙</li></ul><p><img src="/posts/bwg-gfw/1.jpg" width="500"></p><ul><li>也可以登录控制面板，进入到<a href="https://kiwivm.64clouds.com/main-exec.php?mode=blacklistcheck" target="_blank" rel="noopener">Block List Check</a>，出现<code>IP BLOCKED</code>说明被墙</li></ul><img src="/posts/bwg-gfw/3.png"><h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>咨询了搬瓦工，回复原文如下：</p><p><img src="/posts/bwg-gfw/4.png" width="600"></p><p>其中提到了几个解决办法：</p><blockquote><p>1.停止服务，也许几天或几周后会解除；<br>2.付费8.79美元<a href="https://bwh88.net/ipchange.php" target="_blank" rel="noopener">更换新的IP</a>；<br>3.使用<a href="https://justmysocks1.net/members/aff.php?gid=1&amp;aff=1627&amp;language=chinese" target="_blank" rel="noopener">JustMySocks</a>。</p></blockquote><p><strong>查看 <a href="bwg-vultr-justmysocks.html">搬瓦工/Vultr/JustMySocks对比</a></strong></p><h2 id="也许有效的预防措施"><a href="#也许有效的预防措施" class="headerlink" title="也许有效的预防措施"></a>也许有效的预防措施</h2><p>3月1日至17日左右，6月1日至10日左右都是可能被墙的时期，期间最好关机，也许可以防止被墙</p><h2 id="亲测解除"><a href="#亲测解除" class="headerlink" title="亲测解除"></a>亲测解除</h2><p>6月3号被墙，<strong>关机</strong>直到7月7日再测发现已经解除了</p><p><img src="/posts/bwg-gfw/2.png" width="500"></p>]]></content>
+    
+    <summary type="html">
+    
+      搬瓦工被墙后的解决方案
+    
+    </summary>
+    
+      <category term="科学上网" scheme="https://xiandan.in/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    
+      <category term="搬瓦工" scheme="https://xiandan.in/tags/%E6%90%AC%E7%93%A6%E5%B7%A5/"/>
+    
+      <category term="Vultr" scheme="https://xiandan.in/tags/Vultr/"/>
+    
+      <category term="JustMySocks" scheme="https://xiandan.in/tags/JustMySocks/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Studio 3T外网远程访问MongoDB</title>
+    <link href="https://xiandan.in/posts/studio-3t-mongodB.html"/>
+    <id>https://xiandan.in/posts/studio-3t-mongodB.html</id>
+    <published>2019-05-29T13:51:02.000Z</published>
+    <updated>2019-11-03T16:42:36.413Z</updated>
+    
+    <content type="html"><![CDATA[<p>Studio 3T：<a href="https://studio3t.com/download" target="_blank" rel="noopener">https://studio3t.com/download</a></p><p>MongoDB：<a href="http://www.mongodb.org" target="_blank" rel="noopener">http://www.mongodb.org</a></p><h2 id="设置MongoDB"><a href="#设置MongoDB" class="headerlink" title="设置MongoDB"></a>设置MongoDB</h2><p>以<a href="https://www.bt.cn/?invite_code=MV9va2p0bmQ=" target="_blank" rel="noopener">宝塔面板</a>为例，进入到MongoDB的配置文件，将<code>bindIp</code>改成<code>0.0.0.0</code>，表示支持任何ip访问，重启MongoDB生效</p><p><img src="/posts/studio-3t-mongodB/1.jpg" width="600"></p><h2 id="开放端口"><a href="#开放端口" class="headerlink" title="开放端口"></a>开放端口</h2><p>如果没开放端口，还需要在防火墙开放MongoDB端口</p><p><img src="/posts/studio-3t-mongodB/4.jpg" width="400"></p><h2 id="远程连接MongoDB"><a href="#远程连接MongoDB" class="headerlink" title="远程连接MongoDB"></a>远程连接MongoDB</h2><p>打开Studio 3T，<code>Connect</code> - <code>New Connection</code>输入服务器IP和MongoDB的端口，保存后直接双击即可连接</p><img src="/posts/studio-3t-mongodB/2.jpg"><h2 id="添加用户验证"><a href="#添加用户验证" class="headerlink" title="添加用户验证"></a>添加用户验证</h2><p>以上设置开启了<code>不限制IP</code>并且<code>不需要用户验证</code>，是很不安全的，所以还需要添加用户验证<br>切换至<code>admin</code>数据库</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mongo</span><br><span class="line">use admin</span><br></pre></td></tr></table></figure><p>添加一个用户</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">db.createUser(</span><br><span class="line">  &#123;</span><br><span class="line">    user: &quot;[用户名]&quot;,</span><br><span class="line">    pwd: &quot;[密码]&quot;,</span><br><span class="line">    roles: [ &#123; role: &quot;userAdminAnyDatabase&quot;, db: &quot;admin&quot; &#125; ]</span><br><span class="line">  &#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure><p>在配置文件将<code>authorization</code>改为<code>enabled</code>，保存后重启生效</p><p><img src="/posts/studio-3t-mongodB/3.jpg" width="600"></p><h2 id="备份-mongodump-与恢复-mongorestore"><a href="#备份-mongodump-与恢复-mongorestore" class="headerlink" title="备份(mongodump)与恢复(mongorestore)"></a>备份(mongodump)与恢复(mongorestore)</h2><p>mongodump备份，如果端口是27017，命令中可以省略</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongodump -h [地址]:[端口] -d [数据库] -o [备份导出目录]</span><br></pre></td></tr></table></figure><p>mongorestore恢复，如果端口是27017，命令中可以省略</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongorestore -h [地址]:[端口] -d [数据库] [备份所在目录]</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Studio 3T：&lt;a href=&quot;https://studio3t.com/download&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://studio3t.com/download&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;MongoDB：&lt;a href
+      
+    
+    </summary>
+    
+      <category term="开发工具" scheme="https://xiandan.in/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="MongoDB" scheme="https://xiandan.in/tags/MongoDB/"/>
+    
+      <category term="Studio 3T" scheme="https://xiandan.in/tags/Studio-3T/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>利用CDN加速你的Github Pages</title>
+    <link href="https://xiandan.in/posts/github-pages-cdn.html"/>
+    <id>https://xiandan.in/posts/github-pages-cdn.html</id>
+    <published>2019-04-22T03:22:53.000Z</published>
+    <updated>2019-11-03T16:44:23.404Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近发现Github Pages有时候打开很慢，甚至打不开，ping一下平均200多毫秒，还有超时的情况<br><img src="/posts/github-pages-cdn/6.jpg" width="400"></p><p>再看一下<a href="http://tool.chinaz.com/speedtest.aspx" target="_blank" rel="noopener">网站测速</a>也很慢，移动更是全部超时<br><img src="/posts/github-pages-cdn/7.png" width="700"></p><h3 id="开通CDN"><a href="#开通CDN" class="headerlink" title="开通CDN"></a>开通CDN</h3><p>这里我用的是阿里云的<a href="https://www.aliyun.com/product/dcdn?source=5176.11533457&amp;userCode=cogjad1y" target="_blank" rel="noopener">全站加速</a>，具体资费看<a href="https://www.aliyun.com/price/product?source=5176.11533457&amp;userCode=cogjad1y#/dcdn/detail" target="_blank" rel="noopener">全站加速价格</a></p><p>也可以用<a href="https://cloud.tencent.com/act/cps/redirect?redirect=10108&amp;cps_key=428911fa608edf4bc44ef8419a4f57be" target="_blank" rel="noopener">腾讯云</a>，目前免费300G流量</p><p><img src="/posts/github-pages-cdn/1.jpg" width="500"></p><h3 id="添加域名"><a href="#添加域名" class="headerlink" title="添加域名"></a>添加域名</h3><p>开通全站加速后到<a href="https://dcdn.console.aliyun.com/domain/list" target="_blank" rel="noopener">控制台</a>添加域名，在<code>加速域名</code>填写你的域名，选择<code>源站域名</code>，填写你的Github Page地址，如果开启了HTTPS就选择443端口，加速的区域不同地方不同价格，这个看自己需求。</p><p><img src="/posts/github-pages-cdn/2.jpg" width="600"></p><p>添加成功后会生成一个CNAME地址，将你的域名解析到这个地址，如果你的域名也是阿里云的，可以在控制台一键配置。<br>这个不是实时生效的，如果解析后发现没有生效可以等一段时间再看。</p><p><img src="/posts/github-pages-cdn/4.jpg" width="700"><br><img src="/posts/github-pages-cdn/3.jpg" width="700"></p><h3 id="测试效果"><a href="#测试效果" class="headerlink" title="测试效果"></a>测试效果</h3><p>再次ping你的域名，会发现跳转是你CDN的地址，不再是github.io，加速效果也很明显</p><p><img src="/posts/github-pages-cdn/5.jpg" width="400"></p><p>再看一下<a href="http://tool.chinaz.com/speedtest.aspx" target="_blank" rel="noopener">网站测速</a>中国地图一片绿<br><img src="/posts/github-pages-cdn/8.png" width="700"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;最近发现Github Pages有时候打开很慢，甚至打不开，ping一下平均200多毫秒，还有超时的情况&lt;br&gt;&lt;img src=&quot;/posts/github-pages-cdn/6.jpg&quot; width=&quot;400&quot;&gt;&lt;/p&gt;
+&lt;p&gt;再看一下&lt;a href=&quot;http://
+      
+    
+    </summary>
+    
+      <category term="工具" scheme="https://xiandan.in/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Github Pages" scheme="https://xiandan.in/tags/Github-Pages/"/>
+    
+      <category term="CDN" scheme="https://xiandan.in/tags/CDN/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac安装Elastic Stack和基础配置</title>
+    <link href="https://xiandan.in/posts/elastic-stack-install.html"/>
+    <id>https://xiandan.in/posts/elastic-stack-install.html</id>
+    <published>2019-04-18T08:22:42.000Z</published>
+    <updated>2019-10-19T22:34:41.119Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Elastic官网：<a href="https://www.elastic.co/cn/" target="_blank" rel="noopener">https://www.elastic.co</a><br>Elastic Github：<a href="https://github.com/elastic" target="_blank" rel="noopener">https://github.com/elastic</a></p><ul><li><a href="Elasticsearch">Elasticsearch</a>： 全文搜索引擎</li><li><a href="https://www.elastic.co/cn/products/kibana" target="_blank" rel="noopener">Kibana</a>：可视化分析平台</li><li><a href="https://www.elastic.co/cn/products/beats/filebeat" target="_blank" rel="noopener">Filebeat</a>：日志采集</li></ul><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="Elasticsearch"><a href="#Elasticsearch" class="headerlink" title="Elasticsearch"></a>Elasticsearch</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install elastic/tap/elasticsearch-full</span><br></pre></td></tr></table></figure><h3 id="Kibana"><a href="#Kibana" class="headerlink" title="Kibana"></a>Kibana</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install elastic/tap/kibana-full</span><br></pre></td></tr></table></figure><h3 id="Filebeat"><a href="#Filebeat" class="headerlink" title="Filebeat"></a>Filebeat</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install elastic/tap/filebeat-full</span><br></pre></td></tr></table></figure><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="配置Filebeat"><a href="#配置Filebeat" class="headerlink" title="配置Filebeat"></a>配置Filebeat</h3><p>匹配要输入的Log文件路径</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /usr/local/etc/filebeat/filebeat.yml</span><br></pre></td></tr></table></figure><p><img src="/posts/elastic-stack-install/1.jpg" width="500"></p><h3 id="开启Kibana中文"><a href="#开启Kibana中文" class="headerlink" title="开启Kibana中文"></a>开启Kibana中文</h3><p>打开配置文件，将<code>i18n.locale</code>的注释去掉，改成<code>zh-CN</code></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /usr/local/etc/kibana/kibana.yml</span><br></pre></td></tr></table></figure><p><img src="/posts/elastic-stack-install/2.jpg" width="500"></p><h3 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h3><h4 id="前台启动"><a href="#前台启动" class="headerlink" title="前台启动"></a>前台启动</h4><p>需要3个终端窗口，分别启动</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">filebeat -e -d &quot;publish&quot;</span><br><span class="line">elasticsearch</span><br><span class="line">kibana</span><br></pre></td></tr></table></figure><h4 id="后台启动"><a href="#后台启动" class="headerlink" title="后台启动"></a>后台启动</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">nohup filebeat -e -d &quot;publish&quot; &gt;/dev/null 2&gt;log &amp;</span><br><span class="line">nohup elasticsearch &gt;/dev/null 2&gt;log &amp;</span><br><span class="line">nohup kibana &gt;/dev/null 2&gt;log &amp;</span><br></pre></td></tr></table></figure><p>全部启动完成后，打开浏览器访问 <a href="http://localhost:5601" target="_blank" rel="noopener">http://localhost:5601</a></p><p><img src="/posts/elastic-stack-install/3.jpg" width="500"></p><h2 id="添加Apache日志"><a href="#添加Apache日志" class="headerlink" title="*添加Apache日志"></a>*添加Apache日志</h2><p><a href="http://localhost:5601/app/kibana#/home/tutorial_directory/logging" target="_blank" rel="noopener">将数据添加到 Kibana</a></p><p>将<code>setup.kibana</code>中的<code>host</code>注释去掉 </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /usr/local/etc/filebeat/filebeat.yml</span><br></pre></td></tr></table></figure><p><img src="/posts/elastic-stack-install/4.jpg" width="500"></p><p>开启Apache</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">filebeat modules enable apache</span><br><span class="line">filebeat setup</span><br></pre></td></tr></table></figure><p>修改apache的Log路径</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /usr/local/etc/filebeat/modules.d/apache.yml</span><br></pre></td></tr></table></figure><p><img src="/posts/elastic-stack-install/5.jpg" width="500"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;Elastic官网：&lt;a href=&quot;https://www.elastic.co/cn/&quot; target=&quot;_blank&quot; rel=&quot;no
+      
+    
+    </summary>
+    
+      <category term="开发工具" scheme="https://xiandan.in/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Elastic Stack" scheme="https://xiandan.in/tags/Elastic-Stack/"/>
+    
+      <category term="Elasticsearch" scheme="https://xiandan.in/tags/Elasticsearch/"/>
+    
+      <category term="Kibana" scheme="https://xiandan.in/tags/Kibana/"/>
+    
+      <category term="Filebeat" scheme="https://xiandan.in/tags/Filebeat/"/>
+    
+      <category term="日志分析" scheme="https://xiandan.in/tags/%E6%97%A5%E5%BF%97%E5%88%86%E6%9E%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android Studio多设备同步配置</title>
+    <link href="https://xiandan.in/posts/android-studio-sync.html"/>
+    <id>https://xiandan.in/posts/android-studio-sync.html</id>
+    <published>2019-04-17T11:50:56.000Z</published>
+    <updated>2019-06-03T13:29:49.400Z</updated>
+    
+    <content type="html"><![CDATA[<p>JetBrains全家桶都有一个<a href="https://www.jetbrains.com/help/idea/settings-tools-settings-repository.html" target="_blank" rel="noopener">Settings Repository</a>功能，可以把IDE的配置同步到Git仓库中，这里用Github做例子，来实现多设备同步IDE配置。</p><h2 id="创建保存配置的仓库"><a href="#创建保存配置的仓库" class="headerlink" title="创建保存配置的仓库"></a>创建保存配置的仓库</h2><p>在<a href="https://github.com/new" target="_blank" rel="noopener">Github</a>创建一个仓库后，复制git地址</p><p><img src="/posts/android-studio-sync/2.png" width="400"></p><h2 id="配置Git-URL"><a href="#配置Git-URL" class="headerlink" title="配置Git URL"></a>配置Git URL</h2><p><code>File</code> - <code>Settings Repository</code>填入刚刚的git地址</p><p><img src="/posts/android-studio-sync/1.png" width="200"></p><p><img src="/posts/android-studio-sync/3.png" width="400"></p><blockquote><p>Overwrite Remote：上传配置，用本地配置覆盖仓库。<br>Overwrite Local：下载配置，用仓库配置覆盖本地。<br>Merge：将仓库配置和本地配置进行合并。</p></blockquote><h2 id="上传配置到仓库"><a href="#上传配置到仓库" class="headerlink" title="上传配置到仓库"></a>上传配置到仓库</h2><p>点击<code>Overwrite Remote</code>会开始上传配置，出现<code>Settings successfully synced</code>说明同步成功</p><p><img src="/posts/android-studio-sync/5.jpg" width="300"></p><p>刷新页面可以看到配置文件已经全部上传到仓库了</p><p><img src="/posts/android-studio-sync/4.jpg" width="600"></p><h2 id="恢复配置到本地"><a href="#恢复配置到本地" class="headerlink" title="恢复配置到本地"></a>恢复配置到本地</h2><p>如果需要在另一台设备恢复配置，在<code>Settings Repository</code>配置仓库的git地址后执行<code>Overwrite Local</code>即可</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;JetBrains全家桶都有一个&lt;a href=&quot;https://www.jetbrains.com/help/idea/settings-tools-settings-repository.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Sett
+      
+    
+    </summary>
+    
+      <category term="开发工具" scheme="https://xiandan.in/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Android Studio" scheme="https://xiandan.in/tags/Android-Studio/"/>
+    
+      <category term="同步" scheme="https://xiandan.in/tags/%E5%90%8C%E6%AD%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Github短信验证码没有中国区的解决办法</title>
+    <link href="https://xiandan.in/posts/github-verification-code.html"/>
+    <id>https://xiandan.in/posts/github-verification-code.html</id>
+    <published>2019-04-08T06:07:40.000Z</published>
+    <updated>2019-11-03T16:44:57.091Z</updated>
+    
+    <content type="html"><![CDATA[<p>在<a href="https://help.github.com/articles/countries-where-sms-authentication-is-supported/" target="_blank" rel="noopener">Github短信支持列表</a>的国家上是没有中国的</p><p>后来看到<a href="https://gist.github.com/xcatliu/4e1d5e69fc5f8a49e4e6" target="_blank" rel="noopener">xcatliu</a>提供的思路，我试了一下是可以收到验证码的，所以我在这里放一个更简单的方法</p><img src="/posts/github-verification-code/1.jpg"><h3 id="手动添加-86"><a href="#手动添加-86" class="headerlink" title="手动添加+86"></a>手动添加+86</h3><p>打开开发者工具，复制代码到控制台执行</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var option = new Option(&quot;China +86&quot;,&quot;+86&quot;);</span><br><span class="line">option.selected = true;</span><br><span class="line">document.getElementById(&apos;countrycode&apos;).options.add(option, 0);</span><br></pre></td></tr></table></figure><img src="/posts/github-verification-code/2.gif">]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;在&lt;a href=&quot;https://help.github.com/articles/countries-where-sms-authentication-is-supported/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Github短信支持列表&lt;
+      
+    
+    </summary>
+    
+      <category term="Github" scheme="https://xiandan.in/categories/Github/"/>
+    
+    
+      <category term="Github" scheme="https://xiandan.in/tags/Github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac在Docker里的CentOS安装宝塔面板</title>
+    <link href="https://xiandan.in/posts/mac-docker-centos-bt.html"/>
+    <id>https://xiandan.in/posts/mac-docker-centos-bt.html</id>
+    <published>2019-04-01T14:33:16.000Z</published>
+    <updated>2019-11-03T16:42:59.518Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="相关官网"><a href="#相关官网" class="headerlink" title="相关官网"></a>相关官网</h2><ul><li>Docker：<a href="https://www.docker.com" target="_blank" rel="noopener">https://www.docker.com</a></li><li>Kitematic：<a href="https://kitematic.com" target="_blank" rel="noopener">https://kitematic.com</a></li><li>宝塔面板：<a href="https://www.bt.cn/?invite_code=MV9va2p0bmQ=" target="_blank" rel="noopener">https://www.bt.cn</a></li></ul><h2 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew cask install docker</span><br></pre></td></tr></table></figure><h2 id="在Docker里安装CentOS"><a href="#在Docker里安装CentOS" class="headerlink" title="在Docker里安装CentOS"></a>在Docker里安装CentOS</h2><p>Docker Hub：<a href="https://hub.docker.com/_/centos" target="_blank" rel="noopener">https://hub.docker.com/_/centos</a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull centos</span><br></pre></td></tr></table></figure><p>也可以在Kitematic里搜索CentOS安装</p><p><img src="/posts/mac-docker-centos-bt/1.png" width="500"></p><h2 id="映射宝塔端口"><a href="#映射宝塔端口" class="headerlink" title="映射宝塔端口"></a>映射宝塔端口</h2><p>创建一个CentOS容器并映射<code>8888</code>端口，复制返回的<code>容器ID</code></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d -it -p 8888:8888 centos</span><br></pre></td></tr></table></figure><p><img src="/posts/mac-docker-centos-bt/2.jpg" width="500"></p><h2 id="进入CentOS安装宝塔"><a href="#进入CentOS安装宝塔" class="headerlink" title="进入CentOS安装宝塔"></a>进入CentOS安装宝塔</h2><p>进入容器终端</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker exec -it [容器ID] bash</span><br></pre></td></tr></table></figure><p><strong>在CentOS中</strong>执行宝塔安装命令</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; sh install.sh</span><br></pre></td></tr></table></figure><p>安装完成后，提示给的外网IP是用不了的，所以这里需要用<code>本地ip</code>访问面板</p><p><img src="/posts/mac-docker-centos-bt/3.jpg" width="600"></p><h2 id="相关命令"><a href="#相关命令" class="headerlink" title="相关命令"></a>相关命令</h2><p><a href="https://www.runoob.com/docker/docker-command-manual.html" target="_blank" rel="noopener">Docker 命令大全</a></p><p>列出正在运行的容器信息</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker ps</span><br></pre></td></tr></table></figure><p>列出所有容器信息</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker ps -a</span><br></pre></td></tr></table></figure><p>停止所有容器</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker stop $(docker ps -a -q)</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;相关官网&quot;&gt;&lt;a href=&quot;#相关官网&quot; class=&quot;headerlink&quot; title=&quot;相关官网&quot;&gt;&lt;/a&gt;相关官网&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Docker：&lt;a href=&quot;https://www.docker.com&quot; target=&quot;_blank&quot; 
+      
+    
+    </summary>
+    
+      <category term="开发工具" scheme="https://xiandan.in/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Docker" scheme="https://xiandan.in/tags/Docker/"/>
+    
+      <category term="CentOS" scheme="https://xiandan.in/tags/CentOS/"/>
+    
+      <category term="Kitematic" scheme="https://xiandan.in/tags/Kitematic/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>用Apple Configurator 2提取ipa文件</title>
+    <link href="https://xiandan.in/posts/get-ipa.html"/>
+    <id>https://xiandan.in/posts/get-ipa.html</id>
+    <published>2019-02-26T14:48:17.000Z</published>
+    <updated>2019-02-26T15:10:42.692Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="安装Apple-Configurator-2"><a href="#安装Apple-Configurator-2" class="headerlink" title="安装Apple Configurator 2"></a>安装Apple Configurator 2</h2><p>从Mac AppStore安装Apple Configurator 2</p><p><img src="/posts/get-ipa/1.png" width="500"></p><h2 id="下载ipa"><a href="#下载ipa" class="headerlink" title="下载ipa"></a>下载ipa</h2><p>打开后连接设备，选中设备点击添加，如果没登录就登录Apple ID，登录后会把你在AppStore下过的应用都列出来，选一个添加</p><p><img src="/posts/get-ipa/2.png" width="600"></p><p>因为手机上已经装了这个应用，所以最后一步会提示是否替换，<strong>不要做任何操作，保持这个状态</strong></p><p><img src="/posts/get-ipa/3.png" width="400"></p><h2 id="提取ipa"><a href="#提取ipa" class="headerlink" title="提取ipa"></a>提取ipa</h2><p>用Finder<code>前往文件夹</code>进到下面的路径</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~/Library/Group Containers/K36BKF7T3D.group.com.apple.configurator/Library/Caches/Assets/TemporaryItems/MobileApps/</span><br></pre></td></tr></table></figure><p>一直进到最里面的文件夹，会发现刚刚下载的ipa文件</p><p><img src="/posts/get-ipa/4.png" width="700"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;安装Apple-Configurator-2&quot;&gt;&lt;a href=&quot;#安装Apple-Configurator-2&quot; class=&quot;headerlink&quot; title=&quot;安装Apple Configurator 2&quot;&gt;&lt;/a&gt;安装Apple Configurator
+      
+    
+    </summary>
+    
+      <category term="工具" scheme="https://xiandan.in/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Apple Configurator" scheme="https://xiandan.in/tags/Apple-Configurator/"/>
+    
+      <category term="ipa" scheme="https://xiandan.in/tags/ipa/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>让wepy在WebStorm支持代码高亮</title>
+    <link href="https://xiandan.in/posts/wepy-webstorm.html"/>
+    <id>https://xiandan.in/posts/wepy-webstorm.html</id>
+    <published>2019-02-25T09:45:26.000Z</published>
+    <updated>2019-09-01T14:35:50.909Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="支持wpy"><a href="#支持wpy" class="headerlink" title="支持wpy"></a>支持wpy</h2><p><code>Preferences</code> - <code>Editor</code> - <code>File Types</code><br>选择<code>Vue.js Template</code>，添加<code>*.wpy</code></p><p><img src="/posts/wepy-webstorm/5.png" width="600"></p><h2 id="支持特殊标签"><a href="#支持特殊标签" class="headerlink" title="支持特殊标签"></a>支持特殊标签</h2><p><code>Preferences</code> - <code>Editor</code> - <code>Language Injections</code><br>添加<code>XML Tag Injection</code></p><p><img src="/posts/wepy-webstorm/1.jpg" width="600"></p><h4 id="高亮config标签"><a href="#高亮config标签" class="headerlink" title="高亮config标签"></a>高亮config标签</h4><p><code>Namespace</code>用<code>http://www.w3.org/1999/html</code></p><p><img src="/posts/wepy-webstorm/2.jpg" width="400"></p><h4 id="高亮wxs标签"><a href="#高亮wxs标签" class="headerlink" title="高亮wxs标签"></a>高亮wxs标签</h4><p><img src="/posts/wepy-webstorm/3.jpg" width="400"></p><h2 id="支持rpx"><a href="#支持rpx" class="headerlink" title="支持rpx"></a>支持rpx</h2><p><code>Preferences</code> - <code>Tools</code> - <code>File Watchers</code>添加<code>custom</code>  </p><p><img src="/posts/wepy-webstorm/6.png" width="600"></p><p>Program: <code>sed</code><br>Arguments: <code>—i “ s/”\ rpx”/rpx/g $FilePath$</code><br>Output paths to refresh: <code>$FilePath$</code>  </p><blockquote><p>*如果是Windows需要先安装<a href="https://github.com/mbuilov/sed-windows" target="_blank" rel="noopener">sed-windows</a>，<code>Program</code>则换成<code>sed</code>的安装路径  </p></blockquote><p><img src="/posts/wepy-webstorm/7.png" width="600"></p><h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p><img src="/posts/wepy-webstorm/4.jpg" width="600"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;支持wpy&quot;&gt;&lt;a href=&quot;#支持wpy&quot; class=&quot;headerlink&quot; title=&quot;支持wpy&quot;&gt;&lt;/a&gt;支持wpy&lt;/h2&gt;&lt;p&gt;&lt;code&gt;Preferences&lt;/code&gt; - &lt;code&gt;Editor&lt;/code&gt; - &lt;code&gt;Fil
+      
+    
+    </summary>
+    
+      <category term="开发工具" scheme="https://xiandan.in/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="WebStorm" scheme="https://xiandan.in/tags/WebStorm/"/>
+    
+      <category term="wepy" scheme="https://xiandan.in/tags/wepy/"/>
+    
+      <category term="小程序" scheme="https://xiandan.in/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Centos/Mac安装Node.js环境教程</title>
+    <link href="https://xiandan.in/posts/install-nodejs.html"/>
+    <id>https://xiandan.in/posts/install-nodejs.html</id>
+    <published>2019-02-25T04:41:22.000Z</published>
+    <updated>2019-08-31T12:35:54.718Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="CentOS"><a href="#CentOS" class="headerlink" title="CentOS"></a>CentOS</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl --silent --location https://rpm.nodesource.com/setup_12.x | bash -</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install -y nodejs</span><br></pre></td></tr></table></figure><h2 id="Mac"><a href="#Mac" class="headerlink" title="Mac"></a>Mac</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install nodejs</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;CentOS&quot;&gt;&lt;a href=&quot;#CentOS&quot; class=&quot;headerlink&quot; title=&quot;CentOS&quot;&gt;&lt;/a&gt;CentOS&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gut
+      
+    
+    </summary>
+    
+      <category term="开发工具" scheme="https://xiandan.in/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Node.js" scheme="https://xiandan.in/tags/Node-js/"/>
+    
+      <category term="Centos" scheme="https://xiandan.in/tags/Centos/"/>
+    
+      <category term="Mac" scheme="https://xiandan.in/tags/Mac/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git完全复制一个Repository到新Repository</title>
+    <link href="https://xiandan.in/posts/git-mirror.html"/>
+    <id>https://xiandan.in/posts/git-mirror.html</id>
+    <published>2019-02-22T03:02:32.000Z</published>
+    <updated>2019-02-24T07:48:49.335Z</updated>
+    
+    <content type="html"><![CDATA[<p>先clone一份<strong>被复制的Repository</strong>到本地</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone [old repository url]</span><br></pre></td></tr></table></figure><p>进入到旧仓库目录，通过<code>mirror</code>参数推送到新的Repository</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd [old repository]</span><br><span class="line">git push --mirror [new repository url]</span><br></pre></td></tr></table></figure><p>这样就会把旧仓库原样的复制到新仓库上，包括所有的分支、提交记录等等，当然这个也适用于Github</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;先clone一份&lt;strong&gt;被复制的Repository&lt;/strong&gt;到本地&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/s
+      
+    
+    </summary>
+    
+      <category term="工具" scheme="https://xiandan.in/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Git" scheme="https://xiandan.in/tags/Git/"/>
+    
+      <category term="Github" scheme="https://xiandan.in/tags/Github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>通过油猴让直播平台自动网页全屏</title>
+    <link href="https://xiandan.in/posts/tampermonkey-live-fullscreen.html"/>
+    <id>https://xiandan.in/posts/tampermonkey-live-fullscreen.html</id>
+    <published>2019-02-12T08:24:29.000Z</published>
+    <updated>2019-02-24T07:48:49.447Z</updated>
+    
+    <content type="html"><![CDATA[<p>看直播的时候，我个人习惯是关了弹幕开网页全屏，但是一般直播网站都是默认打开弹幕，每次都都要手动点一下很麻烦，所以写了个油猴脚本，进入直播间后会自动网页全屏和关弹幕。</p><p>已经测试Windows、Mac，Chrome、360浏览器均有效</p><h2 id="安装油猴"><a href="#安装油猴" class="headerlink" title="安装油猴"></a>安装油猴</h2><p>Chrome 直接插件商店安装：<br><a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=zh-CN" target="_blank" rel="noopener">Tampermonkey</a></p><p>360浏览器 在扩展中心搜索<code>Tampermonkey</code></p><h2 id="安装油猴脚本"><a href="#安装油猴脚本" class="headerlink" title="安装油猴脚本"></a>安装油猴脚本</h2><p>到<a href="https://greasyfork.org" target="_blank" rel="noopener">greasyfork</a>安装<a href="https://greasyfork.org/zh-CN/scripts/377547-%E7%9B%B4%E6%92%AD%E5%B9%B3%E5%8F%B0%E8%87%AA%E5%8A%A8%E7%BD%91%E9%A1%B5%E5%85%A8%E5%B1%8F" target="_blank" rel="noopener">直播平台自动网页全屏</a></p><p>目前支持斗鱼、熊猫、虎牙</p><p>熊猫TV需要切换成<code>H5播放器</code>才有效果</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;看直播的时候，我个人习惯是关了弹幕开网页全屏，但是一般直播网站都是默认打开弹幕，每次都都要手动点一下很麻烦，所以写了个油猴脚本，进入直播间后会自动网页全屏和关弹幕。&lt;/p&gt;
+&lt;p&gt;已经测试Windows、Mac，Chrome、360浏览器均有效&lt;/p&gt;
+&lt;h2 id=&quot;安装
+      
+    
+    </summary>
+    
+      <category term="工具" scheme="https://xiandan.in/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Tampermonkey" scheme="https://xiandan.in/tags/Tampermonkey/"/>
+    
+      <category term="直播" scheme="https://xiandan.in/tags/%E7%9B%B4%E6%92%AD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用Homebrew安装初始化Google Cloud SDK</title>
+    <link href="https://xiandan.in/posts/google-cloud-sdk-homebrew.html"/>
+    <id>https://xiandan.in/posts/google-cloud-sdk-homebrew.html</id>
+    <published>2019-01-28T11:07:24.000Z</published>
+    <updated>2019-09-01T14:35:40.293Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://cloud.google.com/sdk/docs/quickstarts" target="_blank" rel="noopener">官方文档</a></p><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>1、 先在<a href="https://console.cloud.google.com/cloud-resource-manager" target="_blank" rel="noopener">控制台</a>创建一个应用</p><p>2、 <code>python -V</code>查看python版本，至少2.7以上</p><p><img src="/posts/google-cloud-sdk-homebrew/1.jpg" width="400"></p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>使用brew安装Google Cloud SDK</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew cask install google-cloud-sdk</span><br></pre></td></tr></table></figure><p>如果安装过程中报如下错：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Error: Permission denied @ dir_s_mkdir - /usr/local/Caskroom/google-cloud-sdk/latest</span><br></pre></td></tr></table></figure><p>可以尝试手动赋予权限，再重新调用安装命令</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chown -R $(whoami) /usr/local/Cellar</span><br></pre></td></tr></table></figure><p>执行<code>gcloud</code>有打印出帮助，说明已经安装完成</p><p><img src="/posts/google-cloud-sdk-homebrew/2.jpg" width="500"></p><h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><p>执行初始化命令</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcloud init</span><br></pre></td></tr></table></figure><p>执行后会询问登录，直接回车</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">To continue, you must log in. Would you like to log in (Y/n)?</span><br></pre></td></tr></table></figure><p><img src="/posts/google-cloud-sdk-homebrew/3.jpg" width="500"></p><p>登录完成后，会要求选择一个项目，输入一个项目编号等待完成</p><p><img src="/posts/google-cloud-sdk-homebrew/4.jpg" width="500"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://cloud.google.com/sdk/docs/quickstarts&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官方文档&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;
+      
+    
+    </summary>
+    
+      <category term="开发工具" scheme="https://xiandan.in/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Google Cloud SDK" scheme="https://xiandan.in/tags/Google-Cloud-SDK/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Splash适配解决启动图拉伸的问题</title>
+    <link href="https://xiandan.in/posts/android-splash-compat.html"/>
+    <id>https://xiandan.in/posts/android-splash-compat.html</id>
+    <published>2019-01-28T05:55:06.000Z</published>
+    <updated>2019-02-24T07:48:49.375Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://github.com/dengyuhan/SplashCompatSample" target="_blank" rel="noopener">https://github.com/dengyuhan/SplashCompatSample</a></p><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>做过Splash的都知道，一般的做法是在<code>style</code>中设置<code>windowBackground</code>为启动图，来避免冷启动时的黑屏，但是如果放一张尺寸的图在某些屏幕上就会出现拉伸，并且<code>windowBackground</code>还不能<code>centerCrop</code>，就算通过资源限定符也不能完美的适配。</p><h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p>左边是小米5S（1080x1920），右边是小米MIX2（全面屏1080x2160）</p><p><img src="/posts/android-splash-compat/1.gif" style="height:500px"></p><h2 id="适配过程"><a href="#适配过程" class="headerlink" title="适配过程"></a>适配过程</h2><p>这个例子比较简单，在显示<code>windowBackground</code>时白色背景+slogan，跳到SplashActivity后上面广告+下面slogan</p><h4 id="1-windowBackground"><a href="#1-windowBackground" class="headerlink" title="1. windowBackground"></a>1. windowBackground</h4><p>首先需要解决<code>windowBackground</code>的拉伸问题，用一整张图肯定不行，所以这里只需要一张slogan图片，然后通过<a href="https://developer.android.google.cn/guide/topics/resources/drawable-resource?hl=zh-cn#LayerList" target="_blank" rel="noopener">layer-list</a>来实现。</p><p><img src="/posts/android-splash-compat/6.png" style="height:100px"></p><p>在<code>drawable</code>下建一个<code>splash.xml</code></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span><br><span class="line">&lt;layer-list xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&gt;</span><br><span class="line">&lt;!--白色矩形 作为背景色--&gt;</span><br><span class="line">    &lt;item&gt;</span><br><span class="line">        &lt;shape android:shape=&quot;rectangle&quot;&gt;</span><br><span class="line">            &lt;solid android:color=&quot;@android:color/white&quot; /&gt;</span><br><span class="line">        &lt;/shape&gt;</span><br><span class="line">    &lt;/item&gt;</span><br><span class="line">    </span><br><span class="line">&lt;!--单独的slogan图片 并且设置下间距--&gt;</span><br><span class="line">    &lt;item android:bottom=&quot;@dimen/margin_vertical_splash&quot;&gt;</span><br><span class="line">&lt;!--位置设置成靠下--&gt;</span><br><span class="line">        &lt;bitmap</span><br><span class="line">            android:gravity=&quot;bottom&quot;</span><br><span class="line">            android:src=&quot;@drawable/splash_logo&quot; /&gt;</span><br><span class="line">    &lt;/item&gt;</span><br><span class="line">&lt;/layer-list&gt;</span><br></pre></td></tr></table></figure><h4 id="2-Activity-Theme"><a href="#2-Activity-Theme" class="headerlink" title="2. Activity Theme"></a>2. Activity Theme</h4><p>新建一个Splash主题，<code>windowBackground</code>设置成刚刚建的<code>splash.xml</code></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;style name=&quot;AppTheme.Splash&quot; parent=&quot;Theme.AppCompat.Light.NoActionBar&quot;&gt;</span><br><span class="line">    &lt;item name=&quot;android:windowFullscreen&quot;&gt;true&lt;/item&gt;</span><br><span class="line">    &lt;item name=&quot;android:windowBackground&quot;&gt;@drawable/splash&lt;/item&gt;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure><p>将SplashActivity设成Splash主题</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;activity</span><br><span class="line">    android:name=&quot;.SplashActivity&quot;</span><br><span class="line">    android:theme=&quot;@style/AppTheme.Splash&quot;&gt;</span><br><span class="line">    &lt;intent-filter&gt;</span><br><span class="line">        &lt;action android:name=&quot;android.intent.action.MAIN&quot; /&gt;</span><br><span class="line">        &lt;category android:name=&quot;android.intent.category.LAUNCHER&quot; /&gt;</span><br><span class="line">    &lt;/intent-filter&gt;</span><br><span class="line">&lt;/activity&gt;</span><br></pre></td></tr></table></figure><p>看看效果，在有<code>NavigationBar</code>的手机上，slogan图片被遮住了。  </p><p><img src="/posts/android-splash-compat/2.png" style="height:500px"></p><p>在5.0后，增加了一个<a href="https://developer.android.google.cn/reference/android/R.attr.html#windowDrawsSystemBarBackgrounds" target="_blank" rel="noopener">windowDrawsSystemBarBackgrounds</a>属性，用来标志此窗口是否负责绘制系统栏背景，我们把它设成<code>false</code>，这样当它绘制<code>windowBackground</code>的时候，就会在<code>NavigationBar</code>之上。</p><p>因为这个属性是5.0以后才有的，所以需要新建<code>values-v21</code>文件夹，以便5.0以上的机器使用v21的Splash主题。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style name=&quot;AppTheme.Splash&quot; parent=&quot;Theme.AppCompat.Light.NoActionBar&quot;&gt;</span><br><span class="line">    &lt;item name=&quot;android:windowFullscreen&quot;&gt;true&lt;/item&gt;</span><br><span class="line">    &lt;item name=&quot;android:windowBackground&quot;&gt;@drawable/splash&lt;/item&gt;</span><br><span class="line">    &lt;item name=&quot;android:windowDrawsSystemBarBackgrounds&quot;&gt;false&lt;/item&gt;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure><p><img src="/posts/android-splash-compat/3.png" style="height:500px"></p><h4 id="3-SplashActivity"><a href="#3-SplashActivity" class="headerlink" title="3. SplashActivity"></a>3. SplashActivity</h4><p>因为主题中设置的<code>windowBackground</code>，可以不需要在Activity中再放slogan图片了，只需要放一个广告图片，设置<code>marginBottom</code>给slogan留出位置就可以</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span><br><span class="line">&lt;RelativeLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;</span><br><span class="line">    android:layout_width=&quot;match_parent&quot;</span><br><span class="line">    android:layout_height=&quot;match_parent&quot;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;ImageView</span><br><span class="line">        android:layout_width=&quot;match_parent&quot;</span><br><span class="line">        android:layout_height=&quot;match_parent&quot;</span><br><span class="line">        android:layout_marginBottom=&quot;120dp&quot;</span><br><span class="line">        android:scaleType=&quot;centerCrop&quot;</span><br><span class="line">        android:src=&quot;@drawable/ad&quot; /&gt;</span><br><span class="line">&lt;/RelativeLayout&gt;</span><br></pre></td></tr></table></figure><p><img src="/posts/android-splash-compat/4.png" style="height:500px"></p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>适配启动图的核心代码就是<code>layer-list</code>，将元素叠成启动图的样式，了解了这个知识点，更复杂一点的启动图也是可以适配的。</p><p>如果对<code>layer-list</code>不了解可以看<a href="https://developer.android.google.cn/guide/topics/resources/drawable-resource?hl=zh-cn#LayerList" target="_blank" rel="noopener">官方文档</a>（中文的）。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://github.com/dengyuhan/SplashCompatSample&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/dengyuhan/SplashCompatSample&lt;
+      
+    
+    </summary>
+    
+      <category term="Android 适配" scheme="https://xiandan.in/categories/Android-%E9%80%82%E9%85%8D/"/>
+    
+    
+      <category term="Splash" scheme="https://xiandan.in/tags/Splash/"/>
+    
+      <category term="适配" scheme="https://xiandan.in/tags/%E9%80%82%E9%85%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何真实有效的用代码滚动AppBarLayout</title>
+    <link href="https://xiandan.in/posts/appbar-srcoll.html"/>
+    <id>https://xiandan.in/posts/appbar-srcoll.html</id>
+    <published>2018-12-25T02:56:44.000Z</published>
+    <updated>2019-02-04T06:35:25.056Z</updated>
+    
+    <content type="html"><![CDATA[<p>Github地址：<a href="https://github.com/dengyuhan/AndroidViewHelper" target="_blank" rel="noopener">https://github.com/dengyuhan/AndroidViewHelper</a></p><h3 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h3><p><img src="/posts/appbar-srcoll/1.gif" width="300"></p><h3 id="Gradle-引入"><a href="#Gradle-引入" class="headerlink" title="Gradle 引入"></a>Gradle 引入</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">implementation &apos;com.dyhdyh:view-helper:1.0.3&apos;</span><br></pre></td></tr></table></figure><h3 id="调用DesignViewHelper"><a href="#调用DesignViewHelper" class="headerlink" title="调用DesignViewHelper"></a>调用DesignViewHelper</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//滚动AppBarLayout</span><br><span class="line">DesignViewHelper.setAppBarLayoutOffset(appBar, offsetY);</span><br><span class="line"></span><br><span class="line">//以动画的形式滚动AppBarLayout</span><br><span class="line">DesignViewHelper.setAppBarLayoutOffsetWithAnimate(appBar, offsetY, duration);</span><br><span class="line"></span><br><span class="line">//滚动AppBarLayout到顶部</span><br><span class="line">DesignViewHelper.scrollAppBarTop(appBar, isAnimate);</span><br></pre></td></tr></table></figure><h3 id="篇外话"><a href="#篇外话" class="headerlink" title="篇外话"></a>篇外话</h3><p>得吐槽一下国内的技术文章环境是真的烂，这个问题查来查去不是你抄他就是他抄你，没有一篇能够有效的让AppBarLayout滚动，那没办法只能自己解决了。</p><p>翻了老半天的源码，最终在<code>HeaderBehavior</code>中找到了<code>setHeaderTopBottomOffset</code>，过程很艰辛，结果很简单，但是这个方法不是<code>public</code>的调不到，所以要用反射去调，已经封装在<code>DesignViewHelper</code>，可以直接使用。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">int setHeaderTopBottomOffset(CoordinatorLayout parent, V header, int newOffset) &#123;</span><br><span class="line">    return this.setHeaderTopBottomOffset(parent, header, newOffset, -2147483648, 2147483647);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int setHeaderTopBottomOffset(CoordinatorLayout parent, V header, int newOffset, int minOffset, int maxOffset) &#123;</span><br><span class="line">    int curOffset = this.getTopAndBottomOffset();</span><br><span class="line">    int consumed = 0;</span><br><span class="line">    if (minOffset != 0 &amp;&amp; curOffset &gt;= minOffset &amp;&amp; curOffset &lt;= maxOffset) &#123;</span><br><span class="line">        newOffset = MathUtils.clamp(newOffset, minOffset, maxOffset);</span><br><span class="line">        if (curOffset != newOffset) &#123;</span><br><span class="line">            this.setTopAndBottomOffset(newOffset);</span><br><span class="line">            consumed = curOffset - newOffset;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return consumed;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Github地址：&lt;a href=&quot;https://github.com/dengyuhan/AndroidViewHelper&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/dengyuhan/AndroidView
+      
+    
+    </summary>
+    
+      <category term="Material Design" scheme="https://xiandan.in/categories/Material-Design/"/>
+    
+    
+      <category term="AppBarLayout" scheme="https://xiandan.in/tags/AppBarLayout/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Homebrew安装指定版本软件</title>
+    <link href="https://xiandan.in/posts/homebrew-historic-version.html"/>
+    <id>https://xiandan.in/posts/homebrew-historic-version.html</id>
+    <published>2018-12-06T08:53:12.000Z</published>
+    <updated>2019-02-04T06:35:25.021Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>相关链接<br><a href="https://stackoverflow.com/questions/39187812/homebrew-how-to-install-older-versions" target="_blank" rel="noopener">https://stackoverflow.com/questions/39187812/homebrew-how-to-install-older-versions</a><br><a href="https://stackoverflow.com/questions/3987683/homebrew-install-specific-version-of-formula" target="_blank" rel="noopener">https://stackoverflow.com/questions/3987683/homebrew-install-specific-version-of-formula</a></p></blockquote><h4 id="以安装groovy为例，最新的是2-5-4，但我需要安装2-4-9"><a href="#以安装groovy为例，最新的是2-5-4，但我需要安装2-4-9" class="headerlink" title="以安装groovy为例，最新的是2.5.4，但我需要安装2.4.9"></a>以安装groovy为例，最新的是2.5.4，但我需要安装2.4.9</h4><h4 id="1-在homebrew-core直接搜索groovy-2-4-9，找到该版本的提交记录"><a href="#1-在homebrew-core直接搜索groovy-2-4-9，找到该版本的提交记录" class="headerlink" title="1.在homebrew-core直接搜索groovy 2.4.9，找到该版本的提交记录"></a>1.在<a href="https://github.com/Homebrew/homebrew-core" target="_blank" rel="noopener">homebrew-core</a>直接搜索<code>groovy 2.4.9</code>，找到该版本的提交记录</h4><p><img src="/posts/homebrew-historic-version/1.jpg" width="400"><br><br></p><h4 id="2-查看groovy-rb，这样就得到了历史版本的文件地址"><a href="#2-查看groovy-rb，这样就得到了历史版本的文件地址" class="headerlink" title="2.查看groovy.rb，这样就得到了历史版本的文件地址"></a>2.查看<code>groovy.rb</code>，这样就得到了历史版本的文件地址</h4><p><img src="/posts/homebrew-historic-version/2.jpg" width="600"></p><p><img src="/posts/homebrew-historic-version/3.jpg" width="600"></p><p><img src="/posts/homebrew-historic-version/4.jpg" width="600"><br><br></p><h4 id="3-直接用brew安装"><a href="#3-直接用brew安装" class="headerlink" title="3.直接用brew安装"></a>3.直接用brew安装</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/e091f8904349d6686637c9e0342b525cd58807db/Formula/groovy.rb</span><br></pre></td></tr></table></figure><p><img src="/posts/homebrew-historic-version/5.jpg" width="500"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;相关链接&lt;br&gt;&lt;a href=&quot;https://stackoverflow.com/questions/39187812/homebrew-how-to-install-older-versions&quot; target=&quot;_blank&quot; rel=&quot;n
+      
+    
+    </summary>
+    
+      <category term="开发工具" scheme="https://xiandan.in/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Homebrew" scheme="https://xiandan.in/tags/Homebrew/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>scrcpy - Android无需ROOT的跨平台投屏工具</title>
+    <link href="https://xiandan.in/posts/scrcpy.html"/>
+    <id>https://xiandan.in/posts/scrcpy.html</id>
+    <published>2018-10-24T11:27:21.000Z</published>
+    <updated>2019-06-03T13:29:49.410Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>之前有提到Vysor，但是这个插件免费版的码率比较低，如果要高清的就要付费。<br>现在推荐一个Genymotion推出的投屏工具，跨平台，自定义码率，最重要的是开源，简直良心。</p><p>Github：<a href="https://github.com/Genymobile/scrcpy" target="_blank" rel="noopener">https://github.com/Genymobile/scrcpy</a><br>下载地址：<a href="https://github.com/Genymobile/scrcpy/releases" target="_blank" rel="noopener">https://github.com/Genymobile/scrcpy/releases</a></p><h3 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h3><p>gif录制较模糊，实际使用很清晰</p><img src="/posts/scrcpy/1.gif"><h3 id="设备要求"><a href="#设备要求" class="headerlink" title="设备要求"></a>设备要求</h3><p><code>Android 5.0以上</code></p><h3 id="检查ADB"><a href="#检查ADB" class="headerlink" title="检查ADB"></a>检查ADB</h3><p>在命令行里打<code>adb</code>，如果有反应就说明已经有ADB，如果提示<code>command not found</code>就说明没有安装ADB</p><p>如果没有<a href="https://developer.android.google.cn/studio/releases/platform-tools" target="_blank" rel="noopener">ADB</a>需要先安装ADB<br><a href="https://dl.google.com/android/repository/platform-tools-latest-windows.zip" target="_blank" rel="noopener">Windows</a><br><a href="https://dl.google.com/android/repository/platform-tools-latest-darwin.zip" target="_blank" rel="noopener">Mac OS</a><br><a href="https://dl.google.com/android/repository/platform-tools-latest-linux.zip" target="_blank" rel="noopener">Linux</a></p><h3 id="安装scrcpy"><a href="#安装scrcpy" class="headerlink" title="安装scrcpy"></a>安装scrcpy</h3><h5 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h5><ul><li><a href="https://github.com/Genymobile/scrcpy/releases/download/v1.8/scrcpy-win32-v1.8.zip" target="_blank" rel="noopener">scrcpy-win32-v1.8.zip</a></li><li><a href="https://github.com/Genymobile/scrcpy/releases/download/v1.8/scrcpy-win64-v1.8.zip" target="_blank" rel="noopener">scrcpy-win64-v1.8.zip</a></li></ul><h5 id="Mac-OS"><a href="#Mac-OS" class="headerlink" title="Mac OS"></a>Mac OS</h5><p>可以通过<a href="https://blog.csdn.net/aa464971/article/details/70336331" target="_blank" rel="noopener">Homebrew</a>直接安装<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install scrcpy</span><br></pre></td></tr></table></figure></p><h5 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h5><p>Arch Linux</p><ul><li><a href="https://aur.archlinux.org/packages/scrcpy/" target="_blank" rel="noopener">scrcpy</a></li><li><a href="https://aur.archlinux.org/packages/scrcpy-prebuiltserver/" target="_blank" rel="noopener">scrcpy-prebuiltserver</a></li></ul><p>其它版本的Linux需要手动构建<br><a href="https://github.com/Genymobile/scrcpy/blob/master/BUILD.md" target="_blank" rel="noopener">手动构建文档</a></p><h3 id="打开USB调试"><a href="#打开USB调试" class="headerlink" title="打开USB调试"></a>打开USB调试</h3><p>在 <code>开发人员选项</code> 打开 <code>USB调试</code>，USB连接手机</p><img src="/posts/scrcpy/2.jpg"><h3 id="命令行执行"><a href="#命令行执行" class="headerlink" title="命令行执行"></a>命令行执行</h3><p>启动scrcpy</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrcpy</span><br></pre></td></tr></table></figure><p>如果有多个设备，需要指定序列号，序列号可以从<code>adb devices</code>获得</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrcpy -s a1171b8</span><br></pre></td></tr></table></figure><p>设置端口</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrcpy -p 27184</span><br></pre></td></tr></table></figure><p>查看帮助</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrcpy --help</span><br></pre></td></tr></table></figure><p>设置码率（默认8M）</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrcpy -b 8M</span><br></pre></td></tr></table></figure><p>限制投屏尺寸</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrcpy -m 1024</span><br></pre></td></tr></table></figure><p>裁剪投屏屏幕<code>(长:宽:偏移x:偏移y)</code></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrcpy -c 800:800:0:0</span><br></pre></td></tr></table></figure><p>投屏并录屏</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrcpy -r file.mp4</span><br></pre></td></tr></table></figure><p>不投屏只录屏</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrcpy -Nr file.mp4</span><br></pre></td></tr></table></figure><p>手指触摸的时候显示轨迹球</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrcpy -t</span><br></pre></td></tr></table></figure><p>显示版本信息</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrcpy -v</span><br></pre></td></tr></table></figure><h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><table><thead><tr><th>Action</th><th style="text-align:left">Shortcut</th></tr></thead><tbody><tr><td>切换全屏模式</td><td style="text-align:left"><code>Ctrl</code>+<code>f</code></td></tr><tr><td>将窗口调整为1：1（完美像素）</td><td style="text-align:left"><code>Ctrl</code>+<code>g</code></td></tr><tr><td>调整窗口大小以删除黑色边框</td><td style="text-align:left"><code>Ctrl</code>+<code>x</code> 或 <code>双击黑色背景</code></td></tr><tr><td>设备<code>HOME</code>键</td><td style="text-align:left"><code>Ctrl</code>+<code>h</code> 或 <code>鼠标中键</code></td></tr><tr><td>设备<code>BACK</code>键</td><td style="text-align:left"><code>Ctrl</code>+<code>b</code> 或 <code>鼠标右键</code></td></tr><tr><td>设备<code>任务管理</code>键</td><td style="text-align:left"><code>Ctrl</code>+<code>s</code></td></tr><tr><td>设备 <code>菜单</code> 键</td><td style="text-align:left"><code>Ctrl</code>+<code>m</code></td></tr><tr><td>设备<code>音量+</code>键</td><td style="text-align:left"><code>Ctrl</code>+<code>↑</code></td></tr><tr><td>设备<code>音量-</code>键</td><td style="text-align:left"><code>Ctrl</code>+<code>↓</code></td></tr><tr><td>设备<code>电源</code>键</td><td style="text-align:left"><code>Ctrl</code>+<code>p</code></td></tr><tr><td>点亮手机屏幕</td><td style="text-align:left">鼠标右键</td></tr><tr><td>复制内容到设备</td><td style="text-align:left"><code>Ctrl</code>+<code>v</code></td></tr><tr><td>启用/禁用FPS计数器（stdout）</td><td style="text-align:left"><code>Ctrl</code>+<code>i</code></td></tr><tr><td>安装APK</td><td style="text-align:left">将apk文件拖入投屏</td></tr><tr><td>传输文件到设备</td><td style="text-align:left">将文件拖入投屏（非apk）</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;之前有提到Vysor，但是这个插件免费版的码率比较低，如果要高清的就要付费。&lt;br&gt;现在推荐一个Genymotion推出的投屏工具，跨平台，
+      
+    
+    </summary>
+    
+      <category term="开发工具" scheme="https://xiandan.in/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Android" scheme="https://xiandan.in/tags/Android/"/>
+    
+      <category term="投屏" scheme="https://xiandan.in/tags/%E6%8A%95%E5%B1%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android反编译工具</title>
+    <link href="https://xiandan.in/posts/android-decompile-tool.html"/>
+    <id>https://xiandan.in/posts/android-decompile-tool.html</id>
+    <published>2018-10-24T09:03:43.000Z</published>
+    <updated>2019-02-24T07:48:49.323Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Apktool"><a href="#Apktool" class="headerlink" title="Apktool"></a>Apktool</h3><p><a href="https://github.com/iBotPeaches/Apktool" target="_blank" rel="noopener">https://github.com/iBotPeaches/Apktool</a></p><h6 id="可以反编译apk，也可以重新打包apk"><a href="#可以反编译apk，也可以重新打包apk" class="headerlink" title="可以反编译apk，也可以重新打包apk"></a>可以反编译apk，也可以重新打包apk</h6><p>下载地址：<a href="https://github.com/iBotPeaches/Apktool/releases" target="_blank" rel="noopener">https://github.com/iBotPeaches/Apktool/releases</a><br>brew安装：<code>brew install apktool</code><br>文档：<a href="https://ibotpeaches.github.io/Apktool/documentation" target="_blank" rel="noopener">https://ibotpeaches.github.io/Apktool/documentation</a><br><code>apktool d test.apk</code></p><h3 id="dex2jar"><a href="#dex2jar" class="headerlink" title="dex2jar"></a>dex2jar</h3><p><a href="https://github.com/pxb1988/dex2jar" target="_blank" rel="noopener">https://github.com/pxb1988/dex2jar</a></p><h6 id="可以将-dex文件反编译成-class文件并打包成jar"><a href="#可以将-dex文件反编译成-class文件并打包成jar" class="headerlink" title="可以将.dex文件反编译成.class文件并打包成jar"></a>可以将<code>.dex文件</code>反编译成<code>.class文件</code>并打包成jar</h6><p>下载地址：<a href="https://github.com/pxb1988/dex2jar/releases" target="_blank" rel="noopener">https://github.com/pxb1988/dex2jar/releases</a><br>brew安装：<code>brew install dex2jar</code><br>文档：<a href="https://github.com/pxb1988/dex2jar/wiki" target="_blank" rel="noopener">https://github.com/pxb1988/dex2jar/wiki</a><br><code>d2j-dex2jar classes.dex</code></p><h3 id="jd-gui"><a href="#jd-gui" class="headerlink" title="jd-gui"></a>jd-gui</h3><p><a href="https://github.com/java-decompiler/jd-gui" target="_blank" rel="noopener">https://github.com/java-decompiler/jd-gui</a></p><h6 id="可以查看-class文件，用来查看dex2jar反编译出的jar"><a href="#可以查看-class文件，用来查看dex2jar反编译出的jar" class="headerlink" title="可以查看.class文件，用来查看dex2jar反编译出的jar"></a>可以查看.class文件，用来查看dex2jar反编译出的jar</h6><p>下载地址：<a href="https://github.com/java-decompiler/jd-gui/releases" target="_blank" rel="noopener">https://github.com/java-decompiler/jd-gui/releases</a><br>brew安装：<code>brew install jd-gui</code></p><h3 id="jadx-gui"><a href="#jadx-gui" class="headerlink" title="jadx-gui"></a>jadx-gui</h3><p><a href="https://github.com/skylot/jadx" target="_blank" rel="noopener">https://github.com/skylot/jadx</a></p><h6 id="可以直接浏览反编译后的apk"><a href="#可以直接浏览反编译后的apk" class="headerlink" title="可以直接浏览反编译后的apk"></a>可以直接浏览反编译后的apk</h6><p>下载地址：<a href="https://github.com/skylot/jadx/releases" target="_blank" rel="noopener">https://github.com/skylot/jadx/releases</a></p><img src="/posts/android-decompile-tool/1.jpg"><h3 id="uber-apk-signer"><a href="#uber-apk-signer" class="headerlink" title="uber-apk-signer"></a>uber-apk-signer</h3><p><a href="https://github.com/patrickfav/uber-apk-signer" target="_blank" rel="noopener">https://github.com/patrickfav/uber-apk-signer</a></p><h6 id="可以对apk签名，支持V1、V2"><a href="#可以对apk签名，支持V1、V2" class="headerlink" title="可以对apk签名，支持V1、V2"></a>可以对apk签名，支持V1、V2</h6><p>下载地址：<a href="https://github.com/patrickfav/uber-apk-signer/releases" target="_blank" rel="noopener">https://github.com/patrickfav/uber-apk-signer/releases</a><br>文档：<a href="https://github.com/patrickfav/uber-apk-signer/blob/master/README.md" target="_blank" rel="noopener">https://github.com/patrickfav/uber-apk-signer/blob/master/README.md</a><br><code>java -jar uber-apk-signer.jar -a [apk路径] --ks [keystore路径] --ksAlias [alias名称]</code></p><h3 id="java2smali"><a href="#java2smali" class="headerlink" title="java2smali"></a>java2smali</h3><p><a href="https://github.com/ollide/intellij-java2smali" target="_blank" rel="noopener">https://github.com/ollide/intellij-java2smali</a></p><h6 id="IntelliJ-IDEA和Android-Studio的插件，可以将Java和Kotlin文件编译为smali"><a href="#IntelliJ-IDEA和Android-Studio的插件，可以将Java和Kotlin文件编译为smali" class="headerlink" title="IntelliJ IDEA和Android Studio的插件，可以将Java和Kotlin文件编译为smali"></a>IntelliJ IDEA和Android Studio的插件，可以将Java和Kotlin文件编译为smali</h6><p>下载地址：<a href="https://github.com/ollide/intellij-java2smali/releases" target="_blank" rel="noopener">https://github.com/ollide/intellij-java2smali/releases</a></p><img src="/posts/android-decompile-tool/2.gif">]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;Apktool&quot;&gt;&lt;a href=&quot;#Apktool&quot; class=&quot;headerlink&quot; title=&quot;Apktool&quot;&gt;&lt;/a&gt;Apktool&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/iBotPeaches/Apktool&quot; t
+      
+    
+    </summary>
+    
+      <category term="开发工具" scheme="https://xiandan.in/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Android" scheme="https://xiandan.in/tags/Android/"/>
+    
+      <category term="反编译" scheme="https://xiandan.in/tags/%E5%8F%8D%E7%BC%96%E8%AF%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AssetFile - 像File一样操作Asset资源</title>
+    <link href="https://xiandan.in/posts/android-asset-file.html"/>
+    <id>https://xiandan.in/posts/android-asset-file.html</id>
+    <published>2018-09-17T06:59:17.000Z</published>
+    <updated>2019-07-19T13:42:54.594Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://github.com/dengyuhan/AssetFile" target="_blank" rel="noopener">https://github.com/dengyuhan/AssetFile</a></p><h4 id="如果想跳过直接看文档，可以拉到最底"><a href="#如果想跳过直接看文档，可以拉到最底" class="headerlink" title="如果想跳过直接看文档，可以拉到最底"></a>如果想跳过直接看<a href="#文档">文档</a>，可以拉到最底</h4><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>平时开发中经常会用到Assets，可以让我们把一些资源内置在应用里，但是它使用起来比较麻烦，比如要使用Assets里面的一个文件，需要这样：  </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">    final InputStream stream = getAssets().open(&quot;test.jpg&quot;);</span><br><span class="line">&#125; catch (IOException e) &#123;</span><br><span class="line">    e.printStackTrace();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>拿到的是InputStream，当需要复制到手机外部存储的时候，还得用<code>FileOutputStream</code>输出到文件，如果需要获取文件夹下面的文件：  </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">    final String[] list = getAssets().list(&quot;test&quot;);</span><br><span class="line">&#125; catch (IOException e) &#123;</span><br><span class="line">    e.printStackTrace();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这样获取到的只是文件夹下的文件名，如果要复制整个文件夹到手机目录至少要3步：  </p><ol><li>遍历；</li><li>拼接完整路径；</li><li>调用open输出到文件。  </li></ol><p>强迫症表示很难受，没有Java File的API那么方便，那只能撸一个轮子让它像File一样了。<br>下面的图是用<code>AssetFile</code>做的Assets文件管理器  </p><img src="/posts/android-asset-file/1.gif"><h3 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h3><p>先举一个我遇到的场景，在线滤镜和内置滤镜，在线滤镜需要先把配置文件下载到手机目录，内置滤镜就是放在Assets里的，为了方便管理，把两种滤镜都放到统一的目录，AssetFile先解决了一个复制文件夹的问题。</p><p>如果要获取下图的滤镜1.json，实际上是这样<code>assetManager.open(filter/group/滤镜1/滤镜1.json)</code>，文件名和文件数量实际上是不受开发控制的，也不可能每次变化都再去修改一遍文件名或者代码，所以AssetFile将多层次文件夹的操作简单化了</p><img src="/posts/android-asset-file/2.jpg"><p>AssetFile并没有省略那些流程，只是经过封装，让它使用起来变得更简单了</p><h3 id="基本实现"><a href="#基本实现" class="headerlink" title="基本实现"></a>基本实现</h3><p>首先先来实现一下基本功能，Java的叫File，那我们就叫AssetFile，先暂时存一些基本信息，路径和文件名  </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public class AssetFile &#123;</span><br><span class="line">    private String assetPath;</span><br><span class="line">    private String name;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>我们在用File的时候是传文件路径，AssetFile也一样，假设Assets根目录有一个<code>test.jpg</code>文件  </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">public class AssetFile &#123;</span><br><span class="line">    private String assetPath;</span><br><span class="line">    private String name;</span><br><span class="line">    </span><br><span class="line">    public AssetFile(String assetPath) &#123;</span><br><span class="line">        this.assetPath = assetPath == null ? &quot;&quot; : assetPath;</span><br><span class="line">        //有/的话会去掉/</span><br><span class="line">        int index = assetPath.lastIndexOf(File.separatorChar);</span><br><span class="line">        this.name = assetPath.substring(index + 1, assetPath.length());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">new AssetFile(&quot;test.jpg&quot;)</span><br></pre></td></tr></table></figure><h3 id="文件API"><a href="#文件API" class="headerlink" title="文件API"></a>文件API</h3><p>基本信息也赋好值了，可以说已经有一个雏形了，现在添加一些常用的API，比如<code>exists()</code><br>当调用<code>AssetManager.list(assetPath)</code>的时候，如果找不到这个文件，会抛出<code>IOException</code>，所以只要catch到就说明这个文件不存在。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">public boolean exists(AssetManager assetManager) &#123;</span><br><span class="line">    try &#123;</span><br><span class="line">        assetManager.list(assetPath);</span><br><span class="line">        return true;</span><br><span class="line">    &#125; catch (Exception e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">AssetFile file = new AssetFile(&quot;test.jpg&quot;)</span><br><span class="line">boolean exists = file.exists(context.getAssets())</span><br></pre></td></tr></table></figure><h3 id="加入文件夹的支持"><a href="#加入文件夹的支持" class="headerlink" title="加入文件夹的支持"></a>加入文件夹的支持</h3><p>文件的API比较简单，要考虑文件夹就会有一些逻辑了  </p><h5 id="isDirectory"><a href="#isDirectory" class="headerlink" title="isDirectory()"></a>isDirectory()</h5><p>现在我们加入一个<code>isDirectory ()</code>，用来判断这个路径是否是文件夹，可以获取该路径下的子文件数组，来判断这个路径是不是一个文件夹，如果数组长度大于0说明是一个文件夹。  </p><p>当然这个方法也有不准确的情况，比如你放了一个空文件夹在Assets里，但是为什么要放一个空文件夹在Assets里呢，所以这个方法还是可行的。  </p><p>这里还有一个处理，<code>assetManager.list()</code>是把子文件的路径都添加到数组里了，所以不能每次都这样取一次子文件数组，可以用一个变量来缓存它，当它有值的时候，就直接用变量的值了。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">public class AssetFile &#123;</span><br><span class="line">    private Boolean directory;</span><br><span class="line"></span><br><span class="line">    public boolean isDirectory(AssetManager assetManager) &#123;</span><br><span class="line">        if (directory == null) &#123;</span><br><span class="line">            try &#123;</span><br><span class="line">                directory = assetManager.list(assetPath).length &gt; 0;</span><br><span class="line">            &#125; catch (Exception e) &#123;</span><br><span class="line">                e.printStackTrace();</span><br><span class="line">                directory = false;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return directory;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h5 id="getParent"><a href="#getParent" class="headerlink" title="getParent()"></a>getParent()</h5><p>还有一个常用的方法就是获取父文件夹，这个比较简单，通过分割路径字符串就可以实现。  </p><p>比如A文件夹里放了B文件夹，B文件夹放了C文件，那路径其实就是<code>A/B/C.jpg</code>，通过<code>substring</code>从<code>0</code>开始截取到最后的<code>/</code>，截取后的<code>A/B</code>就是父文件夹的路径了。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">public String getParent() &#123;</span><br><span class="line">    int index = assetPath.lastIndexOf(File.separatorChar);</span><br><span class="line">    return assetPath.substring(0, index);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public AssetFile getParentFile() &#123;</span><br><span class="line">    return new AssetFile(getParent());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h5 id="listFiles"><a href="#listFiles" class="headerlink" title="listFiles()"></a>listFiles()</h5><p>既然有文件夹，就肯定会需要用到<code>listFiles()</code>，<code>assetManager.list()</code>提供的只是子文件的文件名称，所以需要把它拼接成完整的路径传给<code>AssetFile</code>。  </p><p>还可以添加一个<code>AssetFileFilter</code>，<code>return false</code>的就不添加到集合;了。当根目录的时候调用<code>assetManager.list</code>会把系统自带的一些文件列出来，所以这里还实现了一个<code>SystemAssetFileFilter</code>，用来过滤这些文件。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">public List&lt;AssetFile&gt; listFiles(AssetManager assetManager) &#123;</span><br><span class="line">    return listFiles(assetManager, new SystemAssetFileFilter());</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public List&lt;AssetFile&gt; listFiles(AssetManager assetManager, AssetFileFilter filter) &#123;</span><br><span class="line">    try &#123;</span><br><span class="line">        String newAssetPath = TextUtils.isEmpty(assetPath) ? &quot;&quot; : assetPath;</span><br><span class="line">        //先获取子文件数组</span><br><span class="line">        String[] list = assetManager.list(newAssetPath);</span><br><span class="line">        List&lt;AssetFile&gt; fileList = new ArrayList&lt;&gt;();</span><br><span class="line">        for (int i = 0; i &lt; list.length; i++) &#123;</span><br><span class="line">            AssetFile file = new AssetFile(newAssetPath, list[i]);</span><br><span class="line">            if (filter != null) &#123;</span><br><span class="line">        //如果有过滤器，返回true的才添加到AssetFile集合</span><br><span class="line">                if (filter.accept(file)) &#123;</span><br><span class="line">                    fileList.add(file);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">            //否则直接添加</span><br><span class="line">                fileList.add(file);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return fileList;</span><br><span class="line">    &#125; catch (IOException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">    return new ArrayList&lt;&gt;();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="AssetsManager"><a href="#AssetsManager" class="headerlink" title="AssetsManager"></a>AssetsManager</h3><p>为了更方便的使用，可以再扩展一个<code>AssetsManager</code>，提供一些辅助性的方法，比如从Assets复制资源到手机目录，复制文件很简单，拿到流之后直接输出到文件，复制文件夹需要递归来达到复制多层文件夹的效果。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * 复制Asset文件夹和里面的文件到手机目录</span><br><span class="line"> *</span><br><span class="line"> * @param assetSource</span><br><span class="line"> * @param outputDir</span><br><span class="line"> */</span><br><span class="line">public static boolean copyAsset(AssetManager assetManager, AssetFile assetSource, File outputDir) &#123;</span><br><span class="line">    try &#123;</span><br><span class="line">        File outputFile = new File(outputDir, assetSource.getName());</span><br><span class="line"></span><br><span class="line">        String assetPath = assetSource.getAssetPath();</span><br><span class="line">        final String[] list = assetManager.list(assetPath);</span><br><span class="line">        if (list.length &lt;= 0) &#123;</span><br><span class="line">            //文件</span><br><span class="line">            copyAssetFile(assetManager, assetPath, outputFile);</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            //目录</span><br><span class="line">            if (!outputFile.exists()) &#123;</span><br><span class="line">                outputFile.mkdirs();</span><br><span class="line">            &#125;</span><br><span class="line">            for (String child : list) &#123;</span><br><span class="line">                copyAsset(assetManager, new AssetFile(assetPath, child), outputFile);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return true;</span><br><span class="line">    &#125; catch (IOException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">    return false;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * 复制Asset文件到手机目录</span><br><span class="line"> *</span><br><span class="line"> * @param assetPath</span><br><span class="line"> * @param outputFile</span><br><span class="line"> * @return</span><br><span class="line"> */</span><br><span class="line">public static boolean copyAssetFile(AssetManager assetManager, String assetPath, File outputFile) &#123;</span><br><span class="line">    try &#123;</span><br><span class="line">        InputStream is = assetManager.open(assetPath);</span><br><span class="line">        int byteRead = 0;</span><br><span class="line">        FileOutputStream fs = new FileOutputStream(outputFile);</span><br><span class="line">        byte[] buffer = new byte[1024];</span><br><span class="line">        while ((byteRead = is.read(buffer)) != -1) &#123;</span><br><span class="line">            fs.write(buffer, 0, byteRead);</span><br><span class="line">        &#125;</span><br><span class="line">        fs.close();</span><br><span class="line">        is.close();</span><br><span class="line">        return true;</span><br><span class="line">    &#125; catch (Exception e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">    return false;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="文档"><a href="#文档" class="headerlink" title="文档"></a>文档</h3><h5 id="Gradle引入"><a href="#Gradle引入" class="headerlink" title="Gradle引入"></a>Gradle引入</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">implementation &apos;com.dyhdyh.io:asset-file:1.0.2&apos;</span><br></pre></td></tr></table></figure><h5 id="AssetFile"><a href="#AssetFile" class="headerlink" title="AssetFile"></a>AssetFile</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">//根目录</span><br><span class="line">AssetFile root = new AssetFile();</span><br><span class="line">//根目录下的test.jpg</span><br><span class="line">AssetFile testFile = new AssetFile(&quot;test.jpg&quot;);</span><br><span class="line">//test文件夹下的test.jpg  - test/test.jpg</span><br><span class="line">AssetFile testFile = new AssetFile(&quot;test/test.jpg&quot;);</span><br><span class="line">AssetFile testFile = new AssetFile(&quot;test&quot;, &quot;test.jpg&quot;);</span><br><span class="line"></span><br><span class="line">//获取完整路径</span><br><span class="line">assetFile.getAssetPath();</span><br><span class="line"></span><br><span class="line">//获取文件名称或目录名称</span><br><span class="line">assetFile.getName();</span><br><span class="line"></span><br><span class="line">//获取父级目录</span><br><span class="line">assetFile.getParentFile();</span><br><span class="line"></span><br><span class="line">//转换Uri</span><br><span class="line">assetFile.getUri();</span><br><span class="line"></span><br><span class="line">//是否文件夹</span><br><span class="line">assetFile.isDirectory(getAssets());</span><br><span class="line"></span><br><span class="line">//是否根目录</span><br><span class="line">assetFile.isRootDir();</span><br><span class="line"></span><br><span class="line">//文件是否存在</span><br><span class="line">assetFile.exists(getAssets());</span><br><span class="line"></span><br><span class="line">//获取目录下的文件数组</span><br><span class="line">assetFile.listFiles(getAssets());</span><br></pre></td></tr></table></figure><h5 id="AssetsManager-1"><a href="#AssetsManager-1" class="headerlink" title="AssetsManager"></a>AssetsManager</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//复制Assets里的test.jpg到手机根目录</span><br><span class="line">AssetFile assetFile = new AssetFile(&quot;test.jpg&quot;);</span><br><span class="line">File outputFile = new File(Environment.getExternalStorageDirectory(), assetFile.getName());</span><br><span class="line">AssetsManager.copyAssetFile(getAssets(), assetFile.getAssetPath(), outputFile);</span><br><span class="line"></span><br><span class="line">//复制Assets里的test文件夹到手机根目录</span><br><span class="line">AssetsManager.copyAssetFile(getAssets(), &quot;test&quot;, Environment.getExternalStorageDirectory());</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://github.com/dengyuhan/AssetFile&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/dengyuhan/AssetFile&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;如果
+      
+    
+    </summary>
+    
+      <category term="Android 开源" scheme="https://xiandan.in/categories/Android-%E5%BC%80%E6%BA%90/"/>
+    
+    
+      <category term="Android" scheme="https://xiandan.in/tags/Android/"/>
+    
+      <category term="Assets" scheme="https://xiandan.in/tags/Assets/"/>
+    
+  </entry>
+  
+</feed>

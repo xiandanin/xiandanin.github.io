@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000">
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top">
+  
+  
+  <title>标签: Filebeat | 闲蛋</title>
+  <meta property="og:type" content="website">
+<meta property="og:title" content="闲蛋的笔记">
+<meta property="og:url" content="https://xiandan.in/tags/Filebeat/index.html">
+<meta property="og:site_name" content="闲蛋的笔记">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="闲蛋的笔记">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://xiandan.in/tags/Filebeat/index.html">
+  
+    <link rel="alternate" href="/atom.xml" title="闲蛋的笔记" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  
+  
+  
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.css">
+  
+</head>
+
+
+<body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/dengyuhan" target="_blank">
+          <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">闲蛋</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">denghahae@qq.com</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Shanghai, China</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索">
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech="">
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope="" itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav ">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">首页</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">归档</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">分类</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">标签</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">项目</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-contribution">
+          <a href="/contribution">
+            
+            <i class="icon icon-book-fill"></i>
+            
+            <span class="menu-title">贡献</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">关于</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/dengyuhan" target="_blank" title="Github-Fill" data-toggle="tooltip" data-placement="top"><i class="icon icon-github-fill"></i></a></li>
+        
+    	
+        <li><a href="https://blog.csdn.net/aa464971" target="_blank" title="Csdn" data-toggle="tooltip" data-placement="top"><i class="iconfont icon-csdn"></i></a></li>
+        
+        <li><a href="https://stackoverflow.com/users/6699113" target="_blank" title="Stack-Overflow" data-toggle="tooltip" data-placement="top"><i class="iconfont icon-stack-overflow"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope="" itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>一个爱写代码但不想工作的怪人🤔</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Android-NDK/">Android NDK</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-兼容/">Android 兼容</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-开源/">Android 开源</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-文档/">Android 文档</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-源码分析/">Android 源码分析</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-适配/">Android 适配</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Github/">Github</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Material-Design/">Material Design</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/MySQL/">MySQL</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Spring/">Spring</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/工具/">工具</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/开发工具/">开发工具</a><span class="category-list-count">21</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/科学上网/">科学上网</a><span class="category-list-count">6</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/科学上网/">科学上网</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/bwg-vultr-justmysocks.html" class="title">搬瓦工/Vultr/JustMySocks对比</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-06-03T07:17:17.000Z" itemprop="datePublished">2019-06-03</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/科学上网/">科学上网</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/bwg-gfw.html" class="title">搬瓦工被墙后</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-06-03T07:10:42.000Z" itemprop="datePublished">2019-06-03</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/开发工具/">开发工具</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/studio-3t-mongodB.html" class="title">Studio 3T外网远程访问MongoDB</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-05-29T13:51:02.000Z" itemprop="datePublished">2019-05-29</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/工具/">工具</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/github-pages-cdn.html" class="title">利用CDN加速你的Github Pages</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-04-22T03:22:53.000Z" itemprop="datePublished">2019-04-22</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/开发工具/">开发工具</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/elastic-stack-install.html" class="title">Mac安装Elastic Stack和基础配置</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-04-18T08:22:42.000Z" itemprop="datePublished">2019-04-18</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">2019年06月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">2019年05月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">2019年04月</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">2019年02月</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">2019年01月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">2018年12月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">2018年10月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">2018年09月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">2018年06月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">2018年05月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">2018年03月</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">2018年02月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">2017年10月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">2017年09月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">2017年05月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">2017年04月</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">2017年01月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">2016年12月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">2016年10月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016年05月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">2016年04月</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+  </div>
+</aside>
+
+  
+  <main class="main" role="main">
+  <article class="content article article-tags post-type-list" itemscope="">
+    <header class="article-header">
+      <h1 itemprop="name" class="hidden-xs">标签: Filebeat</h1>
+      <p class="text-muted hidden-xs">共 1 篇文章</p>
+      <nav role="navigation" id="nav-main" class="okayNav">
+        <ul>
+          <li><a href="/tags">All</a></li>
+          
+          <li><a href="/tags/Android/">Android</a></li>
+          
+          <li><a href="/tags/AndroidManifest/">AndroidManifest</a></li>
+          
+          <li><a href="/tags/JNI/">JNI</a></li>
+          
+          <li><a href="/tags/Android-Studio/">Android Studio</a></li>
+          
+          <li><a href="/tags/同步/">同步</a></li>
+          
+          <li><a href="/tags/NavigationBar/">NavigationBar</a></li>
+          
+          <li><a href="/tags/反编译/">反编译</a></li>
+          
+          <li><a href="/tags/Appium/">Appium</a></li>
+          
+          <li><a href="/tags/keyStore/">keyStore</a></li>
+          
+          <li><a href="/tags/签名/">签名</a></li>
+          
+          <li><a href="/tags/Assets/">Assets</a></li>
+          
+          <li><a href="/tags/Node-js/">Node.js</a></li>
+          
+          <li><a href="/tags/Centos/">Centos</a></li>
+          
+          <li><a href="/tags/Mac/">Mac</a></li>
+          
+          <li><a href="/tags/CountDownTimer/">CountDownTimer</a></li>
+          
+          <li><a href="/tags/倒计时/">倒计时</a></li>
+          
+          <li><a href="/tags/Git/">Git</a></li>
+          
+          <li><a href="/tags/Github/">Github</a></li>
+          
+          <li><a href="/tags/Java/">Java</a></li>
+          
+          <li><a href="/tags/Spring/">Spring</a></li>
+          
+          <li><a href="/tags/Homebrew/">Homebrew</a></li>
+          
+          <li><a href="/tags/Loading/">Loading</a></li>
+          
+          <li><a href="/tags/Docker/">Docker</a></li>
+          
+          <li><a href="/tags/CentOS/">CentOS</a></li>
+          
+          <li><a href="/tags/Kitematic/">Kitematic</a></li>
+          
+          <li><a href="/tags/Elastic-Stack/">Elastic Stack</a></li>
+          
+          <li><a href="/tags/Elasticsearch/">Elasticsearch</a></li>
+          
+          <li><a href="/tags/Kibana/">Kibana</a></li>
+          
+          <li><a href="/tags/Filebeat/">Filebeat</a></li>
+          
+          <li><a href="/tags/日志分析/">日志分析</a></li>
+          
+          <li><a href="/tags/MediaMetadataRetriever/">MediaMetadataRetriever</a></li>
+          
+          <li><a href="/tags/MySQL/">MySQL</a></li>
+          
+          <li><a href="/tags/Shadowsocks/">Shadowsocks</a></li>
+          
+          <li><a href="/tags/Splash/">Splash</a></li>
+          
+          <li><a href="/tags/适配/">适配</a></li>
+          
+          <li><a href="/tags/Spring-Boot/">Spring Boot</a></li>
+          
+          <li><a href="/tags/MongoDB/">MongoDB</a></li>
+          
+          <li><a href="/tags/Studio-3T/">Studio 3T</a></li>
+          
+          <li><a href="/tags/Chrome/">Chrome</a></li>
+          
+          <li><a href="/tags/WebView/">WebView</a></li>
+          
+          <li><a href="/tags/投屏/">投屏</a></li>
+          
+          <li><a href="/tags/JCenter/">JCenter</a></li>
+          
+          <li><a href="/tags/Gradle/">Gradle</a></li>
+          
+          <li><a href="/tags/Google-Cloud-SDK/">Google Cloud SDK</a></li>
+          
+          <li><a href="/tags/OpenSSL/">OpenSSL</a></li>
+          
+          <li><a href="/tags/RSA/">RSA</a></li>
+          
+          <li><a href="/tags/Proxifier/">Proxifier</a></li>
+          
+          <li><a href="/tags/代理/">代理</a></li>
+          
+          <li><a href="/tags/全局代理/">全局代理</a></li>
+          
+          <li><a href="/tags/GPUImage/">GPUImage</a></li>
+          
+          <li><a href="/tags/插件/">插件</a></li>
+          
+          <li><a href="/tags/YouTube/">YouTube</a></li>
+          
+          <li><a href="/tags/Github-Pages/">Github Pages</a></li>
+          
+          <li><a href="/tags/CDN/">CDN</a></li>
+          
+          <li><a href="/tags/AppBarLayout/">AppBarLayout</a></li>
+          
+          <li><a href="/tags/搬瓦工/">搬瓦工</a></li>
+          
+          <li><a href="/tags/Vultr/">Vultr</a></li>
+          
+          <li><a href="/tags/JustMySocks/">JustMySocks</a></li>
+          
+          <li><a href="/tags/JetBrains/">JetBrains</a></li>
+          
+          <li><a href="/tags/IntelliJ-IDEA/">IntelliJ IDEA</a></li>
+          
+          <li><a href="/tags/PyCharm/">PyCharm</a></li>
+          
+          <li><a href="/tags/WebStorm/">WebStorm</a></li>
+          
+          <li><a href="/tags/PhpStorm/">PhpStorm</a></li>
+          
+          <li><a href="/tags/CLion/">CLion</a></li>
+          
+          <li><a href="/tags/Apple-Configurator/">Apple Configurator</a></li>
+          
+          <li><a href="/tags/ipa/">ipa</a></li>
+          
+          <li><a href="/tags/Button/">Button</a></li>
+          
+          <li><a href="/tags/Genymotion/">Genymotion</a></li>
+          
+          <li><a href="/tags/wepy/">wepy</a></li>
+          
+          <li><a href="/tags/小程序/">小程序</a></li>
+          
+          <li><a href="/tags/Tampermonkey/">Tampermonkey</a></li>
+          
+          <li><a href="/tags/直播/">直播</a></li>
+          
+        </ul>
+      </nav>
+    </header>
+    <!-- /header -->
+    <div class="article-body">
+      <div class="row">
+        
+<div class="col-md-6">
+    
+<article class="panel panel-default hover-shadow hover-grow" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <div class="panel-body">
+     <div class="article-meta">
+       <time datetime="2019-04-18T08:22:42.000Z" itemprop="datePublished">2019-04-18</time>
+     </div>
+     <h3 class="article-title" itemprop="name">
+       <a class="article-link" href="/posts/elastic-stack-install.html">Mac安装Elastic Stack和基础配置</a>
+     </h3>
+   </div>
+   
+   <div class="panel-footer">
+     
+      <a href="/tags/Elastic-Stack/" class="label label-default mb">Elastic Stack</a>
+     
+      <a href="/tags/Elasticsearch/" class="label label-default mb">Elasticsearch</a>
+     
+      <a href="/tags/Kibana/" class="label label-default mb">Kibana</a>
+     
+     
+      <span class="label label-default mb">···</span>
+     
+   </div>
+   
+</article>
+
+
+</div>
+
+      </div>
+    </div>
+  </article>
+   
+</main>
+
+  <footer class="footer" itemscope="" itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/dengyuhan" target="_blank" title="Github-Fill" data-toggle="tooltip" data-placement="top"><i class="icon icon-github-fill"></i></a></li>
+        
+    	
+        <li><a href="https://blog.csdn.net/aa464971" target="_blank" title="Csdn" data-toggle="tooltip" data-placement="top"><i class="iconfont icon-csdn"></i></a></li>
+        
+        <li><a href="https://stackoverflow.com/users/6699113" target="_blank" title="Stack-Overflow" data-toggle="tooltip" data-placement="top"><i class="iconfont icon-stack-overflow"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+		<!--
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+		-->
+        <div class="publishby">
+        	Theme base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script src="/js/plugin.min.js"></script>
+<script src="/js/application.js"></script>
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--CNZZ-->
+<div style="display:none">
+	<script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1258847419&web_id=1258847419"></script>
+</div>
+</body>
+</html>

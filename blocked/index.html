@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui">
+    <meta http-equiv="cache-control" content="no-transform">
+    <meta http-equiv="cache-control" content="no-siteapp">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <title>此页面被屏蔽</title>
+</head>
+<style>
+    #__layout, #__nuxt, body, html {
+        height: 100%;
+    }
+
+    .__nuxt-error-page {
+        padding: 1rem;
+        background: #f7f8fb;
+        color: #47494e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: sans-serif;
+        font-weight: 300 !important;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .__nuxt-error-page .title {
+        font-size: 1.7rem;
+        margin-top: 15px;
+        color: #47494e;
+        margin-bottom: 8px;
+    }
+
+    .__nuxt-error-page a {
+        color: #409eff !important;
+        text-decoration: none;
+    }
+
+    .description {
+        font-size: 1.1rem;
+    }
+</style>
+<body>
+<div class="__nuxt-error-page">
+    <div class="error">
+        <div class="title">此页面暂不对此地区开放</div>
+        <div class="description">
+            <span>你可以：</span>
+            <ul>
+                <li><a href="https://justmysocks.net/members/aff.php?gid=1&language=chinese&aff=1627"
+                       target="_blank">使用海外IP </a> <a href="#" id="url" style="margin-left: 5px">刷新页面</a></li>
+                <li><a href="/categories">看看别的</a></li>
+                <li><a href="/">返回首页</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+
+    function getParameter (name) {
+        const reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)")
+        const r = window.location.search.substr(1).match(reg)
+        if (r != null) {
+            return unescape(r[2])
+        }
+        return null
+    }
+
+    window.onload = function () {
+        const url = getParameter('url')
+        if (url) {
+            document.getElementById("url").setAttribute('href', url)
+        }
+    }
+</script>
+</body>
+</body>
+</html>

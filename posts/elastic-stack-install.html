@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000">
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top">
+  
+  
+  <title>Mac安装Elastic Stack和基础配置 | 闲蛋</title>
+  <meta name="description" content="简介Elastic官网：https://www.elastic.coElastic Github：https://github.com/elastic  Elasticsearch： 全文搜索引擎 Kibana：可视化分析平台 Filebeat：日志采集  安装Elasticsearch1brew install elastic/tap/elasticsearch-full Kibana1brew">
+<meta name="keywords" content="Elastic Stack,Elasticsearch,Kibana,Filebeat,日志分析">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mac安装Elastic Stack和基础配置">
+<meta property="og:url" content="https://xiandan.in/posts/elastic-stack-install.html">
+<meta property="og:site_name" content="闲蛋的笔记">
+<meta property="og:description" content="简介Elastic官网：https://www.elastic.coElastic Github：https://github.com/elastic  Elasticsearch： 全文搜索引擎 Kibana：可视化分析平台 Filebeat：日志采集  安装Elasticsearch1brew install elastic/tap/elasticsearch-full Kibana1brew">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://xiandan.in/posts/elastic-stack-install/1.jpg">
+<meta property="og:image" content="https://xiandan.in/posts/elastic-stack-install/2.jpg">
+<meta property="og:image" content="https://xiandan.in/posts/elastic-stack-install/3.jpg">
+<meta property="og:image" content="https://xiandan.in/posts/elastic-stack-install/4.jpg">
+<meta property="og:image" content="https://xiandan.in/posts/elastic-stack-install/5.jpg">
+<meta property="og:updated_time" content="2019-10-19T22:34:41.119Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mac安装Elastic Stack和基础配置">
+<meta name="twitter:description" content="简介Elastic官网：https://www.elastic.coElastic Github：https://github.com/elastic  Elasticsearch： 全文搜索引擎 Kibana：可视化分析平台 Filebeat：日志采集  安装Elasticsearch1brew install elastic/tap/elasticsearch-full Kibana1brew">
+<meta name="twitter:image" content="https://xiandan.in/posts/elastic-stack-install/1.jpg">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://xiandan.in/posts/elastic-stack-install.html">
+  
+    <link rel="alternate" href="/atom.xml" title="闲蛋的笔记" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  
+  
+  
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.css">
+  
+</head>
+
+
+<body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/dengyuhan" target="_blank">
+          <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">闲蛋</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">denghahae@qq.com</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Shanghai, China</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索">
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech="">
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope="" itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav ">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">首页</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">归档</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">分类</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">标签</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">项目</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-contribution">
+          <a href="/contribution">
+            
+            <i class="icon icon-book-fill"></i>
+            
+            <span class="menu-title">贡献</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">关于</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/dengyuhan" target="_blank" title="Github-Fill" data-toggle="tooltip" data-placement="top"><i class="icon icon-github-fill"></i></a></li>
+        
+    	
+        <li><a href="https://blog.csdn.net/aa464971" target="_blank" title="Csdn" data-toggle="tooltip" data-placement="top"><i class="iconfont icon-csdn"></i></a></li>
+        
+        <li><a href="https://stackoverflow.com/users/6699113" target="_blank" title="Stack-Overflow" data-toggle="tooltip" data-placement="top"><i class="iconfont icon-stack-overflow"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope="" itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>一个爱写代码但不想工作的怪人🤔</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Android-NDK/">Android NDK</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-兼容/">Android 兼容</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-开源/">Android 开源</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-文档/">Android 文档</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-源码分析/">Android 源码分析</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android-适配/">Android 适配</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Github/">Github</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Material-Design/">Material Design</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/MySQL/">MySQL</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Spring/">Spring</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/工具/">工具</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/开发工具/">开发工具</a><span class="category-list-count">21</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/科学上网/">科学上网</a><span class="category-list-count">6</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/科学上网/">科学上网</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/bwg-vultr-justmysocks.html" class="title">搬瓦工/Vultr/JustMySocks对比</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-06-03T07:17:17.000Z" itemprop="datePublished">2019-06-03</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/科学上网/">科学上网</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/bwg-gfw.html" class="title">搬瓦工被墙后</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-06-03T07:10:42.000Z" itemprop="datePublished">2019-06-03</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/开发工具/">开发工具</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/studio-3t-mongodB.html" class="title">Studio 3T外网远程访问MongoDB</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-05-29T13:51:02.000Z" itemprop="datePublished">2019-05-29</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/工具/">工具</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/github-pages-cdn.html" class="title">利用CDN加速你的Github Pages</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-04-22T03:22:53.000Z" itemprop="datePublished">2019-04-22</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/开发工具/">开发工具</a>
+              </p>
+              <p class="item-title">
+                <a href="/posts/elastic-stack-install.html" class="title">Mac安装Elastic Stack和基础配置</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-04-18T08:22:42.000Z" itemprop="datePublished">2019-04-18</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">2019年06月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">2019年05月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">2019年04月</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">2019年02月</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">2019年01月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">2018年12月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">2018年10月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">2018年09月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">2018年06月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">2018年05月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">2018年03月</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">2018年02月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">2017年10月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">2017年09月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">2017年05月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">2017年04月</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">2017年01月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">2016年12月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">2016年10月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016年05月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">2016年04月</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+  </div>
+</aside>
+
+  
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-elastic-stack-install" class="article article-type-post" itemscope="" itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Mac安装Elastic Stack和基础配置
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/posts/elastic-stack-install.html" class="article-date">
+	  <time datetime="2019-04-18T08:22:42.000Z" itemprop="datePublished">2019-04-18 16:22</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/开发工具/">开发工具</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link" href="/tags/Elastic-Stack/">Elastic Stack</a>, <a class="article-tag-link" href="/tags/Elasticsearch/">Elasticsearch</a>, <a class="article-tag-link" href="/tags/Filebeat/">Filebeat</a>, <a class="article-tag-link" href="/tags/Kibana/">Kibana</a>, <a class="article-tag-link" href="/tags/日志分析/">日志分析</a>
+  </span>
+
+
+        
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/posts/elastic-stack-install.html#comments" class="article-comment-link">评论</a></span>
+        
+      </div>
+    </div>
+	<blockquote class="mt-2x">
+	  <ul class="post-copyright list-unstyled">
+	    <li class="post-copyright-link hidden-xs">
+	      转载请注明出处：<br>
+	      
+	      	<a href="https://xiandan.in/posts/elastic-stack-install.html" title="Mac安装Elastic Stack和基础配置" target="_blank" rel="external">https://xiandan.in/posts/elastic-stack-install.html</a>
+	      
+	    </li>
+	  </ul>
+	</blockquote>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Elastic官网：<a href="https://www.elastic.co/cn/" target="_blank" rel="noopener">https://www.elastic.co</a><br>Elastic Github：<a href="https://github.com/elastic" target="_blank" rel="noopener">https://github.com/elastic</a></p>
+<ul>
+<li><a href="Elasticsearch">Elasticsearch</a>： 全文搜索引擎</li>
+<li><a href="https://www.elastic.co/cn/products/kibana" target="_blank" rel="noopener">Kibana</a>：可视化分析平台</li>
+<li><a href="https://www.elastic.co/cn/products/beats/filebeat" target="_blank" rel="noopener">Filebeat</a>：日志采集</li>
+</ul>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="Elasticsearch"><a href="#Elasticsearch" class="headerlink" title="Elasticsearch"></a>Elasticsearch</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install elastic/tap/elasticsearch-full</span><br></pre></td></tr></table></figure>
+<h3 id="Kibana"><a href="#Kibana" class="headerlink" title="Kibana"></a>Kibana</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install elastic/tap/kibana-full</span><br></pre></td></tr></table></figure>
+<h3 id="Filebeat"><a href="#Filebeat" class="headerlink" title="Filebeat"></a>Filebeat</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install elastic/tap/filebeat-full</span><br></pre></td></tr></table></figure>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="配置Filebeat"><a href="#配置Filebeat" class="headerlink" title="配置Filebeat"></a>配置Filebeat</h3><p>匹配要输入的Log文件路径</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /usr/local/etc/filebeat/filebeat.yml</span><br></pre></td></tr></table></figure>
+<p><img src="/posts/elastic-stack-install/1.jpg" width="500"></p>
+<h3 id="开启Kibana中文"><a href="#开启Kibana中文" class="headerlink" title="开启Kibana中文"></a>开启Kibana中文</h3><p>打开配置文件，将<code>i18n.locale</code>的注释去掉，改成<code>zh-CN</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /usr/local/etc/kibana/kibana.yml</span><br></pre></td></tr></table></figure>
+<p><img src="/posts/elastic-stack-install/2.jpg" width="500"></p>
+<h3 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h3><h4 id="前台启动"><a href="#前台启动" class="headerlink" title="前台启动"></a>前台启动</h4><p>需要3个终端窗口，分别启动</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">filebeat -e -d &quot;publish&quot;</span><br><span class="line">elasticsearch</span><br><span class="line">kibana</span><br></pre></td></tr></table></figure>
+<h4 id="后台启动"><a href="#后台启动" class="headerlink" title="后台启动"></a>后台启动</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">nohup filebeat -e -d &quot;publish&quot; &gt;/dev/null 2&gt;log &amp;</span><br><span class="line">nohup elasticsearch &gt;/dev/null 2&gt;log &amp;</span><br><span class="line">nohup kibana &gt;/dev/null 2&gt;log &amp;</span><br></pre></td></tr></table></figure>
+<p>全部启动完成后，打开浏览器访问 <a href="http://localhost:5601" target="_blank" rel="noopener">http://localhost:5601</a></p>
+<p><img src="/posts/elastic-stack-install/3.jpg" width="500"></p>
+<h2 id="添加Apache日志"><a href="#添加Apache日志" class="headerlink" title="*添加Apache日志"></a>*添加Apache日志</h2><p><a href="http://localhost:5601/app/kibana#/home/tutorial_directory/logging" target="_blank" rel="noopener">将数据添加到 Kibana</a></p>
+<p>将<code>setup.kibana</code>中的<code>host</code>注释去掉 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /usr/local/etc/filebeat/filebeat.yml</span><br></pre></td></tr></table></figure>
+<p><img src="/posts/elastic-stack-install/4.jpg" width="500"></p>
+<p>开启Apache</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">filebeat modules enable apache</span><br><span class="line">filebeat setup</span><br></pre></td></tr></table></figure>
+<p>修改apache的Log路径</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /usr/local/etc/filebeat/modules.d/apache.yml</span><br></pre></td></tr></table></figure>
+<p><img src="/posts/elastic-stack-install/5.jpg" width="500"></p>
+
+      
+    </div>
+	
+  </article>
+  
+    
+  <section id="comments">
+  	
+           
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom="">
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/posts/github-pages-cdn.html" title="利用CDN加速你的Github Pages"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+    </li>
+    
+    
+    <li class="next">
+      <a href="/posts/android-studio-sync.html" title="Android Studio多设备同步配置"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
+  
+
+
+</main>
+
+  <footer class="footer" itemscope="" itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/dengyuhan" target="_blank" title="Github-Fill" data-toggle="tooltip" data-placement="top"><i class="icon icon-github-fill"></i></a></li>
+        
+    	
+        <li><a href="https://blog.csdn.net/aa464971" target="_blank" title="Csdn" data-toggle="tooltip" data-placement="top"><i class="iconfont icon-csdn"></i></a></li>
+        
+        <li><a href="https://stackoverflow.com/users/6699113" target="_blank" title="Stack-Overflow" data-toggle="tooltip" data-placement="top"><i class="iconfont icon-stack-overflow"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+		<!--
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+		-->
+        <div class="publishby">
+        	Theme base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script src="/js/plugin.min.js"></script>
+<script src="/js/application.js"></script>
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+
+
+
+
+   
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+   
+    
+  <!-- <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"> -->
+  <script src="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+  <script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: '4fede66efdff9428c9d1',
+    clientSecret: 'e4f92739e52e2e7b01ac64b118582b70c9ec6ff0',
+    repo: 'dengyuhan.github.io',
+    owner: 'dengyuhan',
+    admin: ['dengyuhan'],
+    id: md5(location.pathname),
+    distractionFreeMode: false,
+	perPage: 20
+  })
+  gitalk.render('comments')
+  </script>
+
+      
+
+
+
+
+
+
+
+
+<!--CNZZ-->
+<div style="display:none">
+	<script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1258847419&web_id=1258847419"></script>
+</div>
+</body>
+</html>

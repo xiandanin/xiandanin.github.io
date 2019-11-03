@@ -36,9 +36,9 @@
 }
 .State svg{
     margin-left: 5px;
-	margin-bottom: 3px
+    margin-bottom: 3px;
     padding-bottom: 1px;
-	vertical-align: middle;
+    vertical-align: middle;
 }
 .State--purple {
     background-color: #6f42c1;
@@ -737,7 +737,7 @@ abbr[data-original-title] {
 blockquote {
   padding: 10.5px 16px;
   margin: 0 0 21px;
-  border: 1px dotted #eeeeee;
+  border: 1px solid #eeeeee;
   border-left: 3px solid #eeeeee;
   background-color: #fbfbfb;
 }

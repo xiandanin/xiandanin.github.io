@@ -1,0 +1,97 @@
+User-agent: Baiduspider
+Disallow: /posts/bwg-vultr-justmysocks.html
+Disallow: /posts/mac-global-proxy.html
+Disallow: /posts/shadowsocks-install.html
+Disallow: /posts/shadowsocks-server-install.html
+Disallow: /posts/youtube-download.html
+
+User-agent: Baiduspider-image
+Disallow: /posts/bwg-vultr-justmysocks.html
+Disallow: /posts/mac-global-proxy.html
+Disallow: /posts/shadowsocks-install.html
+Disallow: /posts/shadowsocks-server-install.html
+Disallow: /posts/youtube-download.html
+
+User-agent: YoudaoBot
+Disallow: /posts/bwg-vultr-justmysocks.html
+Disallow: /posts/mac-global-proxy.html
+Disallow: /posts/shadowsocks-install.html
+Disallow: /posts/shadowsocks-server-install.html
+Disallow: /posts/youtube-download.html
+
+User-agent: Sogou web spider
+Disallow: /posts/bwg-vultr-justmysocks.html
+Disallow: /posts/mac-global-proxy.html
+Disallow: /posts/shadowsocks-install.html
+Disallow: /posts/shadowsocks-server-install.html
+Disallow: /posts/youtube-download.html
+
+User-agent: Sogou inst spider
+Disallow: /posts/bwg-vultr-justmysocks.html
+Disallow: /posts/mac-global-proxy.html
+Disallow: /posts/shadowsocks-install.html
+Disallow: /posts/shadowsocks-server-install.html
+Disallow: /posts/youtube-download.html
+
+User-agent: Sogou spider2
+Disallow: /posts/bwg-vultr-justmysocks.html
+Disallow: /posts/mac-global-proxy.html
+Disallow: /posts/shadowsocks-install.html
+Disallow: /posts/shadowsocks-server-install.html
+Disallow: /posts/youtube-download.html
+
+User-agent: Sogou blog
+Disallow: /posts/bwg-vultr-justmysocks.html
+Disallow: /posts/mac-global-proxy.html
+Disallow: /posts/shadowsocks-install.html
+Disallow: /posts/shadowsocks-server-install.html
+Disallow: /posts/youtube-download.html
+
+User-agent: Sogou News Spider
+Disallow: /posts/bwg-vultr-justmysocks.html
+Disallow: /posts/mac-global-proxy.html
+Disallow: /posts/shadowsocks-install.html
+Disallow: /posts/shadowsocks-server-install.html
+Disallow: /posts/youtube-download.html
+
+User-agent: Sogou Orion spider
+Disallow: /posts/bwg-vultr-justmysocks.html
+Disallow: /posts/mac-global-proxy.html
+Disallow: /posts/shadowsocks-install.html
+Disallow: /posts/shadowsocks-server-install.html
+Disallow: /posts/youtube-download.html
+
+User-agent: ChinasoSpider
+Disallow: /posts/bwg-vultr-justmysocks.html
+Disallow: /posts/mac-global-proxy.html
+Disallow: /posts/shadowsocks-install.html
+Disallow: /posts/shadowsocks-server-install.html
+Disallow: /posts/youtube-download.html
+
+User-agent: Sosospider
+Disallow: /posts/bwg-vultr-justmysocks.html
+Disallow: /posts/mac-global-proxy.html
+Disallow: /posts/shadowsocks-install.html
+Disallow: /posts/shadowsocks-server-install.html
+Disallow: /posts/youtube-download.html
+
+User-agent: 360spider
+Disallow: /posts/bwg-vultr-justmysocks.html
+Disallow: /posts/mac-global-proxy.html
+Disallow: /posts/shadowsocks-install.html
+Disallow: /posts/shadowsocks-server-install.html
+Disallow: /posts/youtube-download.html
+
+User-agent: yisouspider
+Disallow: /posts/bwg-vultr-justmysocks.html
+Disallow: /posts/mac-global-proxy.html
+Disallow: /posts/shadowsocks-install.html
+Disallow: /posts/shadowsocks-server-install.html
+Disallow: /posts/youtube-download.html
+
+User-agent: EasouSpider
+Disallow: /posts/bwg-vultr-justmysocks.html
+Disallow: /posts/mac-global-proxy.html
+Disallow: /posts/shadowsocks-install.html
+Disallow: /posts/shadowsocks-server-install.html
+Disallow: /posts/youtube-download.html
