@@ -17,16 +17,21 @@
   <meta http-equiv="window-target" content="_top">
   
   
-  <title>分类: Android NDK | 闲蛋</title>
-  <meta property="og:type" content="website">
-<meta property="og:title" content="闲蛋的笔记">
-<meta property="og:url" content="https://xiandan.in/categories/Android-NDK/index.html">
+  <title>Git特殊使用场景命令 | 闲蛋</title>
+  <meta name="description" content="删除已推到远程分支的提交git log复制需要回滚的commit_id，把HEAD指向这个commit_id并强制推送 12git reset --hard [commit_id]git push origin HEAD 交互式命令1echo &amp;quot;输入要回滚的commit id&amp;quot; &amp;amp;&amp;amp; read id &amp;amp;&amp;amp; git reset --hard $id">
+<meta name="keywords" content="Git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git特殊使用场景命令">
+<meta property="og:url" content="https://xiandan.in/posts/git-command.html">
 <meta property="og:site_name" content="闲蛋的笔记">
+<meta property="og:description" content="删除已推到远程分支的提交git log复制需要回滚的commit_id，把HEAD指向这个commit_id并强制推送 12git reset --hard [commit_id]git push origin HEAD 交互式命令1echo &amp;quot;输入要回滚的commit id&amp;quot; &amp;amp;&amp;amp; read id &amp;amp;&amp;amp; git reset --hard $id">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-12-31T14:26:11.695Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="闲蛋的笔记">
+<meta name="twitter:title" content="Git特殊使用场景命令">
+<meta name="twitter:description" content="删除已推到远程分支的提交git log复制需要回滚的commit_id，把HEAD指向这个commit_id并强制推送 12git reset --hard [commit_id]git push origin HEAD 交互式命令1echo &amp;quot;输入要回滚的commit id&amp;quot; &amp;amp;&amp;amp; read id &amp;amp;&amp;amp; git reset --hard $id">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://xiandan.in/categories/Android-NDK/index.html">
+  <link rel="canonical" href="https://xiandan.in/posts/git-command.html">
   
     <link rel="alternate" href="/atom.xml" title="闲蛋的笔记" type="application/atom+xml">
   
@@ -306,75 +311,109 @@
 </aside>
 
   
-  <main class="main" role="main">
-  <article class="content article article-categories article-type-list" itemscope="">
-    <header class="article-header">
-      <h1 itemprop="name" class="hidden-xs">分类: Android NDK</h1>
-      <p class="hidden-xs">共 1 篇文章</p>
-      <nav role="navigation" id="nav-main" class="okayNav">
-        <ul>
-          <li><a href="/categories">All</a></li>
-          
-          <li><a href="/categories/Android-文档/">Android 文档</a></li>
-          
-          <li><a href="/categories/Android-NDK/">Android NDK</a></li>
-          
-          <li><a href="/categories/开发工具/">开发工具</a></li>
-          
-          <li><a href="/categories/Android-兼容/">Android 兼容</a></li>
-          
-          <li><a href="/categories/Android-开源/">Android 开源</a></li>
-          
-          <li><a href="/categories/Github/">Github</a></li>
-          
-          <li><a href="/categories/工具/">工具</a></li>
-          
-          <li><a href="/categories/Spring/">Spring</a></li>
-          
-          <li><a href="/categories/MySQL/">MySQL</a></li>
-          
-          <li><a href="/categories/科学上网/">科学上网</a></li>
-          
-          <li><a href="/categories/Android-适配/">Android 适配</a></li>
-          
-          <li><a href="/categories/Material-Design/">Material Design</a></li>
-          
-          <li><a href="/categories/Android-源码分析/">Android 源码分析</a></li>
-          
-        </ul>
-      </nav>
-    </header>
-    <!-- /header -->
-    <div class="article-body">
-      <div class="panel panel-default b-no">
-    <div class="panel-heading" role="tab">
-        <h4 class="panel-title">
-            <a data-toggle="collapse" href="#collapseAndroid NDK" aria-expanded="true">
-              <i class="icon icon-folder text-active"></i><i class="icon icon-folder-open text"></i>
-              Android NDK
-            </a>
-            <small class="text-muted">(Total 1 articles)</small>
-        </h4>
-    </div>
-    <div id="collapseAndroid NDK" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingAndroid NDK">
-        <div class="panel-body">
-            <div class="collection">
-              
-                
-<a href="/posts/android-jni-error.html" class="collection-item" target="_blank" itemprop="url" target="_blank">
-  <time datetime="2018-06-05T15:56:25.000Z" itemprop="datePublished">2018-06-05</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> Android JNI常见异常解决
-</a>
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-git-command" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Git特殊使用场景命令
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/posts/git-command.html" class="article-date">
+	  <time datetime="2019-12-31T03:23:01.000Z" itemprop="datePublished">2019-12-31 11:23</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/开发工具/">开发工具</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link" href="/tags/Git/">Git</a>
+  </span>
 
 
-              
-            </div>
-        </div>
+        
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/posts/git-command.html#comments" class="article-comment-link">评论</a></span>
+        
+      </div>
     </div>
-</div>
+	<blockquote class="mt-2x">
+	  <ul class="post-copyright list-unstyled">
+	    <li class="post-copyright-link hidden-xs">
+	      转载请注明出处：<br/>
+	      
+	      	<a href="https://xiandan.in/posts/git-command.html" title="Git特殊使用场景命令" target="_blank" rel="external">https://xiandan.in/posts/git-command.html</a>
+	      
+	    </li>
+	  </ul>
+	</blockquote>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <h2 id="删除已推到远程分支的提交"><a href="#删除已推到远程分支的提交" class="headerlink" title="删除已推到远程分支的提交"></a>删除已推到远程分支的提交</h2><p><code>git log</code>复制需要回滚的<strong>commit_id</strong>，把<strong>HEAD</strong>指向这个commit_id并强制推送</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard [commit_id]</span><br><span class="line">git push origin HEAD</span><br></pre></td></tr></table></figure>
+<h4 id="交互式命令"><a href="#交互式命令" class="headerlink" title="交互式命令"></a>交互式命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;输入要回滚的commit id&quot; &amp;&amp; read id &amp;&amp; git reset --hard $id &amp;&amp; git push origin HEAD --force</span><br></pre></td></tr></table></figure>
+<h2 id="强制更新"><a href="#强制更新" class="headerlink" title="强制更新"></a>强制更新</h2><p>抛弃当前所有的变更并更新</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git fetch --all</span><br><span class="line">git reset --hard origin/[分支名称]</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
+<h4 id="交互式命令-1"><a href="#交互式命令-1" class="headerlink" title="交互式命令"></a>交互式命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;输入要更新的分支(default: master)&quot; &amp;&amp; read input &amp;&amp; branch=$&#123;input:=master&#125; &amp;&amp; echo 从&quot;$branch&quot;拉取更新 &amp;&amp; git fetch --all &amp;&amp; git reset --hard origin/&quot;$branch&quot; &amp;&amp; git pull</span><br></pre></td></tr></table></figure>
+<h2 id="克隆到非空文件夹"><a href="#克隆到非空文件夹" class="headerlink" title="克隆到非空文件夹"></a>克隆到非空文件夹</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git clone --no-checkout [git_url] tmp</span><br><span class="line">mv tmp/.git .</span><br><span class="line">rmdir tmp</span><br><span class="line">git reset --hard HEAD</span><br></pre></td></tr></table></figure>
+<h4 id="交互式命令-2"><a href="#交互式命令-2" class="headerlink" title="交互式命令"></a>交互式命令</h4><p>克隆并覆盖当前文件夹</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;输入要克隆的URL&quot; &amp;&amp; read url &amp;&amp; echo 克隆&quot;$url&quot;到当前文件夹 &amp;&amp; git clone --no-checkout $url tmp &amp;&amp; mv tmp/.git . &amp;&amp; rmdir tmp &amp;&amp; git reset --hard HEAD</span><br></pre></td></tr></table></figure>
+      
     </div>
+	
   </article>
-   
+  
+    
+  <section id="comments">
+  	
+           
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    
+    <li class="next">
+      <a href="/posts/bwg-vultr-justmysocks.html" title="搬瓦工/Vultr/JustMySocks对比"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
+  
+
+
 </main>
 
   <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -429,6 +468,34 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
 
+
+   
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+   
+    
+  <!-- <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"> -->
+  <script src="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+  <script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: '4fede66efdff9428c9d1',
+    clientSecret: 'e4f92739e52e2e7b01ac64b118582b70c9ec6ff0',
+    repo: 'xiandanin.github.io',
+    owner: 'xiandanin',
+    admin: ['xiandanin'],
+    id: md5(location.pathname),
+    distractionFreeMode: false,
+	perPage: 20
+  })
+  gitalk.render('comments')
+  </script>
+
+      
 
 
 
