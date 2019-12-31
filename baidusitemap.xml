@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://xiandan.in/posts/git-command.html</loc>
+    <lastmod>2019-12-31T14:37:27.943Z</lastmod>
+    
+  </url>
+  <url>
     <loc>https://xiandan.in/posts/tampermonkey-live-fullscreen.html</loc>
     <lastmod>2019-12-31T14:26:11.702Z</lastmod>
     
@@ -48,11 +53,6 @@
   <url>
     <loc>https://xiandan.in/posts/loadingbar.html</loc>
     <lastmod>2019-12-31T14:26:11.696Z</lastmod>
-    
-  </url>
-  <url>
-    <loc>https://xiandan.in/posts/git-command.html</loc>
-    <lastmod>2019-12-31T14:26:11.695Z</lastmod>
     
   </url>
   <url>
@@ -201,12 +201,12 @@
     
   </url>
   <url>
-    <loc>https://xiandan.in/posts/android-navigationBar-height.html</loc>
+    <loc>https://xiandan.in/posts/android-decompile-tool.html</loc>
     <lastmod>2019-02-24T07:48:49.323Z</lastmod>
     
   </url>
   <url>
-    <loc>https://xiandan.in/posts/android-decompile-tool.html</loc>
+    <loc>https://xiandan.in/posts/android-navigationBar-height.html</loc>
     <lastmod>2019-02-24T07:48:49.323Z</lastmod>
     
   </url>
@@ -246,12 +246,12 @@
     
   </url>
   <url>
-    <loc>https://xiandan.in/repository/index.html</loc>
+    <loc>https://xiandan.in/links/index.html</loc>
     <lastmod>2018-12-16T08:55:18.163Z</lastmod>
     
   </url>
   <url>
-    <loc>https://xiandan.in/links/index.html</loc>
+    <loc>https://xiandan.in/repository/index.html</loc>
     <lastmod>2018-12-16T08:55:18.163Z</lastmod>
     
   </url>
