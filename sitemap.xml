@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://xiandan.in/posts/bwg-gfw.html</loc>
+    <lastmod>2020-06-06T16:20:26.279Z</lastmod>
+    
+  </url>
+  <url>
+    <loc>https://xiandan.in/posts/bwg-vultr-justmysocks.html</loc>
+    <lastmod>2020-06-06T16:20:26.242Z</lastmod>
+    
+  </url>
+  <url>
+    <loc>https://xiandan.in/posts/shadowsocks-install.html</loc>
+    <lastmod>2020-06-06T16:20:26.075Z</lastmod>
+    
+  </url>
+  <url>
     <loc>https://xiandan.in/posts/git-command.html</loc>
     <lastmod>2020-01-04T15:36:45.188Z</lastmod>
     
@@ -88,21 +103,6 @@
   <url>
     <loc>https://xiandan.in/posts/studio-3t-mongodB.html</loc>
     <lastmod>2019-11-03T16:42:36.413Z</lastmod>
-    
-  </url>
-  <url>
-    <loc>https://xiandan.in/posts/bwg-vultr-justmysocks.html</loc>
-    <lastmod>2019-11-03T16:38:31.326Z</lastmod>
-    
-  </url>
-  <url>
-    <loc>https://xiandan.in/posts/bwg-gfw.html</loc>
-    <lastmod>2019-10-19T22:34:41.131Z</lastmod>
-    
-  </url>
-  <url>
-    <loc>https://xiandan.in/posts/shadowsocks-install.html</loc>
-    <lastmod>2019-10-19T22:34:41.129Z</lastmod>
     
   </url>
   <url>
@@ -256,12 +256,12 @@
     
   </url>
   <url>
-    <loc>https://xiandan.in/categories/index.html</loc>
+    <loc>https://xiandan.in/books/index.html</loc>
     <lastmod>2018-12-16T08:55:18.163Z</lastmod>
     
   </url>
   <url>
-    <loc>https://xiandan.in/books/index.html</loc>
+    <loc>https://xiandan.in/categories/index.html</loc>
     <lastmod>2018-12-16T08:55:18.163Z</lastmod>
     
   </url>
