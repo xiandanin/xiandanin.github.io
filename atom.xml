@@ -270,6 +270,36 @@
   </entry>
   
   <entry>
+    <title>在Windows/MacOS中安装ipa文件</title>
+    <link href="https://xiandan.in/posts/install-ipa.html"/>
+    <id>https://xiandan.in/posts/install-ipa.html</id>
+    <published>2019-02-26T15:58:22.000Z</published>
+    <updated>2020-09-01T15:17:46.217Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Windows-PP助手"><a href="#Windows-PP助手" class="headerlink" title="Windows - PP助手"></a>Windows - PP助手</h2><blockquote><p>PP助手：<a href="http://pro.25pp.com/pp_win_iosandroid" target="_blank" rel="noopener">http://pro.25pp.com</a> </p></blockquote><p>连接设备后，在应用列表手动安装</p><p><img src="/posts/install-ipa/install_ipa_1.gif" width="600"></p><h2 id="Mac-Apple-Configurator-2"><a href="#Mac-Apple-Configurator-2" class="headerlink" title="Mac - Apple Configurator 2"></a>Mac - Apple Configurator 2</h2><blockquote><p>Apple Configurator 2：<a href="https://apps.apple.com/cn/app/apple-configurator-2/id1037126344" target="_blank" rel="noopener">https://apps.apple.com/cn/app/apple-configurator-2/id1037126344</a> </p></blockquote><p>从Mac AppStore安装Apple Configurator 2<br><img src="/posts/install-ipa/install_ipa_2.jpg" width="400"></p><p>打开后连接设备，选中设备点击<code>添加</code>，<code>从我的Mac选取...</code>选择刚刚下载的ipa文件</p><p><img src="/posts/install-ipa/install_ipa_3.jpg" width="500"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Windows-PP助手&quot;&gt;&lt;a href=&quot;#Windows-PP助手&quot; class=&quot;headerlink&quot; title=&quot;Windows - PP助手&quot;&gt;&lt;/a&gt;Windows - PP助手&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;PP助手：&lt;a href=
+      
+    
+    </summary>
+    
+      <category term="工具" scheme="https://xiandan.in/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="PP助手" scheme="https://xiandan.in/tags/PP%E5%8A%A9%E6%89%8B/"/>
+    
+      <category term="Apple Configurator" scheme="https://xiandan.in/tags/Apple-Configurator/"/>
+    
+      <category term="ipa" scheme="https://xiandan.in/tags/ipa/"/>
+    
+  </entry>
+  
+  <entry>
     <title>用Apple Configurator 2提取ipa文件</title>
     <link href="https://xiandan.in/posts/get-ipa.html"/>
     <id>https://xiandan.in/posts/get-ipa.html</id>
@@ -537,33 +567,6 @@
       <category term="Android" scheme="https://xiandan.in/tags/Android/"/>
     
       <category term="投屏" scheme="https://xiandan.in/tags/%E6%8A%95%E5%B1%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Android反编译工具</title>
-    <link href="https://xiandan.in/posts/android-decompile-tool.html"/>
-    <id>https://xiandan.in/posts/android-decompile-tool.html</id>
-    <published>2018-10-24T09:03:43.000Z</published>
-    <updated>2019-02-24T07:48:49.323Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="Apktool"><a href="#Apktool" class="headerlink" title="Apktool"></a>Apktool</h3><p><a href="https://github.com/iBotPeaches/Apktool" target="_blank" rel="noopener">https://github.com/iBotPeaches/Apktool</a></p><h6 id="可以反编译apk，也可以重新打包apk"><a href="#可以反编译apk，也可以重新打包apk" class="headerlink" title="可以反编译apk，也可以重新打包apk"></a>可以反编译apk，也可以重新打包apk</h6><p>下载地址：<a href="https://github.com/iBotPeaches/Apktool/releases" target="_blank" rel="noopener">https://github.com/iBotPeaches/Apktool/releases</a><br>brew安装：<code>brew install apktool</code><br>文档：<a href="https://ibotpeaches.github.io/Apktool/documentation" target="_blank" rel="noopener">https://ibotpeaches.github.io/Apktool/documentation</a><br><code>apktool d test.apk</code></p><h3 id="dex2jar"><a href="#dex2jar" class="headerlink" title="dex2jar"></a>dex2jar</h3><p><a href="https://github.com/pxb1988/dex2jar" target="_blank" rel="noopener">https://github.com/pxb1988/dex2jar</a></p><h6 id="可以将-dex文件反编译成-class文件并打包成jar"><a href="#可以将-dex文件反编译成-class文件并打包成jar" class="headerlink" title="可以将.dex文件反编译成.class文件并打包成jar"></a>可以将<code>.dex文件</code>反编译成<code>.class文件</code>并打包成jar</h6><p>下载地址：<a href="https://github.com/pxb1988/dex2jar/releases" target="_blank" rel="noopener">https://github.com/pxb1988/dex2jar/releases</a><br>brew安装：<code>brew install dex2jar</code><br>文档：<a href="https://github.com/pxb1988/dex2jar/wiki" target="_blank" rel="noopener">https://github.com/pxb1988/dex2jar/wiki</a><br><code>d2j-dex2jar classes.dex</code></p><h3 id="jd-gui"><a href="#jd-gui" class="headerlink" title="jd-gui"></a>jd-gui</h3><p><a href="https://github.com/java-decompiler/jd-gui" target="_blank" rel="noopener">https://github.com/java-decompiler/jd-gui</a></p><h6 id="可以查看-class文件，用来查看dex2jar反编译出的jar"><a href="#可以查看-class文件，用来查看dex2jar反编译出的jar" class="headerlink" title="可以查看.class文件，用来查看dex2jar反编译出的jar"></a>可以查看.class文件，用来查看dex2jar反编译出的jar</h6><p>下载地址：<a href="https://github.com/java-decompiler/jd-gui/releases" target="_blank" rel="noopener">https://github.com/java-decompiler/jd-gui/releases</a><br>brew安装：<code>brew install jd-gui</code></p><h3 id="jadx-gui"><a href="#jadx-gui" class="headerlink" title="jadx-gui"></a>jadx-gui</h3><p><a href="https://github.com/skylot/jadx" target="_blank" rel="noopener">https://github.com/skylot/jadx</a></p><h6 id="可以直接浏览反编译后的apk"><a href="#可以直接浏览反编译后的apk" class="headerlink" title="可以直接浏览反编译后的apk"></a>可以直接浏览反编译后的apk</h6><p>下载地址：<a href="https://github.com/skylot/jadx/releases" target="_blank" rel="noopener">https://github.com/skylot/jadx/releases</a></p><img src="/posts/android-decompile-tool/1.jpg"><h3 id="uber-apk-signer"><a href="#uber-apk-signer" class="headerlink" title="uber-apk-signer"></a>uber-apk-signer</h3><p><a href="https://github.com/patrickfav/uber-apk-signer" target="_blank" rel="noopener">https://github.com/patrickfav/uber-apk-signer</a></p><h6 id="可以对apk签名，支持V1、V2"><a href="#可以对apk签名，支持V1、V2" class="headerlink" title="可以对apk签名，支持V1、V2"></a>可以对apk签名，支持V1、V2</h6><p>下载地址：<a href="https://github.com/patrickfav/uber-apk-signer/releases" target="_blank" rel="noopener">https://github.com/patrickfav/uber-apk-signer/releases</a><br>文档：<a href="https://github.com/patrickfav/uber-apk-signer/blob/master/README.md" target="_blank" rel="noopener">https://github.com/patrickfav/uber-apk-signer/blob/master/README.md</a><br><code>java -jar uber-apk-signer.jar -a [apk路径] --ks [keystore路径] --ksAlias [alias名称]</code></p><h3 id="java2smali"><a href="#java2smali" class="headerlink" title="java2smali"></a>java2smali</h3><p><a href="https://github.com/ollide/intellij-java2smali" target="_blank" rel="noopener">https://github.com/ollide/intellij-java2smali</a></p><h6 id="IntelliJ-IDEA和Android-Studio的插件，可以将Java和Kotlin文件编译为smali"><a href="#IntelliJ-IDEA和Android-Studio的插件，可以将Java和Kotlin文件编译为smali" class="headerlink" title="IntelliJ IDEA和Android Studio的插件，可以将Java和Kotlin文件编译为smali"></a>IntelliJ IDEA和Android Studio的插件，可以将Java和Kotlin文件编译为smali</h6><p>下载地址：<a href="https://github.com/ollide/intellij-java2smali/releases" target="_blank" rel="noopener">https://github.com/ollide/intellij-java2smali/releases</a></p><img src="/posts/android-decompile-tool/2.gif">]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;Apktool&quot;&gt;&lt;a href=&quot;#Apktool&quot; class=&quot;headerlink&quot; title=&quot;Apktool&quot;&gt;&lt;/a&gt;Apktool&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/iBotPeaches/Apktool&quot; t
-      
-    
-    </summary>
-    
-      <category term="开发工具" scheme="https://xiandan.in/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="Android" scheme="https://xiandan.in/tags/Android/"/>
-    
-      <category term="反编译" scheme="https://xiandan.in/tags/%E5%8F%8D%E7%BC%96%E8%AF%91/"/>
     
   </entry>
   

@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://xiandan.in/posts/install-ipa.html</loc>
+    <lastmod>2020-09-01T15:17:46.217Z</lastmod>
+    
+  </url>
+  <url>
     <loc>https://xiandan.in/posts/android-countdowntimer-support.html</loc>
     <lastmod>2020-06-30T07:07:40.067Z</lastmod>
     
@@ -236,12 +241,12 @@
     
   </url>
   <url>
-    <loc>https://xiandan.in/categories/index.html</loc>
+    <loc>https://xiandan.in/books/index.html</loc>
     <lastmod>2018-12-16T08:55:18.163Z</lastmod>
     
   </url>
   <url>
-    <loc>https://xiandan.in/books/index.html</loc>
+    <loc>https://xiandan.in/categories/index.html</loc>
     <lastmod>2018-12-16T08:55:18.163Z</lastmod>
     
   </url>
