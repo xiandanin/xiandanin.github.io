@@ -18,18 +18,25 @@
   
   
   <title>Charles在Android7.0以上抓包https出现&lt;unknown&gt;的解决办法 | 闲蛋</title>
-  <meta name="description" content="Android 7.0 开发者版本 - 默认受信任的证书颁发机构">
+  <meta name="description" content="Android7.0以上仅信任系统提供的证书，不再信任用户添加的证书颁发机构 (CA)，所以直接安装Charles的证书抓包https已经无效，会出现&amp;lt;unknown&amp;gt;  Android 7.0 开发者版本 - 默认受信任的证书颁发机构   解决办法既然是仅信任系统提供的证书，那么可以把Charles安装为系统证书，这个操作需要设备已经ROOT 保存Charles证书（文件名为char">
 <meta name="keywords" content="抓包,Charles">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Charles在Android7.0以上抓包https出现&lt;unknown&gt;的解决办法">
 <meta property="og:url" content="https://xiandan.in/posts/charles-https.html">
 <meta property="og:site_name" content="闲蛋的笔记">
-<meta property="og:description" content="Android 7.0 开发者版本 - 默认受信任的证书颁发机构">
+<meta property="og:description" content="Android7.0以上仅信任系统提供的证书，不再信任用户添加的证书颁发机构 (CA)，所以直接安装Charles的证书抓包https已经无效，会出现&amp;lt;unknown&amp;gt;  Android 7.0 开发者版本 - 默认受信任的证书颁发机构   解决办法既然是仅信任系统提供的证书，那么可以把Charles安装为系统证书，这个操作需要设备已经ROOT 保存Charles证书（文件名为char">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-09-12T09:35:48.222Z">
+<meta property="og:image" content="https://xiandan.in/posts/charles-https/charles_0.jpg">
+<meta property="og:image" content="https://xiandan.in/posts/charles-https/charles_1.jpg">
+<meta property="og:image" content="https://xiandan.in/posts/charles-https/charles_2.jpg">
+<meta property="og:image" content="https://xiandan.in/posts/charles-https/charles_3.jpg">
+<meta property="og:image" content="https://xiandan.in/posts/charles-https/charles_4.gif">
+<meta property="og:image" content="https://xiandan.in/posts/charles-https/charles_5.jpg">
+<meta property="og:updated_time" content="2020-09-12T17:47:21.561Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Charles在Android7.0以上抓包https出现&lt;unknown&gt;的解决办法">
-<meta name="twitter:description" content="Android 7.0 开发者版本 - 默认受信任的证书颁发机构">
+<meta name="twitter:description" content="Android7.0以上仅信任系统提供的证书，不再信任用户添加的证书颁发机构 (CA)，所以直接安装Charles的证书抓包https已经无效，会出现&amp;lt;unknown&amp;gt;  Android 7.0 开发者版本 - 默认受信任的证书颁发机构   解决办法既然是仅信任系统提供的证书，那么可以把Charles安装为系统证书，这个操作需要设备已经ROOT 保存Charles证书（文件名为char">
+<meta name="twitter:image" content="https://xiandan.in/posts/charles-https/charles_0.jpg">
   <!-- Canonical links -->
   <link rel="canonical" href="https://xiandan.in/posts/charles-https.html">
   
@@ -364,8 +371,23 @@
 	</blockquote>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <p><a href="https://developer.android.google.cn/about/versions/nougat/android-7.0#default_trusted_ca" target="_blank" rel="noopener">Android 7.0 开发者版本 - 默认受信任的证书颁发机构</a></p>
-
+        <p>Android7.0以上<strong>仅信任系统提供的证书</strong>，不再信任用户添加的证书颁发机构 (CA)，所以直接安装Charles的证书抓包https已经无效，会出现<code>&lt;unknown&gt;</code></p>
+<blockquote>
+<p><a href="https://developer.android.google.cn/about/versions/nougat/android-7.0#default_trusted_ca" target="_blank" rel="noopener">Android 7.0 开发者版本 - 默认受信任的证书颁发机构</a></p>
+</blockquote>
+<p><img src="/posts/charles-https/charles_0.jpg" width="500"></p>
+<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>既然是仅信任系统提供的证书，那么可以把Charles安装为系统证书，这个操作需要设备已经ROOT</p>
+<h4 id="保存Charles证书（文件名为charles-ssl-proxying-certificate-pem）到本地"><a href="#保存Charles证书（文件名为charles-ssl-proxying-certificate-pem）到本地" class="headerlink" title="保存Charles证书（文件名为charles-ssl-proxying-certificate.pem）到本地"></a>保存Charles证书（文件名为<code>charles-ssl-proxying-certificate.pem</code>）到本地</h4><img src="/posts/charles-https/charles_1.jpg">
+<h4 id="获取证书文件Hash值"><a href="#获取证书文件Hash值" class="headerlink" title="获取证书文件Hash值"></a>获取证书文件Hash值</h4><p><code>openssl x509 -subject_hash_old -in charles-ssl-proxying-certificate.pem</code></p>
+<p><img src="/posts/charles-https/charles_2.jpg" width="600"></p>
+<h4 id="重命名证书文件"><a href="#重命名证书文件" class="headerlink" title="重命名证书文件"></a>重命名证书文件</h4><p>证书的命名规则是<code>[Hash].[Number]</code>，后缀名的数字是为了避免文件名冲突，如果有多个证书的Hash值是一样的，后缀名的数字就可以从0开始编上号。<br>比如上步获取的Hash值为<code>10f7f839</code>，重命名证书文件为<code>10f7f839.0</code></p>
+<h4 id="安装成系统证书"><a href="#安装成系统证书" class="headerlink" title="安装成系统证书"></a>安装成系统证书</h4><p>把重命名后的证书文件推送到手机上</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb push 10f7f839.0 /sdcard</span><br></pre></td></tr></table></figure>
+<p><img src="/posts/charles-https/charles_3.jpg" width="400"></p>
+<p>用RE管理器之类的文件管理器，将证书文件复制到<code>/system/etc/security/cacerts/</code>文件夹</p>
+<p><img src="/posts/charles-https/charles_4.gif" width="300"></p>
+<h4 id="测试结果"><a href="#测试结果" class="headerlink" title="测试结果"></a>测试结果</h4><p>再次抓包，已经可以看到请求了</p>
+<img src="/posts/charles-https/charles_5.jpg">
       
     </div>
 	
