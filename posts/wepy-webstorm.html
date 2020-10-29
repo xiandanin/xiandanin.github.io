@@ -33,7 +33,7 @@
 <meta property="og:image" content="https://xiandan.in/posts/wepy-webstorm/6.png">
 <meta property="og:image" content="https://xiandan.in/posts/wepy-webstorm/7.png">
 <meta property="og:image" content="https://xiandan.in/posts/wepy-webstorm/4.jpg">
-<meta property="og:updated_time" content="2019-09-01T14:35:50.909Z">
+<meta property="og:updated_time" content="2020-10-27T18:22:47.919Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="让wepy在WebStorm支持代码高亮">
 <meta name="twitter:description" content="支持wpyPreferences - Editor - File Types选择Vue.js Template，添加*.wpy  支持特殊标签Preferences - Editor - Language Injections添加XML Tag Injection  高亮config标签Namespace用http://www.w3.org/1999/html  高亮wxs标签 支持rpxPref">
@@ -196,6 +196,9 @@
     <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
   <div class="slimContent">
     
+      
+
+    
       <div class="widget">
     <h3 class="widget-title">公告</h3>
     <div class="widget-body">
@@ -354,10 +357,18 @@
   </span>
 
 
-        
-
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="/posts/wepy-webstorm.html#comments" class="article-comment-link">评论</a></span>
         
+        
+	<span class="article-read hidden">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv"></span>
+		</span>
+	</span>
+
+
+
       </div>
     </div>
 	<blockquote class="mt-2x">
@@ -381,7 +392,7 @@
 <h4 id="高亮wxs标签"><a href="#高亮wxs标签" class="headerlink" title="高亮wxs标签"></a>高亮wxs标签</h4><p><img src="/posts/wepy-webstorm/3.jpg" width="400"></p>
 <h2 id="支持rpx"><a href="#支持rpx" class="headerlink" title="支持rpx"></a>支持rpx</h2><p><code>Preferences</code> - <code>Tools</code> - <code>File Watchers</code>添加<code>custom</code>  </p>
 <p><img src="/posts/wepy-webstorm/6.png" width="600"></p>
-<p>Program: <code>sed</code><br>Arguments: <code>—i “ s/”\ rpx”/rpx/g $FilePath$</code><br>Output paths to refresh: <code>$FilePath$</code>  </p>
+<p>Program: <code>sed</code><br>Arguments（macOS）: <code>-i &quot;&quot; s/&quot;\ rpx&quot;/rpx/g $FilePath$</code><br>Arguments（Windows）: <code>-i s/&quot;\ rpx&quot;/rpx/g $FilePath$</code><br>Output paths to refresh: <code>$FilePath$</code>  </p>
 <blockquote>
 <p>*如果是Windows需要先安装<a href="https://github.com/mbuilov/sed-windows" target="_blank" rel="noopener">sed-windows</a>，<code>Program</code>则换成<code>sed</code>的安装路径  </p>
 </blockquote>
@@ -431,6 +442,7 @@
   </div>
 </nav>
   
+
 
 
 </main>

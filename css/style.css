@@ -6116,6 +6116,14 @@ body.no-sidebar .sidebar {
   display: block !important;
 }
 
+.toc-level-2{
+  font-weight: bold;
+}
+
+.toc-child {
+  font-weight: normal;
+}
+
 .tagcloud a {
   display: inline-block;
   margin-bottom: 0.2em;
