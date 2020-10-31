@@ -9,7 +9,7 @@
  */
 
 /**
- * 
+ *
  */
 
 /* Mixins */
@@ -5028,7 +5028,7 @@ a.label:focus {
  */
 
 table {
-  border: 1px solid #f2f2f2;
+  border: 1px solid #dfe2e5;
 }
 
 table > thead > tr > th,
@@ -5037,11 +5037,11 @@ table > tbody > tr > th,
 table > tbody > tr > td,
 table > tfoot > tr > th,
 table > tfoot > tr > td {
-  border: 1px solid #f2f2f2;
+  border: 1px solid #dfe2e5;
 }
 
 table > tbody > tr:nth-of-type(odd) {
-  background-color: #f8f8f8;
+  background-color: #f6f8fa;
 }
 
 table > tbody > tr:hover {
@@ -5117,11 +5117,11 @@ table table {
 }
 
 .icon-csdn:before {
-  content: "\e50d"; 
+  content: "\e50d";
 }
 
 .icon-stack-overflow:before {
-  content: "\f239"; 
+  content: "\f239";
 }
 
 .icon-diandian:before {
@@ -5594,7 +5594,7 @@ code {
   padding: 0.2em 0.4em;
   margin: 0 0.3em;
   color: #1d1d1d;
-  background: #f2f2f2;
+  background: rgba(27,31,35,0.05);
   border-radius: 3px;
   font-size: 90%;
 }
@@ -5679,6 +5679,10 @@ pre code {
 }
 
 .sidebar {
+  max-width: 250px;
+}
+
+.sidebar {
   background-color: #fdfdfd;
 }
 
@@ -5690,6 +5694,8 @@ pre code {
   position: relative;
   min-height: 100vh;
   padding: 15px;
+  width: auto !important;
+  margin-right: 250px;
 }
 
 .main:before,
@@ -6591,6 +6597,10 @@ body.no-sidebar .sidebar {
   margin-left: 32px;
   font-family: "PingHei","PingFangSC-Light",Helvetica Neue,"Work Sans","Hiragino Sans GB","Microsoft YaHei",SimSun,sans-serif;
 }
+.marked-body table{
+  width: auto;
+}
+
 
 /*
  * We are hiding the invisible nav outside the screen

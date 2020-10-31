@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://xiandan.in/posts/nodejs-global-docs.html</loc>
+    <lastmod>2020-10-31T19:57:33.239Z</lastmod>
+    
+  </url>
+  <url>
+    <loc>https://xiandan.in/posts/scrcpy.html</loc>
+    <lastmod>2020-10-31T17:17:50.592Z</lastmod>
+    
+  </url>
+  <url>
     <loc>https://xiandan.in/posts/github-pages-cdn.html</loc>
     <lastmod>2020-10-29T16:35:57.132Z</lastmod>
     
@@ -81,23 +91,18 @@
     
   </url>
   <url>
-    <loc>https://xiandan.in/posts/android-gpuimage-support.html</loc>
+    <loc>https://xiandan.in/posts/android-studio-plugin.html</loc>
     <lastmod>2019-12-31T14:26:11.700Z</lastmod>
     
   </url>
   <url>
-    <loc>https://xiandan.in/posts/android-studio-plugin.html</loc>
+    <loc>https://xiandan.in/posts/android-gpuimage-support.html</loc>
     <lastmod>2019-12-31T14:26:11.700Z</lastmod>
     
   </url>
   <url>
     <loc>https://xiandan.in/posts/android-upload-jcenter.html</loc>
     <lastmod>2019-12-31T14:26:11.699Z</lastmod>
-    
-  </url>
-  <url>
-    <loc>https://xiandan.in/posts/scrcpy.html</loc>
-    <lastmod>2019-12-31T14:26:11.698Z</lastmod>
     
   </url>
   <url>
@@ -286,12 +291,12 @@
     
   </url>
   <url>
-    <loc>https://xiandan.in/categories/index.html</loc>
+    <loc>https://xiandan.in/links/index.html</loc>
     <lastmod>2018-12-16T08:55:18.163Z</lastmod>
     
   </url>
   <url>
-    <loc>https://xiandan.in/links/index.html</loc>
+    <loc>https://xiandan.in/categories/index.html</loc>
     <lastmod>2018-12-16T08:55:18.163Z</lastmod>
     
   </url>
