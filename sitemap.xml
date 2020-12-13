@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://xiandan.in/posts/git-command.html</loc>
+    <lastmod>2020-12-13T16:45:06.920Z</lastmod>
+    
+  </url>
+  <url>
+    <loc>https://xiandan.in/posts/git-history-author.html</loc>
+    <lastmod>2020-12-13T16:44:34.922Z</lastmod>
+    
+  </url>
+  <url>
+    <loc>https://xiandan.in/posts/git-lfs-migrate.html</loc>
+    <lastmod>2020-12-13T15:55:29.248Z</lastmod>
+    
+  </url>
+  <url>
+    <loc>https://xiandan.in/posts/bwg-vultr-justmysocks.html</loc>
+    <lastmod>2020-11-12T15:57:30.321Z</lastmod>
+    
+  </url>
+  <url>
+    <loc>https://xiandan.in/posts/bwg-gfw.html</loc>
+    <lastmod>2020-11-12T15:57:19.814Z</lastmod>
+    
+  </url>
+  <url>
+    <loc>https://xiandan.in/posts/github-pages-cdn.html</loc>
+    <lastmod>2020-11-12T15:57:12.250Z</lastmod>
+    
+  </url>
+  <url>
     <loc>https://xiandan.in/posts/nodejs-global-docs.html</loc>
     <lastmod>2020-10-31T19:57:33.239Z</lastmod>
     
@@ -8,11 +38,6 @@
   <url>
     <loc>https://xiandan.in/posts/scrcpy.html</loc>
     <lastmod>2020-10-31T17:17:50.592Z</lastmod>
-    
-  </url>
-  <url>
-    <loc>https://xiandan.in/posts/github-pages-cdn.html</loc>
-    <lastmod>2020-10-29T16:35:57.132Z</lastmod>
     
   </url>
   <url>
@@ -66,21 +91,6 @@
     
   </url>
   <url>
-    <loc>https://xiandan.in/posts/bwg-gfw.html</loc>
-    <lastmod>2020-06-06T16:20:26.279Z</lastmod>
-    
-  </url>
-  <url>
-    <loc>https://xiandan.in/posts/bwg-vultr-justmysocks.html</loc>
-    <lastmod>2020-06-06T16:20:26.242Z</lastmod>
-    
-  </url>
-  <url>
-    <loc>https://xiandan.in/posts/git-command.html</loc>
-    <lastmod>2020-01-04T15:36:45.188Z</lastmod>
-    
-  </url>
-  <url>
     <loc>https://xiandan.in/posts/tampermonkey-live-fullscreen.html</loc>
     <lastmod>2019-12-31T14:26:11.702Z</lastmod>
     
@@ -91,12 +101,12 @@
     
   </url>
   <url>
-    <loc>https://xiandan.in/posts/android-studio-plugin.html</loc>
+    <loc>https://xiandan.in/posts/android-gpuimage-support.html</loc>
     <lastmod>2019-12-31T14:26:11.700Z</lastmod>
     
   </url>
   <url>
-    <loc>https://xiandan.in/posts/android-gpuimage-support.html</loc>
+    <loc>https://xiandan.in/posts/android-studio-plugin.html</loc>
     <lastmod>2019-12-31T14:26:11.700Z</lastmod>
     
   </url>
@@ -291,12 +301,12 @@
     
   </url>
   <url>
-    <loc>https://xiandan.in/links/index.html</loc>
+    <loc>https://xiandan.in/categories/index.html</loc>
     <lastmod>2018-12-16T08:55:18.163Z</lastmod>
     
   </url>
   <url>
-    <loc>https://xiandan.in/categories/index.html</loc>
+    <loc>https://xiandan.in/links/index.html</loc>
     <lastmod>2018-12-16T08:55:18.163Z</lastmod>
     
   </url>

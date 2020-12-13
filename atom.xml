@@ -81,7 +81,7 @@
     <published>2020-09-12T09:45:36.000Z</published>
     <updated>2020-09-12T10:07:06.220Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote><p><a href="https://www.lalal.ai/" target="_blank" rel="noopener">lalal.ai</a> - 基于世界排名第一的AI驱动技术的高质量音频分割</p></blockquote><p>下面是分离后的效果<br>        <div id="aplayer-HaBdbMBK" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-HaBdbMBK"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "人声",              author: "vocals.mp3",              url: "extract-audio/vocals.mp3",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script></p>        <div id="aplayer-CzxlzTmN" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-CzxlzTmN"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "伴奏",              author: "accompaniment.mp3",              url: "extract-audio/accompaniment.mp3",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote><p><a href="https://www.lalal.ai/" target="_blank" rel="noopener">lalal.ai</a> - 基于世界排名第一的AI驱动技术的高质量音频分割</p></blockquote><p>下面是分离后的效果<br>        <div id="aplayer-ZEEkZxWQ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-ZEEkZxWQ"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "人声",              author: "vocals.mp3",              url: "extract-audio/vocals.mp3",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script></p>        <div id="aplayer-gHmyLjxe" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-gHmyLjxe"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "伴奏",              author: "accompaniment.mp3",              url: "extract-audio/accompaniment.mp3",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script>]]></content>
     
     <summary type="html">
     
@@ -131,13 +131,13 @@
   </entry>
   
   <entry>
-    <title>Git特殊使用场景命令</title>
-    <link href="https://xiandan.in/posts/git-command.html"/>
-    <id>https://xiandan.in/posts/git-command.html</id>
-    <published>2019-12-31T03:23:01.000Z</published>
-    <updated>2020-01-04T15:36:45.188Z</updated>
+    <title>修改Git历史提交记录的提交者名称和邮箱</title>
+    <link href="https://xiandan.in/posts/git-history-author.html"/>
+    <id>https://xiandan.in/posts/git-history-author.html</id>
+    <published>2019-12-31T07:14:57.000Z</published>
+    <updated>2020-12-13T16:44:34.922Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="删除已推到远程分支的提交"><a href="#删除已推到远程分支的提交" class="headerlink" title="删除已推到远程分支的提交"></a>删除已推到远程分支的提交</h2><p><code>git log</code>复制需要回滚的<strong>commit_id</strong>，把<strong>HEAD</strong>指向这个commit_id并强制推送</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard [commit_id]</span><br><span class="line">git push origin HEAD --force</span><br></pre></td></tr></table></figure><h4 id="交互式命令"><a href="#交互式命令" class="headerlink" title="交互式命令"></a>交互式命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;输入要回滚的commit id&quot; &amp;&amp; read id &amp;&amp; git reset --hard $id &amp;&amp; git push origin HEAD --force</span><br></pre></td></tr></table></figure><h2 id="强制更新"><a href="#强制更新" class="headerlink" title="强制更新"></a>强制更新</h2><p>抛弃当前所有的变更并更新</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git fetch --all</span><br><span class="line">git reset --hard origin/[分支名称]</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure><h4 id="交互式命令-1"><a href="#交互式命令-1" class="headerlink" title="交互式命令"></a>交互式命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;输入要更新的分支(default: master)&quot; &amp;&amp; read input &amp;&amp; branch=$&#123;input:=master&#125; &amp;&amp; echo 从&quot;$branch&quot;拉取更新 &amp;&amp; git fetch --all &amp;&amp; git reset --hard origin/&quot;$branch&quot; &amp;&amp; git pull</span><br></pre></td></tr></table></figure><h2 id="克隆到非空文件夹"><a href="#克隆到非空文件夹" class="headerlink" title="克隆到非空文件夹"></a>克隆到非空文件夹</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git clone --no-checkout [git_url] tmp</span><br><span class="line">mv tmp/.git .</span><br><span class="line">rmdir tmp</span><br><span class="line">git reset --hard HEAD</span><br></pre></td></tr></table></figure><h4 id="交互式命令-2"><a href="#交互式命令-2" class="headerlink" title="交互式命令"></a>交互式命令</h4><p>克隆并覆盖当前文件夹</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;输入要克隆的URL&quot; &amp;&amp; read url &amp;&amp; echo 克隆&quot;$url&quot;到当前文件夹 &amp;&amp; git clone --no-checkout $url tmp &amp;&amp; mv tmp/.git . &amp;&amp; rmdir tmp &amp;&amp; git reset --hard HEAD</span><br></pre></td></tr></table></figure><h2 id="更改全局用户名和邮箱"><a href="#更改全局用户名和邮箱" class="headerlink" title="更改全局用户名和邮箱"></a>更改全局用户名和邮箱</h2><p>全局用户名</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;[用户名]&quot;</span><br></pre></td></tr></table></figure><p>全局邮箱</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email &quot;[邮箱地址]&quot;</span><br></pre></td></tr></table></figure><h2 id="给Github设置SSH代理"><a href="#给Github设置SSH代理" class="headerlink" title="给Github设置SSH代理"></a>给Github设置SSH代理</h2><p>修改或创建config</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi ~/.ssh/config</span><br></pre></td></tr></table></figure><p>设置Github走1080端口</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">ProxyCommand nc -X 5 -x 127.0.0.1:1080 %h %p</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>来源：<a href="https://stackoverflow.com/questions/750172/how-to-change-the-author-and-committer-name-and-e-mail-of-multiple-commits-in-gi" target="_blank" rel="noopener">https://stackoverflow.com/questions/750172/how-to-change-the-author-and-committer-name-and-e-mail-of-multiple-commits-in-gi</a></p><p>修改旧邮箱<code>OLD_EMAIL</code>，新姓名<code>CORRECT_NAME</code>，新邮箱<code>CORRECT_EMAIL</code>，执行此脚本</p><p><strong>此方法虽然可以达到效果，但使用<code>git-filter-branch</code>会对历史记录重写产生明显的干扰，所以需要慎用</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/sh</span><br><span class="line"></span><br><span class="line">git filter-branch --env-filter &apos;</span><br><span class="line">OLD_EMAIL=&quot;your-old-email@example.com&quot;</span><br><span class="line">CORRECT_NAME=&quot;Your Correct Name&quot;</span><br><span class="line">CORRECT_EMAIL=&quot;your-correct-email@example.com&quot;</span><br><span class="line">if [ &quot;$GIT_COMMITTER_EMAIL&quot; = &quot;$OLD_EMAIL&quot; ]</span><br><span class="line">then</span><br><span class="line">    export GIT_COMMITTER_NAME=&quot;$CORRECT_NAME&quot;</span><br><span class="line">    export GIT_COMMITTER_EMAIL=&quot;$CORRECT_EMAIL&quot;</span><br><span class="line">fi</span><br><span class="line">if [ &quot;$GIT_AUTHOR_EMAIL&quot; = &quot;$OLD_EMAIL&quot; ]</span><br><span class="line">then</span><br><span class="line">    export GIT_AUTHOR_NAME=&quot;$CORRECT_NAME&quot;</span><br><span class="line">    export GIT_AUTHOR_EMAIL=&quot;$CORRECT_EMAIL&quot;</span><br><span class="line">fi</span><br><span class="line">&apos; --tag-name-filter cat -- --branches --tags</span><br></pre></td></tr></table></figure><p>完成后强制提交</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push --force</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -148,7 +148,61 @@
     
     </summary>
     
-      <category term="开发工具" scheme="https://xiandan.in/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+      <category term="Git" scheme="https://xiandan.in/categories/Git/"/>
+    
+    
+      <category term="Git" scheme="https://xiandan.in/tags/Git/"/>
+    
+      <category term="Github" scheme="https://xiandan.in/tags/Github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>迁移Git历史记录到Git LFS</title>
+    <link href="https://xiandan.in/posts/git-lfs-migrate.html"/>
+    <id>https://xiandan.in/posts/git-lfs-migrate.html</id>
+    <published>2019-12-31T04:23:01.000Z</published>
+    <updated>2020-12-13T15:55:29.248Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Git LFS是Github开源的Git扩展，用于对大型文件进行版本控制，可以解决Github对单个文件限制100M的问题</p><ul><li>官网：<a href="https://git-lfs.github.com" target="_blank" rel="noopener">https://git-lfs.github.com</a></li><li>Github：<a href="https://github.com/git-lfs/git-lfs" target="_blank" rel="noopener">https://github.com/git-lfs/git-lfs</a></li><li>迁移文档：<a href="https://github.com/git-lfs/git-lfs/blob/master/docs/man/git-lfs-migrate.1.ronn" target="_blank" rel="noopener">https://github.com/git-lfs/git-lfs/blob/master/docs/man/git-lfs-migrate.1.ronn</a></li></ul><h2 id="迁移"><a href="#迁移" class="headerlink" title="迁移"></a>迁移</h2><p>先用<a href="https://gist.github.com/Maxattax97/f566fdf67ac4ad2492ea1c732f5afdda" target="_blank" rel="noopener">gitlistobjectbysize.sh</a>按文件大小排序列出大文件，</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash -e</span><br><span class="line"># work over each commit and append all files in tree to $tempFile</span><br><span class="line">tempFile=$(mktemp)</span><br><span class="line">IFS=$&apos;\n&apos;</span><br><span class="line">for commitSHA1 in $(git rev-list --all); do</span><br><span class="line">git ls-tree -r --long &quot;$commitSHA1&quot; &gt;&gt;&quot;$tempFile&quot;</span><br><span class="line">done</span><br><span class="line"></span><br><span class="line"># sort files by SHA1, de-dupe list and finally re-sort by filesize</span><br><span class="line">sort --key 3 &quot;$tempFile&quot; | \</span><br><span class="line">uniq | \</span><br><span class="line">sort --key 4 --numeric-sort --reverse | \</span><br><span class="line">awk &apos;!visited[$5]++&apos; | \</span><br><span class="line">awk &apos;&#123; split( &quot;B KB MB GB&quot; , v ); s=1; while( $4&gt;1024 )&#123; $4/=1024; s++ &#125; print int($4) &quot; &quot; v[s] &quot;\t\t&quot; $5 &#125;&apos; | \</span><br><span class="line">tac</span><br><span class="line"></span><br><span class="line"># remove temp file</span><br><span class="line">rm &quot;$tempFile&quot;</span><br></pre></td></tr></table></figure><p>运行此脚本需要先安装tac</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install coreutils</span><br></pre></td></tr></table></figure><p><img src="/posts/git-lfs-migrate/1.jpg" width="400"></p><p>将列出的大文件或文件夹加入<code>--include</code>，多个以<code>,</code>分隔</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 加入assets文件夹 指定master分支 仅显示迁移信息不迁移</span><br><span class="line">git lfs migrate info --include=&quot;src/main/assets&quot; --include-ref=master</span><br><span class="line"></span><br><span class="line">//执行迁移</span><br><span class="line">git lfs migrate import --include=&quot;src/main/assets&quot; --include-ref=master --verbose</span><br><span class="line"></span><br><span class="line">//强制提交</span><br><span class="line">git push --force</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="Git" scheme="https://xiandan.in/categories/Git/"/>
+    
+    
+      <category term="Git" scheme="https://xiandan.in/tags/Git/"/>
+    
+      <category term="Git LFS" scheme="https://xiandan.in/tags/Git-LFS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git特殊使用场景命令</title>
+    <link href="https://xiandan.in/posts/git-command.html"/>
+    <id>https://xiandan.in/posts/git-command.html</id>
+    <published>2019-12-31T03:23:01.000Z</published>
+    <updated>2020-12-13T16:45:06.920Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="删除已推到远程分支的提交"><a href="#删除已推到远程分支的提交" class="headerlink" title="删除已推到远程分支的提交"></a>删除已推到远程分支的提交</h2><p><code>git log</code>复制需要回滚的<strong>commit_id</strong>，把<strong>HEAD</strong>指向这个commit_id并强制推送</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard [commit_id]</span><br><span class="line">git push origin HEAD --force</span><br></pre></td></tr></table></figure><h4 id="交互式命令"><a href="#交互式命令" class="headerlink" title="交互式命令"></a>交互式命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;输入要回滚的commit id&quot; &amp;&amp; read id &amp;&amp; git reset --hard $id &amp;&amp; git push origin HEAD --force</span><br></pre></td></tr></table></figure><h2 id="强制更新"><a href="#强制更新" class="headerlink" title="强制更新"></a>强制更新</h2><p>抛弃当前所有的变更并更新</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git fetch --all</span><br><span class="line">git reset --hard origin/[分支名称]</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure><h4 id="交互式命令-1"><a href="#交互式命令-1" class="headerlink" title="交互式命令"></a>交互式命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;输入要更新的分支(default: master)&quot; &amp;&amp; read input &amp;&amp; branch=$&#123;input:=master&#125; &amp;&amp; echo 从&quot;$branch&quot;拉取更新 &amp;&amp; git fetch --all &amp;&amp; git reset --hard origin/&quot;$branch&quot; &amp;&amp; git pull</span><br></pre></td></tr></table></figure><h2 id="克隆到非空文件夹"><a href="#克隆到非空文件夹" class="headerlink" title="克隆到非空文件夹"></a>克隆到非空文件夹</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git clone --no-checkout [git_url] tmp</span><br><span class="line">mv tmp/.git .</span><br><span class="line">rmdir tmp</span><br><span class="line">git reset --hard HEAD</span><br></pre></td></tr></table></figure><h4 id="交互式命令-2"><a href="#交互式命令-2" class="headerlink" title="交互式命令"></a>交互式命令</h4><p>克隆并覆盖当前文件夹</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;输入要克隆的URL&quot; &amp;&amp; read url &amp;&amp; echo 克隆&quot;$url&quot;到当前文件夹 &amp;&amp; git clone --no-checkout $url tmp &amp;&amp; mv tmp/.git . &amp;&amp; rmdir tmp &amp;&amp; git reset --hard HEAD</span><br></pre></td></tr></table></figure><h2 id="更改全局用户名和邮箱"><a href="#更改全局用户名和邮箱" class="headerlink" title="更改全局用户名和邮箱"></a>更改全局用户名和邮箱</h2><p>全局用户名</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;[用户名]&quot;</span><br></pre></td></tr></table></figure><p>全局邮箱</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email &quot;[邮箱地址]&quot;</span><br></pre></td></tr></table></figure><h2 id="给Github设置SSH代理"><a href="#给Github设置SSH代理" class="headerlink" title="给Github设置SSH代理"></a>给Github设置SSH代理</h2><p>来源：<a href="https://gist.github.com/chuyik/02d0d37a49edc162546441092efae6a1" target="_blank" rel="noopener">https://gist.github.com/chuyik/02d0d37a49edc162546441092efae6a1</a></p><p>修改或创建config</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi ~/.ssh/config</span><br></pre></td></tr></table></figure><p>设置Github走1080端口</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">// macOS</span><br><span class="line">Host github.com</span><br><span class="line">   HostName github.com</span><br><span class="line">   User git</span><br><span class="line">   # Socks5</span><br><span class="line">   ProxyCommand nc -v -x 127.0.0.1:1080 %h %p</span><br><span class="line"></span><br><span class="line">// Windows</span><br><span class="line">Host github.com</span><br><span class="line">   HostName github.com</span><br><span class="line">   User git</span><br><span class="line">   # Socks5</span><br><span class="line">   ProxyCommand connect -S 127.0.0.1:1080 %h %p</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="Git" scheme="https://xiandan.in/categories/Git/"/>
     
     
       <category term="Git" scheme="https://xiandan.in/tags/Git/"/>
@@ -160,7 +214,7 @@
     <link href="https://xiandan.in/posts/bwg-vultr-justmysocks.html"/>
     <id>https://xiandan.in/posts/bwg-vultr-justmysocks.html</id>
     <published>2019-06-03T07:17:17.000Z</published>
-    <updated>2020-06-06T16:20:26.242Z</updated>
+    <updated>2020-11-12T15:57:30.321Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="搬瓦工"><a href="#搬瓦工" class="headerlink" title="搬瓦工"></a>搬瓦工</h2><p><a href="https://bwh88.net/aff.php?aff=48595" target="_blank" rel="noopener">搬瓦工</a>是IT7旗下的VPS品牌，相对国内的VPS性价比很高。</p><h2 id="JustMySocks"><a href="#JustMySocks" class="headerlink" title="JustMySocks"></a>JustMySocks</h2><p><a href="https://justmysocks3.net/members/aff.php?gid=1&amp;aff=1627&amp;language=chinese" target="_blank" rel="noopener">JustMySocks</a>是搬瓦工推出的代理服务，相对VPS也是便宜很多，并且很稳定。</p><p><img src="/posts/bwg-vultr-justmysocks/4.jpg" width="500"></p><h2 id="Vultr"><a href="#Vultr" class="headerlink" title="Vultr"></a>Vultr</h2><p>除了搬瓦工，还有<a href="https://www.vultr.com/?ref=8093231" target="_blank" rel="noopener">Vultr</a>也可以用，比搬瓦工要贵，但是按小时付费的，所以可以随时更换。</p><p>可以先<a href="https://www.vultr.com/faq/#downloadspeedtests" target="_blank" rel="noopener">测速</a>再选择适合自己的机房</p><p>Vultr的工单处理的很快，快的时候2分钟就回复了，而且可以随时提现余额</p><h2 id="对比"><a href="#对比" class="headerlink" title="对比"></a>对比</h2><p>价格更新于2019-09-23，不排除涨价降价的可能，以官网显示为准</p><table><thead><tr><th style="text-align:center"></th><th style="text-align:center">类型</th><th style="text-align:center">最低档价格</th><th style="text-align:center">最低档流量</th><th style="text-align:center">速度</th><th>优点</th><th>缺点</th></tr></thead><tbody><tr><td style="text-align:center">搬瓦工</td><td style="text-align:center">VPS</td><td style="text-align:center">$49.99/年</td><td style="text-align:center">1T/月</td><td style="text-align:center">正常</td><td>硬件配置性价比更高</td><td>1.被墙就只能花钱改IP<br>2.最低档的只能年付</td></tr><tr><td style="text-align:center">Vultr</td><td style="text-align:center">VPS</td><td style="text-align:center">$0.007/时<br>$5/月<br>$60/年</td><td style="text-align:center">1T/月</td><td style="text-align:center">略慢</td><td>1.可以随时开通和取消<br>2.余额可随时提现<br>3.工单处理快</td><td>1.国内访问相对较慢<br>2.价格较高</td></tr><tr><td style="text-align:center">JustMySocks</td><td style="text-align:center">服务</td><td style="text-align:center">$2.88/月<br>$28.88/年</td><td style="text-align:center">100G/月</td><td style="text-align:center">正常</td><td>1.最便宜<br>2.稳定</td><td>不能自定义端口/密码/域名</td></tr></tbody></table><h2 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h2><p>搬瓦工官网：<a href="https://bandwagonhost.com/aff.php?aff=48595" target="_blank" rel="noopener">https://bandwagonhost.com</a><br>搬瓦工官网：<a href="https://bwh88.net/aff.php?aff=48595" target="_blank" rel="noopener">https://bwh88.net</a>（国内可访问）</p><p>Vultr官网：<a href="https://www.vultr.com/?ref=8093231" target="_blank" rel="noopener">https://www.vultr.com</a>  </p><p>JustMySocks官网：<a href="https://justmysocks.net/members/aff.php?gid=1&amp;aff=1627&amp;language=chinese" target="_blank" rel="noopener">https://justmysocks.net</a><br>JustMySocks官网：<a href="https://justmysocks3.net/members/aff.php?gid=1&amp;aff=1627&amp;language=chinese" target="_blank" rel="noopener">https://justmysocks3.net</a>（国内可访问）  </p>]]></content>
     
@@ -173,10 +227,8 @@
     
     </summary>
     
-      <category term="科学上网" scheme="https://xiandan.in/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+      <category term="VPS" scheme="https://xiandan.in/categories/VPS/"/>
     
-    
-      <category term="Shadowsocks" scheme="https://xiandan.in/tags/Shadowsocks/"/>
     
       <category term="搬瓦工" scheme="https://xiandan.in/tags/%E6%90%AC%E7%93%A6%E5%B7%A5/"/>
     
@@ -191,7 +243,7 @@
     <link href="https://xiandan.in/posts/bwg-gfw.html"/>
     <id>https://xiandan.in/posts/bwg-gfw.html</id>
     <published>2019-06-03T07:10:42.000Z</published>
-    <updated>2020-06-06T16:20:26.279Z</updated>
+    <updated>2020-11-12T15:57:19.814Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="验证是否被墙"><a href="#验证是否被墙" class="headerlink" title="验证是否被墙"></a>验证是否被墙</h2><ul><li>在<a href="http://port.ping.pe" target="_blank" rel="noopener">http://port.ping.pe</a>输入服务器IP和SSH端口号，如果国外节点成功国内节点失败说明被墙</li></ul><p><img src="/posts/bwg-gfw/1.jpg" width="500"></p><ul><li>也可以登录控制面板，进入到<a href="https://kiwivm.64clouds.com/main-exec.php?mode=blacklistcheck" target="_blank" rel="noopener">Block List Check</a>，出现<code>IP BLOCKED</code>说明被墙</li></ul><img src="/posts/bwg-gfw/3.png"><h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>咨询了搬瓦工，回复原文如下：</p><p><img src="/posts/bwg-gfw/4.png" width="600"></p><p>其中提到了几个解决办法：</p><blockquote><p>1.停止服务，也许几天或几周后会解除；<br>2.付费8.79美元<a href="https://bwh88.net/ipchange.php" target="_blank" rel="noopener">更换新的IP</a>；<br>3.使用<a href="https://justmysocks3.net/members/aff.php?gid=1&amp;aff=1627&amp;language=chinese" target="_blank" rel="noopener">JustMySocks</a>。</p></blockquote><p><strong>查看 <a href="bwg-vultr-justmysocks.html">搬瓦工/Vultr/JustMySocks对比</a></strong></p><h2 id="也许有效的预防措施"><a href="#也许有效的预防措施" class="headerlink" title="也许有效的预防措施"></a>也许有效的预防措施</h2><p>3月1日至17日左右，6月1日至10日左右都是可能被墙的时期，期间最好关机，也许可以防止被墙</p><h2 id="亲测解除"><a href="#亲测解除" class="headerlink" title="亲测解除"></a>亲测解除</h2><p>6月3号被墙，<strong>关机</strong>直到7月7日再测发现已经解除了</p><p><img src="/posts/bwg-gfw/2.png" width="500"></p>]]></content>
     
@@ -201,7 +253,7 @@
     
     </summary>
     
-      <category term="科学上网" scheme="https://xiandan.in/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+      <category term="VPS" scheme="https://xiandan.in/categories/VPS/"/>
     
     
       <category term="搬瓦工" scheme="https://xiandan.in/tags/%E6%90%AC%E7%93%A6%E5%B7%A5/"/>
@@ -244,7 +296,7 @@
     <link href="https://xiandan.in/posts/github-pages-cdn.html"/>
     <id>https://xiandan.in/posts/github-pages-cdn.html</id>
     <published>2019-04-22T03:22:53.000Z</published>
-    <updated>2020-10-29T16:35:57.132Z</updated>
+    <updated>2020-11-12T15:57:12.250Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>最近发现Github Pages有时候打开很慢，甚至打不开，ping一下平均200多毫秒，还有超时的情况<br><img src="/posts/github-pages-cdn/6.jpg" width="400"></p><p>再看一下<a href="http://tool.chinaz.com/speedtest.aspx" target="_blank" rel="noopener">网站测速</a>也很慢，移动更是全部超时<br><img src="/posts/github-pages-cdn/7.png" width="700"></p><h3 id="开通CDN"><a href="#开通CDN" class="headerlink" title="开通CDN"></a>开通CDN</h3><p>这里我用的是阿里云的<a href="https://www.aliyun.com/product/dcdn?source=5176.11533457&amp;userCode=cogjad1y" target="_blank" rel="noopener">全站加速</a>，具体资费看<a href="https://www.aliyun.com/price/product?source=5176.11533457&amp;userCode=cogjad1y#/dcdn/detail" target="_blank" rel="noopener">全站加速价格</a></p><p>也可以用<a href="https://cloud.tencent.com/act/cps/redirect?redirect=10108&amp;cps_key=428911fa608edf4bc44ef8419a4f57be" target="_blank" rel="noopener">腾讯云</a>，目前免费300G流量</p><p><img src="/posts/github-pages-cdn/1.jpg" width="500"></p><h3 id="添加域名"><a href="#添加域名" class="headerlink" title="添加域名"></a>添加域名</h3><p>开通全站加速后到<a href="https://dcdn.console.aliyun.com/domain/list" target="_blank" rel="noopener">控制台</a>添加域名，在<code>加速域名</code>填写你的域名，选择<code>源站域名</code>，填写你的Github Page地址，如果开启了HTTPS就选择443端口，加速的区域不同地方不同价格，这个看自己需求。</p><p><img src="/posts/github-pages-cdn/2.jpg" width="600"></p><p>添加成功后会生成一个CNAME地址，将你的域名解析到这个地址，如果你的域名也是阿里云的，可以在控制台一键配置。<br>这个不是实时生效的，如果解析后发现没有生效可以等一段时间再看。</p><p><img src="/posts/github-pages-cdn/4.jpg" width="700"><br><img src="/posts/github-pages-cdn/3.jpg" width="700"></p><h3 id="测试效果"><a href="#测试效果" class="headerlink" title="测试效果"></a>测试效果</h3><p>再次ping你的域名，会发现跳转是你CDN的地址，不再是github.io，加速效果也很明显</p><p><img src="/posts/github-pages-cdn/5.jpg" width="400"></p><p>再看一下<a href="http://tool.chinaz.com/speedtest.aspx" target="_blank" rel="noopener">网站测速</a>中国地图一片绿<br><img src="/posts/github-pages-cdn/8.png" width="700"></p>]]></content>
     
@@ -515,61 +567,9 @@
       <category term="工具" scheme="https://xiandan.in/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="Github" scheme="https://xiandan.in/tags/Github/"/>
-    
       <category term="Git" scheme="https://xiandan.in/tags/Git/"/>
     
-  </entry>
-  
-  <entry>
-    <title>通过油猴脚本让直播平台自动网页全屏</title>
-    <link href="https://xiandan.in/posts/tampermonkey-live-fullscreen.html"/>
-    <id>https://xiandan.in/posts/tampermonkey-live-fullscreen.html</id>
-    <published>2019-02-12T08:24:29.000Z</published>
-    <updated>2019-12-31T14:26:11.702Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Github：<a href="https://github.com/xiandanin/LardMonkeyScripts" target="_blank" rel="noopener">https://github.com/xiandanin/LardMonkeyScripts</a></p><p>看直播的时候，我个人习惯是关了弹幕开网页全屏，但是一般直播网站都是默认打开弹幕，每次都都要手动点一下很麻烦，所以写了个油猴脚本，进入直播间后会自动网页全屏和关弹幕。</p><p>已经测试Windows、Mac，Chrome、360浏览器均有效</p><h2 id="安装油猴"><a href="#安装油猴" class="headerlink" title="安装油猴"></a>安装油猴</h2><p>Chrome 直接插件商店安装：<br><a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=zh-CN" target="_blank" rel="noopener">Tampermonkey</a></p><p>360浏览器 在扩展中心搜索<code>Tampermonkey</code></p><h2 id="安装油猴脚本"><a href="#安装油猴脚本" class="headerlink" title="安装油猴脚本"></a>安装油猴脚本</h2><p>到<a href="https://greasyfork.org" target="_blank" rel="noopener">greasyfork</a>安装<a href="https://greasyfork.org/zh-CN/scripts/377547-%E7%9B%B4%E6%92%AD%E5%B9%B3%E5%8F%B0%E8%87%AA%E5%8A%A8%E7%BD%91%E9%A1%B5%E5%85%A8%E5%B1%8F" target="_blank" rel="noopener">直播平台自动网页全屏</a></p><p>目前支持斗鱼、熊猫、虎牙</p><p>熊猫TV需要切换成<code>H5播放器</code>才有效果</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
-      
-    
-    </summary>
-    
-      <category term="工具" scheme="https://xiandan.in/categories/%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="Tampermonkey" scheme="https://xiandan.in/tags/Tampermonkey/"/>
-    
-      <category term="直播" scheme="https://xiandan.in/tags/%E7%9B%B4%E6%92%AD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用Homebrew安装初始化Google Cloud SDK</title>
-    <link href="https://xiandan.in/posts/google-cloud-sdk-homebrew.html"/>
-    <id>https://xiandan.in/posts/google-cloud-sdk-homebrew.html</id>
-    <published>2019-01-28T11:07:24.000Z</published>
-    <updated>2019-09-01T14:35:40.293Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><a href="https://cloud.google.com/sdk/docs/quickstarts" target="_blank" rel="noopener">官方文档</a></p><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>1、 先在<a href="https://console.cloud.google.com/cloud-resource-manager" target="_blank" rel="noopener">控制台</a>创建一个应用</p><p>2、 <code>python -V</code>查看python版本，至少2.7以上</p><p><img src="/posts/google-cloud-sdk-homebrew/1.jpg" width="400"></p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>使用brew安装Google Cloud SDK</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew cask install google-cloud-sdk</span><br></pre></td></tr></table></figure><p>如果安装过程中报如下错：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Error: Permission denied @ dir_s_mkdir - /usr/local/Caskroom/google-cloud-sdk/latest</span><br></pre></td></tr></table></figure><p>可以尝试手动赋予权限，再重新调用安装命令</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chown -R $(whoami) /usr/local/Cellar</span><br></pre></td></tr></table></figure><p>执行<code>gcloud</code>有打印出帮助，说明已经安装完成</p><p><img src="/posts/google-cloud-sdk-homebrew/2.jpg" width="500"></p><h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><p>执行初始化命令</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcloud init</span><br></pre></td></tr></table></figure><p>执行后会询问登录，直接回车</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">To continue, you must log in. Would you like to log in (Y/n)?</span><br></pre></td></tr></table></figure><p><img src="/posts/google-cloud-sdk-homebrew/3.jpg" width="500"></p><p>登录完成后，会要求选择一个项目，输入一个项目编号等待完成</p><p><img src="/posts/google-cloud-sdk-homebrew/4.jpg" width="500"></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
-      
-    
-    </summary>
-    
-      <category term="开发工具" scheme="https://xiandan.in/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="Google Cloud SDK" scheme="https://xiandan.in/tags/Google-Cloud-SDK/"/>
+      <category term="Github" scheme="https://xiandan.in/tags/Github/"/>
     
   </entry>
   
