@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://xiandan.in/posts/nodejs-global-docs.html</loc>
+    <lastmod>2021-03-14T05:46:07.389Z</lastmod>
+    
+  </url>
+  <url>
+    <loc>https://xiandan.in/posts/jdk-download.html</loc>
+    <lastmod>2021-01-21T14:21:34.245Z</lastmod>
+    
+  </url>
+  <url>
+    <loc>https://xiandan.in/posts/wepy-vant-helloworld.html</loc>
+    <lastmod>2020-12-22T14:34:18.109Z</lastmod>
+    
+  </url>
+  <url>
     <loc>https://xiandan.in/posts/git-command.html</loc>
     <lastmod>2020-12-13T16:45:06.920Z</lastmod>
     
@@ -23,11 +38,6 @@
   <url>
     <loc>https://xiandan.in/posts/github-pages-cdn.html</loc>
     <lastmod>2020-11-12T15:57:12.250Z</lastmod>
-    
-  </url>
-  <url>
-    <loc>https://xiandan.in/posts/nodejs-global-docs.html</loc>
-    <lastmod>2020-10-31T19:57:33.239Z</lastmod>
     
   </url>
   <url>
@@ -281,7 +291,7 @@
     
   </url>
   <url>
-    <loc>https://xiandan.in/categories/index.html</loc>
+    <loc>https://xiandan.in/repository/index.html</loc>
     <lastmod>2018-12-16T08:55:18.163Z</lastmod>
     
   </url>
@@ -291,7 +301,7 @@
     
   </url>
   <url>
-    <loc>https://xiandan.in/repository/index.html</loc>
+    <loc>https://xiandan.in/categories/index.html</loc>
     <lastmod>2018-12-16T08:55:18.163Z</lastmod>
     
   </url>
